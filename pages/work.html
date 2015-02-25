@@ -1,0 +1,101 @@
+{% extends "templates/partials/base.html" %}
+{% set item = get('work') %}
+{% set pageName = 'work' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage.url %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% block title %} {{ item.name }} | {% parent %} {% endblock %}
+{% block content %}
+
+<div id="stage" class="row feature" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+  <div class="large-12 columns">
+    <div class="panel">
+      <div class="large-6 medium-8 columns end">
+        <div class="feature-title" style="color: {{item.hed_color}}">
+          <h5>{{item.section_name}}</h5>
+          <h1>{{ item.hed }}</h1>
+        </div>
+        <div class="featured-desc">
+          <p style="color: {{item.hed_color}}">{{ item.dek|safe }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <p class="intro"><img src="/static/images/brand-slash.png" alt="Brand Slash">{{ item.intro_paragraph }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel work-body">
+          {{ item.body_before_logos|safe }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row sub-detail">
+    <div class="large-12 logo-grid columns">
+      <div class="panel">
+
+        {% set clients = paginate(cms.clients|where('feature_on_homepage', 'True')|sort('priority', true), 6) %}
+        {% for client in clients %}
+          <div class="large-2 columns"><img src="{{client.logo.url}}" alt="{{ client.client_name }} Logo"></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="row display-header portfolio-grid-head">
+    <div class="row">
+      <h3>{{item.showcase_title}}</h3>
+    </div>
+  </div>
+
+  <div class="row portfolio-grid">
+
+    <div class="large-12 medium-12 columns">
+
+     <div class="row showcase-grid">
+        {% set showcasesMax = 16 %}
+        {% set showcasesShown = 0 %}
+        {% set showcase = cms.showcases %}
+        {% set showcase = showcase|sort('priority', true) %}
+          {% for tile in showcase %}
+             {% if showcasesShown < showcasesMax %}
+              <!-- Image Tile -->
+              <div class="large-2 medium-2 portfolio-case columns showcase-box">
+                <a href="{{ url(tile) }}" style="background-image:url('{{ tile.tile_image|imageCrop(300) }}');">
+                  <div class="front">
+                    <h4>{{ tile.name }}</h4>
+                    <p>{{ tile.promo }}</p>
+                  </div>
+                  <div class="back">
+                    <p>See the work</p>
+                  </div>
+                </a>
+              </div>
+              {% set showcasesShown = showcasesShown + 1 %}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+         {% include "templates/partials/base_cta.html" %}
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

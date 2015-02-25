@@ -1,0 +1,221 @@
+
+{% extends "templates/partials/base.html" %}
+{% set item = get('contact') %}
+{% block title %} {{ item.name }} | {% parent %} {% endblock %}
+{% set pageName = 'contact' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% block content %}
+
+  <div id="stage" class="row feature" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-6 medium-6 columns">
+          <div class="feature-title" style="color: {{item.hed_color}}">
+            <h1>{{item.hed}}</h1>
+          </div>
+        </div>
+        <div class="large-6 medium-6 columns">
+          <div class="feature-copy">
+           {{item.dec|safe}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div class="row contact-info">
+  	 <div class="panel">
+        <div class="large-12 column">
+          <div class="large-12 column contact-info">
+            <h2>{{ item.intro|safe }}</h2>
+          </div>
+          <div class="large-6 column contact-info">
+            <p class="call">
+            <span>Call us </span>781.278.2300
+            </p>
+            <p class="email">
+              <span>Email us </span><a data-accountname="TheTeam" class="ElectronicMailAddress"></a>
+            </p>
+            <p class="follow">
+              <span>Follow us </span><a href="http://twitter.com/wearecramer">@WeAreCramer</a>
+            </p>
+            <p class="like">
+              <span>Like us on </span><a href="http://facebook.com/wearecramer">Facebook</a>
+            </p>
+            <p class="connect">
+              <span>Connect with us on </span><a href="https://www.linkedin.com/company/cramer">LinkedIn</a>
+            </p>
+            <p class="write">
+              <span>Write us </span> at <a href="https://www.google.com/maps/place/425+University+Ave,+Norwood,+MA+02062/@42.1987669,-71.158962,17z/data=!4m2!3m1!1s0x89e480386ff8a019:0x5991a0040a94e761?hl=en">425 University Avenue, Norwood, MA 02062</a>
+            </p>
+            <p>
+              <span>Or stop by </span>to enjoy our delicious lunches
+            </p>
+          </div>
+          <div class="large-6 column google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d2955.733428338064!2d-71.15896199999999!3d42.19876689999998!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e480386ff8a019%3A0x5991a0040a94e761!2s425+University+Ave%2C+Norwood%2C+MA+02062!5e0!3m2!1sen!2sus!4v1413839495480" width="100%" height="290" frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row contact-form">
+    	<div class="panel">
+        <div class="large-12 column">
+          <div class="large-12 column" ><h2>{{ item.above_form }}</h2></div>
+          <div>
+          	<div id="contact-form-resp">
+          	</div>
+            <form id="contact-form" method="post" class="validate" target="_blank" novalidate>
+            		<!-- Salesforce OID -->
+      					<input type="hidden" value="00Dd0000000e6P0" name="oid"/>
+      					<input type="hidden" value="http://projectcrayfish.webhook.org/contact/" name="retURL"/>
+      					<input type="hidden" value="Lead from cramer.com" name="lead_source"/>
+              <div>
+
+                <div class="large-6 column">
+
+                  <div class="large-6 column">
+                    <div class="mc-field-group">
+                      <label for="first_name">First Name<span class="asterisk">*</span></label>
+                      <input type="text" value="" name="first_name" class="" id="first_name">
+                    </div>
+                  </div>
+
+                  <div class="large-6 column last-name">
+                    <div class="mc-field-group">
+                      <label for="last_name">Last Name<span class="asterisk">*</span></label>
+                      <input type="text" value="" name="last_name" class="" id="last_name">
+                    </div>
+                  </div>
+
+                  <div class="large-6 column company">
+                    <div class="mc-field-group">
+                      <label for="company">Company</label>
+                      <input type="text" value="" name="company" class="" id="company">
+                    </div>
+                  </div>
+
+                  <div class="large-6 column title">
+                    <div class="mc-field-group">
+                      <label for="job_title">Job Title</label>
+                      <input type="text" value="" name="title" class="" id="job_title">
+                    </div>
+                  </div>
+
+
+
+                  <div class="large-6 column phone">
+	                  <div class="mc-field-group">
+	                      <label for="phone_1">Phone</label>
+	                      <input type="text" size="3" name="phone_1" maxlength="3" id="phone_1"/> -
+          						  <input type="text" size="3" name="phone_2" maxlength="3" id="phone_2"/> -
+          						  <input type="text" size="4" name="phone_3" maxlength="4" id="phone_3"/>
+	                  </div>
+                  </div>
+
+                  <div class="large-6 column email">
+	                  <div class="mc-field-group">
+	                      <label for="email">Email Address<span class="asterisk">*</span></label>
+	                      <input type="email" value="" name="email" class="email" id="email">
+	                  </div>
+                  </div>
+
+                </div>
+
+                <div class="large-6 column">
+                  <div class="mc-field-group">
+                    <label for="subject" style="">Subject<span class="asterisk">*</span></label>
+          					<select name="subject" id="subject" class="subject">
+          						<option class="default">Please select a subject</option>
+          						<option value="Sales Inquiries">Sales Inquiries</option>
+          						<option value="Corporate Communications">Corporate Communications</option>
+          						<option value="Career Opportunities">Career Opportunities</option>
+          						<option value="Other">Other</option>
+          					</select>
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="comment">Question<span class="asterisk">*</span></label>
+                    <textarea name="comment" class="" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="large-12 submit column">
+                  <p><span class="asterisk">*</span> indicates required field</p>
+                  <input type="submit" value="Submit" name="subscribe" id="subscribe" class="button">
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block footer_extra %}
+    <script>
+
+
+	var submitContactForm = function(){
+      var contactFormHeight = $(".row.contact-form").height();
+      console.log(contactFormHeight);
+      $(".row.contact-form").css( { height: contactFormHeight+"px" } );
+
+		$.ajax({
+			type: "post",
+			url: "http://www.cramerlabs.com/tools/cramer.com.sf.connector/salesforce.php",
+			data: $("#contact-form").serialize(),
+			error: function(msg, e) {
+				respMsg = "There was an error submitting your request -- please call the front desk at 1-781-278-2300.";
+				$("#contact-form-resp").html("");
+             $(".contact-form h2").addClass("thanks");
+				$(".contact-form h2").html(respMsg);
+				$(".contact-form").remove();
+			},
+			success: function(msg) {
+				$("#contact-form-resp").html("");
+			 	switch(msg){
+			 		case "success":
+			 			respMsg = "Thank you for contacting us.";
+                    $(".contact-form h2").addClass("thanks");
+			 			$(".contact-form h2").html(respMsg);
+			 			$("#contact-form").remove();
+			 			break;
+			 		case "failed":
+			 			respMsg = "There was an error submitting your request -- please call the front desk at 1-781-278-2300";
+			 			$(".contact-form h2").html(respMsg);
+			 			break;
+			 	}
+			}
+		});
+	};
+	$(document).ready(function(){
+
+		$("#contact-form").validate({
+			 rules: {
+				"first_name": "required",
+				"last_name":"required",
+				"email": "required",
+				"comment":"required",
+				"subject": "required"
+			},
+			submitHandler: function(form) {
+				submitContactForm();
+			}
+		});
+
+
+	})
+
+</script>
+{% endblock %}

@@ -1,0 +1,1301 @@
+html
+  height: 100%
+
+body
+  height: 100%
+  background: #000
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-family: 'Serifa W01 45 Light'
+  width: 100%
+  position: relative
+  opacity: 0
+  -webkit-transition: opacity .5s ease-in-out, background 1s ease-in-out
+  -moz-transition: opacity .5s ease-in-out, background 1s ease-in-out
+  -o-transition: opacity .5s ease-in-out, background 1s ease-in-out
+  -ms-transition: opacity .5s ease-in-out, background 1s ease-in-out
+  transition: opacity .5s ease-in-out, background 1s ease-in-out
+  &.loaded
+    background: #fff
+    opacity: 1
+
+.no-js body
+  opacity: 1
+
+body.menu-open
+  overflow: scroll
+
+.panel
+  overflow: hidden
+  width: 100%
+  max-width: 1300px
+  position: relative
+  margin: 0 auto
+
+.focus
+  small
+    font-size: 22px
+    color: #222
+    font-family: 'Univers LT W01 65 Bold'
+  .feature
+    p
+      font-size: 34px
+      font-family: 'Serifa W01 45 Light'
+    .feature-copy
+      margin-top: 25px
+      color: white
+      line-height: 1
+  p, ul
+    padding-left: 0
+  .row.feature .panel
+    margin-top: 197px
+  .feature-title h2
+    margin-top: 0
+
+.contact h2
+  font-size: 35px
+
+.contact-form h2
+  text-align: center
+
+.contact .feature .panel
+  margin-top: 180px
+  color: #333
+
+// HEADER
+
+#header
+  text-align: center
+  height: 85px
+  background: rgba(255, 255, 255, 0.7)
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 999
+  -moz-transition: all 0.4s ease-in-out
+  -o-transition: all 0.4s ease-in-out
+  -webkit-transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out
+  .menu-toggle
+    float: right
+
+#menu-toggle
+  padding: 20px 0
+  position: absolute
+  top: 25%
+  right: 5%
+  box-sizing: border-box
+  cursor: pointer
+  > div
+    display: block
+    height: 5px
+    width: 40px
+    background: #4c4c4c
+    position: relative
+    -moz-transition: all 0.4s ease-in-out
+    -o-transition: all 0.4s ease-in-out
+    -webkit-transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-in-out
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    float: right
+    &:before
+      display: block
+      content: ""
+      position: absolute
+      top: -10px
+      width: 40px
+      height: 5px
+      background: #4c4c4c
+      -moz-transition: all 0.4s ease-in-out
+      -o-transition: all 0.4s ease-in-out
+      -webkit-transition: all 0.4s ease-in-out
+      transition: all 0.4s ease-in-out
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+    &:after
+      display: block
+      content: ""
+      position: absolute
+      top: 10px
+      width: 40px
+      height: 5px
+      background: #4c4c4c
+      -moz-transition: all 0.4s ease-in-out
+      -o-transition: all 0.4s ease-in-out
+      -webkit-transition: all 0.4s ease-in-out
+      transition: all 0.4s ease-in-out
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+  &:hover > div
+    background: #000
+    &:before, &:after
+      background: #000
+
+.menu-open #menu-toggle div
+  background: transparent
+  &:before
+    top: 0px
+    -moz-transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+  &:after
+    top: 0px
+    -moz-transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+
+#menu
+  top: 85px
+  bottom: 0
+  position: fixed
+  overflow-x: hidden
+  background: rgba(253, 118, 9, 0.95)
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+  opacity: 0
+  z-index: 999
+  -moz-transition: all 0.4s ease-in-out
+  -o-transition: all 0.4s ease-in-out
+  -ms-transition: all 0.4s ease-in-out
+  -webkit-transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out
+  -moz-transform: translate3d(100%, 0px, 0px)
+  -ms-transform: translate3d(100%, 0px, 0px)
+  -o-transform: translate3d(100%, 0px, 0px)
+  -webkit-transform: translate3d(100%, 0px, 0px)
+  transform: translate3d(100%, 0px, 0px)
+  .menu-content
+    opacity: 0
+    -moz-transition: opacity 0.4s ease-in-out
+    -o-transition: opacity 0.4s ease-in-out
+    -webkit-transition: opacity 0.4s ease-in-out
+    transition: opacity 0.4s ease-in-out
+    -moz-transition-delay: 0.4s
+    -o-transition-delay: 0.4s
+    -webkit-transition-delay: 0.4s
+    transition-delay: 0.4s
+
+.menu-open #menu
+  .menu-content
+    opacity: 1
+  opacity: 1
+  -moz-transform: translate3d(0px, 0px, 0px)
+  -ms-transform: translate3d(0px, 0px, 0px)
+  -o-transform: translate3d(0px, 0px, 0px)
+  -webkit-transform: translate3d(0px, 0px, 0px)
+  transform: translate3d(0px, 0px, 0px)
+
+#menu .menu-content h2
+  color: #fff
+  font-size: 28px
+  font-weight: normal
+  margin-left: 25px
+  line-height: 1.1
+  strong
+    font-family: 'Serifa W01 65 Bold'
+    font-weight: normal
+
+#header nav
+  position: absolute
+  top: 10px
+  right: 150px
+  -moz-transform: translate3d(0px, -200%, 0px)
+  -webkit-transform: translate3d(0px, -200%, 0px)
+  transform: translate3d(0px, -200%, 0px)
+  -moz-transition: all 0.4s ease-in-out
+  -webkit-transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out
+
+.menu-open #header nav
+  -moz-transform: translate3d(0px, 0px, 0px)
+  -webkit-transform: translate3d(0px, 0px, 0px)
+  transform: translate3d(0px, 0px, 0px)
+
+#header
+  nav li
+    font-family: 'Serifa W01 55 Roman'
+    font-size: 24px
+    list-style-type: none
+    margin: 0 1em 0
+    padding: 0
+    float: left
+    a
+      color: #fc7706
+      text-decoration: none
+  .logo
+    position: relative
+    background: transparent url(../images/cramer-logo.png) no-repeat center center
+    display: block
+    left: 5%
+    margin-top: 24px
+    width: 123px
+    height: 46px
+    display: block
+    text-indent: 100%
+    -moz-transition: all 0.4s ease-in-out
+    -webkit-transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-in-out
+
+.menu-open #header .logo
+  margin-left: 0
+
+// HEADER RESPONSIVE
+
+@media only screen and (max-width: 64.063em)
+  #menu
+    display: none
+  #header nav
+    top: 85px
+    right: auto
+    position: fixed
+    overflow-x: hidden
+    background: rgba(253, 118, 9, 0.95)
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+    opacity: 1
+    z-index: 999
+    width: 100%
+    height: 100%
+    ul
+      margin: 15px 0
+      padding: 0
+      li
+        float: none
+        margin: 0
+        padding: 5px 0
+        font-size: 30px
+        a
+          display: block
+          color: #fff
+          &:hover
+            background-color: purple
+
+// HEADER - HOME PAGE SPECIFIC
+
+body.home
+  #header
+    background: transparent
+  &.menu-open #header
+    background: #ffffff
+  #header #menu-toggle > div
+    background: #ffffff
+    &:before, &:after
+      background: #ffffff
+  &.menu-open #header #menu-toggle > div
+    &:before, &:after
+      background: #4c4c4c
+
+// end: home page header
+
+.feed
+  background: rgba(255, 255, 255, 0.15)
+  padding: 10px 25px
+  ol
+    list-style-type: none
+    margin: 0
+    padding: 0
+  li
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 13px
+    margin: 0 0 1em 0
+    header
+      font-weight: bold
+  p
+    margin: 0
+  a
+    color: #fff
+
+.video-container
+  position: relative
+  overflow: hidden
+  height: 100%
+
+#homepage_background_video
+  position: absolute !important
+  bottom: 0px
+  right: 0px
+  min-width: 100%
+  min-height: 100%
+  width: auto !important
+  height: auto !important
+  overflow: hidden
+
+#homepage_background_video_grid_wrapper
+  position: absolute !important
+  bottom: 0px
+  right: 0px
+  min-width: 100%
+  min-height: 100%
+  width: auto !important
+  height: auto !important
+  overflow: hidden
+  video
+    object-fit: cover
+
+.video-container .content
+  color: #fff
+  background: url(../images/home-overlay.png) no-repeat top center
+  background-size: cover
+  z-index: 10
+  position: fixed
+  top: 0
+  bottom: 0
+  -moz-transition: all 0.4s ease-in-out
+  -webkit-transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out
+  h1
+    font-size: 45px
+    margin: 34% 0 .5em
+    line-height: 1.111
+    a, strong
+      color: #fc7706
+      text-decoration: none
+    a:hover strong
+      background-color: purple
+  .cta
+    font-family: 'Univers LT W02 55 Roman'
+    font-size: 14px
+    text-transform: uppercase
+    margin-right: 15px
+    a
+      color: #fff
+      text-decoration: none
+      background: url(../images/cta-carat.png) no-repeat right center
+      padding: 5px 25px 5px 0
+      line-height: 1
+      &:hover
+        color: #fc7706
+        background-color: purple
+
+.menu-open .video-container .content
+  -moz-transform: translate3d(-100%, 0, 0)
+  -webkit-transform: translate3d(-100%, 0, 0)
+  transform: translate3d(-100%, 0, 0)
+
+.newsletter-signup
+  input[type='email']
+    font-family: 'Univers LT W01 65 Bold'
+    font-size: 14px
+    color: #fff
+    background: rgba(255, 255, 255, 0.15)
+    border: none
+    outline: none
+    padding: 4px
+  \::-webkit-input-placeholder
+    color: #fff
+  \:-moz-placeholder
+    color: #fff
+  \::-moz-placeholder
+    color: #fff
+  \:-ms-input-placeholder
+    color: #fff
+  input[type='submit']
+    font-family: 'Univers LT W01 65 Bold'
+    font-size: 14px
+    color: #fff
+    background: purple
+    border: none
+    outline: none
+    padding: 4px
+
+ul.social
+  margin: .5em 0
+  padding: 0
+  li
+    list-style: none
+    float: left
+    margin: 0 .5em 0 0
+    a
+      display: block
+      width: 24px
+      height: 24px
+      text-indent: -9999em
+      background-repeat: no-repeat
+      background-position: center center
+    &.linkedin a
+      background-image: url(../images/icon-linkedin.png)
+    &.twitter a
+      background-image: url(../images/icon-twitter.png)
+    &.facebook a
+      background-image: url(../images/icon-facebook.png)
+    &.google-plus a
+      background-image: url(../images/icon-google-plus.png)
+
+.page
+  position: relative
+  background: #fff
+  overflow: hidden
+  padding-bottom: 30px
+  
+// FEATURE
+
+.feature
+  position: fixed
+  top: 0
+  bottom: 0
+  background-size: cover!important
+
+.work .feature
+  background: url(../images/work-feature.jpg) no-repeat center center
+
+.team .feature
+  background: url(../images/team-feature.jpg) no-repeat center center
+
+.about .feature
+  background: url(../images/about-feature.jpg) no-repeat center center
+
+.careers .feature
+  background: url(../images/careers-feature.jpg) no-repeat center center
+
+// TEAM
+
+.team
+  .feature .large-5
+    margin-left: 60px
+  .feature-title h3
+    margin: 0
+
+.about .feature-title h3
+  margin: 0
+
+.team .featured-desc p, .about .featured-desc p
+  font-size: 34px
+  line-height: 1.176
+  margin: 0
+
+p.intro
+  font-size: 28px
+  line-height: 1.357
+  color: #444444
+  text-align: center
+  padding: 0 80px
+  margin: 60px 0
+
+.teamFilter
+  padding: 0 80px
+  margin-bottom: 60px
+  .panel
+    max-width: 1130px
+  label, input, select
+    float: left
+
+#searchName
+  label, input
+    float: left
+  float: right
+
+.teamFilter
+  label
+    color: #fc7706
+    font-size: 28px
+    margin-right: 20px
+    position: static
+  select
+    max-width: 197px
+  .lastName
+    width: 240px
+  input
+    margin-right: 10px
+  select, input
+    background-color: #e3e3e3
+    border: 0px
+    margin-top: 10px
+    color: #444444
+  select
+    padding: 5px 8px
+  input
+    padding: 5px 8px
+    padding: 6px 8px
+    &[type="submit"]
+      background-color: #ffffff
+      text-indent: -9999px
+      background-image: url("../images/submit-arrow.png")
+      background-repeat: no-repeat
+      background-position: center
+      cursor: pointer
+
+.teamWrapper .panel
+  max-width: 1200px
+
+.teamMember
+  position: relative
+  bottom: -236px
+
+.teamMemberHide
+  transform: translate3d(0px, 0px, 0px) !important
+  -webkit-transition: -webkit-transform .2s ease-in
+  -moz-transition: -moz-transform .2s ease-in
+  -o-transition: -o-transform .2s ease-in
+  transition: transform .2s ease-in
+
+.teamMemberShow
+  transform: translate3d(0px, -279px, 0px) !important
+  -webkit-transition: -webkit-transform .2s ease-in
+  -moz-transition: -moz-transform .2s ease-in
+  -o-transition: -o-transform .2s ease-in
+  transition: transform .2s ease-in
+
+.teamWrapper .large-3
+  width: 300px
+  padding: 0
+  margin: 0 0 30px 0
+  background-repeat: no-repeat
+  background-position: center center
+  position: relative
+
+.memberWrapper
+  overflow: hidden
+  height: 280px
+
+.teamBorder
+  position: absolute
+  bottom: 0
+  left: -40px
+  width: 380px
+  height: 1px
+  background: -moz-radial-gradient(center, ellipse cover, rgba(178, 178, 178, 1) 44%, rgba(255, 255, 255, 0) 86%)
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(44%, rgba(178, 178, 178, 1)), color-stop(86%, rgba(255, 255, 255, 0)))
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(178, 178, 178, 1) 44%, rgba(255, 255, 255, 0) 86%)
+  background: -o-radial-gradient(center, ellipse cover, rgba(178, 178, 178, 1) 44%, rgba(255, 255, 255, 0) 86%)
+  background: -ms-radial-gradient(center, ellipse cover, rgba(178, 178, 178, 1) 44%, rgba(255, 255, 255, 0) 86%)
+  background: radial-gradient(ellipse at center, rgba(178, 178, 178, 1) 44%, rgba(255, 255, 255, 0) 86%)
+
+.teamWrapper .large-3
+  &:hover .teamMember, &:active .teamMember
+    transform: translate3d(0px, -279px, 0px)
+    -webkit-transition: -webkit-transform .2s ease-in
+    -moz-transition: -moz-transform .2s ease-in
+    -o-transition: -o-transform .2s ease-in
+    transition: transform .2s ease-in
+  &:last-child
+    float: left!important
+
+.nameDept
+  text-align: center
+  font-family: 'Univers LT W01 45 Light'
+  padding: 10px 0
+  background-color: rgba(255, 255, 255, 0.9)
+  span
+    font-family: 'Univers LT W01 65 Bold'
+
+.teamWrapper
+  .bio
+    background-color: rgba(251, 122, 15, 0.95)
+    color: #ffffff
+    padding: 40px 15px 0 15px
+    font-size: 16px
+    min-height: 280px
+  .name
+    font-family: 'Univers LT W01 65 Bold'
+    line-height: 1
+    margin: 0
+  .title
+    font-family: 'Univers LT W01 45 Light'
+    line-height: 1
+    margin: 0 0 20px 0
+  .info
+    line-height: 1
+    margin: 0 0 20px 0
+    font-family: 'Univers LT W02 55 Roman'
+
+.team .closeButton
+  position: absolute
+  top: 55px
+  right: 10px
+  opacity: .5
+  cursor: pointer
+  z-index: 9999
+  display: none
+
+// ABOUT
+
+.about
+  .feature .panel .large-12
+    margin-left: 150px
+  p.intro
+    margin: 60px 0 10px 0
+
+.aboutDetails
+  p
+    font-family: 'Univers LT W02 55 Roman'
+    padding-left: 40px
+  .results p
+    background: url("../images/about-details-results.jpg") no-repeat top left
+  .creative p
+    background: url("../images/about-details-creative.jpg") no-repeat top left
+  .tinker p
+    background: url("../images/about-details-tinker.jpg") no-repeat top left
+
+.aboutImages
+  h2
+    font-size: 61px
+    margin: 0px
+    text-align: center
+    a
+      min-width: 100%
+      min-height: 207px
+      display: block
+      padding-top: 50px
+      color: #ffffff
+      text-decoration: none
+      font-family: 'Serifa W01 45 Light'
+  .work .aboutImagesBg
+    background: url(../images/about-image-work.jpg) no-repeat center center
+    background-size: 100%
+  .team .aboutImagesBg
+    background: url(../images/about-image-team.jpg) no-repeat center center
+    background-size: 100%
+  .contact .aboutImagesBg
+    background: url(../images/about-image-contact.jpg) no-repeat center center
+    background-size: 100%
+
+.about
+  .feature-title h3
+    margin: 0
+  .featured-desc p
+    font-size: 34px
+    line-height: 1.176
+    color: #444444
+    margin: 0
+
+// CAREERS
+
+.careers .feature-title h3
+  margin: 240px 0 0 30px
+  font-size: 47px
+  font-weight: normal
+
+.careers-wrapper
+  .panel
+    max-width: 1130px
+  h2
+    font-size: 19px
+    color: #b5b6b5
+    font-family: 'Univers LT W01 65 Bold'
+    text-transform: uppercase
+    font-weight: normal
+  h3
+    font-size: 47px
+    line-height: 1.1
+    color: #333333
+    font-family: 'Serifa W01 45 Light'
+    margin: 0 0 15px 0
+    font-weight: normal
+  p
+    font-size: 16px
+    color: #444444
+    font-family: 'Univers LT W02 55 Roman'
+  .large-9
+    a
+      font-size: 12px
+      color: #444444
+      font-family: 'Serifa W01 55 Roman'
+      text-decoration: none
+      padding-right: 20px
+      background: url("../images/submit-arrow.png") no-repeat center right
+      background-size: 8%
+    p
+      max-width: 90%
+    padding-left: 0
+    padding-left: 0
+    border-right: 1px solid #e1dfdd
+    .row
+      margin-left: 0
+  .large-3
+    padding-left: 40px
+  .open-position
+    margin: 0 0 35px 0
+    p
+      margin: 10px 0
+    ol
+      list-style: disc
+
+
+// CAREERS DETAIL
+
+.careers-detail-wrapper
+  margin-top: 85px
+  background: #f0efef
+  .open-position
+    h2
+      font-family: 'Serifa W01 45 Light'
+      text-transform: capitalize
+      margin-bottom: 0
+      font-size: 28px
+      line-height: 1
+      color: #444444
+      font-weight: normal
+    h1
+      margin: 0 0 5px 0
+      padding-top: 0
+      font-family: 'Serifa W01 45 Light'
+      text-transform: capitalize
+      font-size: 34px
+      line-height: 1
+      color: #333333
+      font-weight: normal
+  .careers-wrapper .panel
+    max-width: 950px
+    background-color: #e1dfdd
+    overflow: hidden
+    padding: 35px 35px
+
+.careers-detail-cta
+  .panel
+    max-width: 950px
+    overflow: hidden
+    padding: 20px 0
+  .large-3
+    padding-left: 0
+  .cta a
+    padding-left: 20px
+    font-size: 12px
+    text-decoration: none
+    color: #444444
+    text-transform: uppercase
+    font-family: 'Univers LT W02 55 Roman'
+  .apply
+    padding-right: 0
+    p
+      float: right
+      font-family: 'Univers LT W02 55 Roman'
+      font-size: 16px
+      margin: 8px 20px 0 0
+    a
+      float: right
+      color: #ffffff
+      font-size: 14px
+      text-transform: uppercase
+      text-decoration: none
+      font-family: 'Univers LT W01 65 Bold'
+      padding: 10px 25px
+      background: #fc7706
+  .cta
+    margin-top: 8px
+    background: url(../images/cta-carat-left.png) no-repeat left center
+
+.careers-detail-wrapper
+  .careers-wrapper
+    ul, ol
+      font-family: 'Univers LT W02 55 Roman'
+  p.intro
+    margin: 62px 0 75px 0
+    font-size: 47px
+
+.careers-detail-cta.share-this .share
+  float: left
+  padding: 1px 12px 0 0
+  text-transform: uppercase
+  font-size: 12px
+  font-family: 'Univers LT W01 65 Bold'
+
+.share-this
+  .custom
+    margin-right: 12px
+  .social ul
+    float: left
+    padding-left: 0
+
+// FOCUS DETAIL
+
+.focus-detail .head-content .focus-image
+  h1
+    font-family: 'Univers LT W01 65 Bold'
+    font-size: 14px
+    line-height: 14px
+    margin: 80px 0 0 0
+    font-weight: normal
+  h2
+    font-family: 'Serifa W01 65 Bold'
+    font-size: 40px
+    line-height: 40px
+    margin: 5px 0 5px 0
+    font-weight: normal
+  p
+    font-family: 'Serifa W01 45 Light'
+    font-size: 20px
+    line-height: 20px
+    margin: 0
+    font-weight: normal
+
+.focus-head-info
+  h2
+    line-height: 1.5em
+    margin-bottom: 5px
+    font-family: 'Serifa W01 45 Light'
+    font-weight: normal
+  p
+    font-family: 'Univers LT W02 55 Roman'
+    font-weight: normal
+    margin: 10px 0
+    &:nth-child(2)
+      margin-top: 0
+
+.detail-wrapper
+  background-color: #f2f0f1
+  overflow: hidden
+
+.focus-detail
+  p.intro
+    margin-bottom: 40px
+    img
+      margin-right: 10px
+  h2 img
+    margin-right: 10px
+  .head-content
+    margin-top: 85px
+    padding-bottom: 60px
+    .focus-image
+      background: url('../images/cramer-focus-healthcare.jpg') no-repeat top right
+      min-height: 412px
+  .panel
+    max-width: 1245px
+  .aboutImages
+    .work
+      padding-left: 0px
+    .contact
+      padding-right: 0px
+  .logo-row
+    padding-bottom: 70px
+    .large-2
+      padding-bottom: 40px
+  .portfolio-grid
+    padding-bottom: 55px
+  .we-deliver
+    background: #bebebe
+    padding: 20px
+    button
+      text-decoration: none
+      padding: 0 28px 0 0
+      margin-bottom: 0
+      background: url(../images/cta-carat-down.png) no-repeat right center
+      float: right
+      color: #4d4d4d
+      font-family: 'Univers LT W02 55 Roman'
+      font-size: 14px
+    h2
+      margin-top: 0
+      font-weight: normal
+      font-size: 18px
+      line-height: 18px
+      font-family: 'Univers LT W01 65 Bold'
+      margin-bottom: 10px
+      color: #4d4d4d
+    p, ul
+      font-weight: normal
+      font-family: 'Univers LT W02 55 Roman'
+      margin-top: 10px
+      color: #4d4d4d
+
+.we-deliver ul
+  padding-left: 20px
+
+.focus-detail .learn-more
+  margin-bottom: 20px
+  .intro
+    margin-bottom: 10px
+    font-family: 'Serifa W01 55 Roman'
+  .cta
+    margin: 0 auto
+    width: 297px
+    font-family: 'Serifa W01 55 Roman'
+
+.learn-more .cta
+  a
+    padding: 12px 22px
+    color: #ffffff
+    text-transform: uppercase
+    background: #fc7706
+    text-decoration: none
+    font-family: 'Univers LT W01 65 Bold'
+    font-size: 12px
+  span
+    margin: 0 10px
+    font-size: 25px
+
+.focus-detail
+  .aboutImages h2 a
+    min-height: 300px
+    padding-top: 108px
+    font-size: 50px
+  .events .aboutImagesBg, .content .aboutImagesBg, .marketing .aboutImagesBg
+    background: url(../images/test.jpg) no-repeat center center
+    background-size: 100%
+
+// FOOTER
+
+#footer
+  margin: 0
+  ul li
+    display: inline
+    color: #b2b2b2
+    font-family: 'Univers LT W01 45 Light'
+    font-size: 12px
+    margin-right: 10px
+    color: #ffffff
+    a
+      color: #ffffff
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+.feature .large-4.medium-4.columns
+  margin: 150px 0 0 25px
+  color: #ffffff
+  width: 50%
+
+.logo-grid li img
+  width: 100%
+  height: auto
+
+.portfolio-case .logo img
+  width: 100%
+  height: auto
+  display: block
+
+.logo-grid li
+  width: 50%
+  height: auto
+  margin: 0 0 1em 0
+
+.feature-title
+    font-size: 47px
+    font-weight: normal
+    font-family: 'Serifa W01 65 Bold'
+    line-height: 1
+    margin-top: 30%
+    h3
+      margin: 0
+
+div.featured-desc
+  font-size: 28px
+  font-weight: normal
+  font-family: 'Serifa W01 45 Light'
+  line-height: 1.3
+
+.sub-detail
+  color: #444444
+  font-size: 24px
+
+
+div.large-4.logo-grid.columns li img
+  width: 200px
+  height: auto
+
+ul
+  &.row-one, &.row-two
+    list-style-type: none
+    li
+      float: left
+
+.work .display-header h3
+  text-align: center
+  font-size: 47px
+  font-family: 'Serifa W01 65 Bold'
+
+.large-3.medium-3.portfolio-case.columns:last-child
+  float: left
+
+.portfolio-grid .row
+  max-width: 1300px
+  margin: 0 auto
+
+.cta-case, .portfolio-case
+  margin: 15px
+  padding: 0!important
+  overflow: hidden
+  width: 295px
+  min-height: 293px
+
+.owl-item img
+  width: 100%
+  height: auto
+
+.large-2.medium-2.cta-case.columns:last-child .large-2.medium-2.portfolio-case.columns:last-child
+  float: left
+
+.cta-case:hover .back-details, .portfolio-case:hover .back-details
+  transform: translate3d(0px, -295px, 0px)
+  display: block
+  z-index: 999
+  width: 100%
+  background: #fc7609 url(../images/submit-arrow.png) no-repeat bottom center
+
+.portfolio-grid
+  .cta-case.grey p
+    font-size: 31px
+    font-family: 'Serifa W01 45 Light'
+    line-height: 30px
+    color: #444
+  .portfolio-case .back-details p .portfolio-grid .cta-case .back-details p
+    font-size: 18px
+    font-family: 'Univers LT W01 45 Light'
+    line-height: 30px
+    color: #fff
+
+div.callout.panel.front-img
+  width: 100%
+  position: relative
+  display: block
+  overflow: hidden
+  min-height: 295px
+  background: #e1dfdd url(../images/submit-arrow.png) no-repeat 95% 133px
+
+.front-img img
+  width: 100%
+  height: auto
+
+div
+  &.back-details
+    padding: 0
+    font-family: 'Univers LT W02 55 Roman'
+    font-size: 18px
+    color: #fff
+    height: 300px
+    width: 100%
+    position: absolute
+    z-index: 999
+    background: #fc841e url(../images/arrow-right-white.png) no-repeat 95% 133px
+    -webkit-transition: -webkit-transform .2s ease-in
+    -moz-transition: -moz-transform .2s ease-in
+    -o-transition: -o-transform .2s ease-in
+    transition: transform .2s ease-in
+
+p.blurb
+  font-size: 18px
+  padding: 10px
+  margin-top: 0
+
+.shadow-layer
+  position: absolute
+  z-index: 995
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.9)
+  -webkit-transition: -webkit-transform 1s ease-in
+  -moz-transition: -moz-transform 1s ease-in
+  -o-transition: -o-transform 1s ease-in
+  transition: transform 1s ease-in
+  transform: translate3d(0px, 0px, 0px)
+  .large-8
+    margin: 250px auto
+    p
+      color: white
+      font-size: 45px
+  .link
+    text-transform: capitalize
+    background: url(../images/submit-arrow.png) no-repeat 99% center
+    float: right
+    color: #fff
+    padding-right: 22px
+
+.showcase .sub-detail .link
+  text-transform: capitalize
+  background: url(../images/submit-arrow.png) no-repeat 99% center
+  float: right
+  color: #999
+  padding-right: 22px
+  font-size: 14px
+
+.shadow-layer.off
+  transform: translate3d(0px, -9999px, 0px)
+
+.showcase
+  .sub-detail p
+    margin-top: 0
+  .link
+    margin-bottom: 50px
+
+.owl-buttons div
+  background: transparent
+  position: absolute
+  top: 60%
+
+.owl-next
+  position: absolute
+  right: 15px
+  font-size: 48px!important
+  transform: translate3d(150px, 0, 0)
+  -webkit-transition: -webkit-transform .3s ease-in
+  -moz-transition: -moz-transform .3s ease-in
+  -o-transition: -o-transform .3s ease-in
+  transition: transform .3s ease-in
+  background: url(../images/slide-arrow-right.png) no-repeat center center !important
+  background-size: cover
+  width: 90px
+  height: 90px
+
+.feature:hover
+  .owl-next
+    transform: translate3d(15px, 0, 0)
+  .owl-prev
+    transform: translate3d(15px, 0, 0)
+
+.owl-prev
+  position: absolute
+  left: 15px
+  font-size: 48px!important
+  transform: translate3d(-150px, 0, 0)
+  -webkit-transition: -webkit-transform .3s ease-in
+  -moz-transition: -moz-transform .3s ease-in
+  -o-transition: -o-transform .3s ease-in
+  transition: transform .3s ease-in
+  background: url(../images/slide-arrow-left.png) no-repeat center center !important
+  background-size: cover
+  width: 90px
+  height: 90px
+
+.ssp
+  background: #f0efef
+
+.decrative-head
+  margin-top: 105px
+  text-align: center
+  font-size: 47px
+  display: block
+  width: auto
+
+.ssp
+  h2 img
+    padding-right: 7px
+  .three-col-branded
+    h2
+      font-family: 'Serifa W01 45 Light'
+      font-weight: 100
+    p
+      font-family: 'Univers LT W01 45 Light'
+
+.ssp-body-copy p
+  font-family: 'Univers LT W01 45 Light'
+
+.ssp
+  .three-col-branded .link
+    text-align: right
+    font-size: 12px
+    display: block
+    padding-right: 20px
+    font-family: 'Univers LT W01 45 Light'
+    background: url(../images/submit-arrow.png) no-repeat 99% center
+    a
+      color: #333
+      text-decoration: none
+  h3
+    font-weight: 100
+  .caption
+    font-style: italic
+  ul
+    padding-left: 17px
+
+.bq
+  blockquote
+    font-size: 28px
+    color: #999
+    padding: 5px 0
+  div
+    margin: 0 auto
+
+.social ul
+  list-style-type: none
+  float: right
+  li
+    width: 30px
+    height: 23px
+    display: block
+    float: left
+    &.email
+      background: url(../images/social-sprite.png) no-repeat 0 0
+      -webkit-transition: all .3s ease-in
+      -o-transition: all .3s ease-in
+      transition: all .3s ease-in
+    &.linkedin
+      background: url(../images/social-sprite.png) no-repeat -39px 0
+      -webkit-transition: all .3s ease-in
+      -o-transition: all .3s ease-in
+      transition: all .3s ease-in
+    &.facebook
+      background: url(../images/social-sprite.png) no-repeat -75px 0
+      -webkit-transition: all .3s ease-in
+      -o-transition: all .3s ease-in
+      transition: all .3s ease-in
+    &.twitter
+      background: url(../images/social-sprite.png) no-repeat -108px 0
+      -webkit-transition: all .3s ease-in
+      -o-transition: all .3s ease-in
+      transition: all .3s ease-in
+    &.gplus
+      background: url(../images/social-sprite.png) no-repeat -142px 0
+      -webkit-transition: all .3s ease-in
+      -o-transition: all .3s ease-in
+      transition: all .3s ease-in
+    &.email:hover
+      background: url(../images/social-sprite.png) no-repeat 0 -23px
+    &.linkedin:hover
+      background: url(../images/social-sprite.png) no-repeat -39px -23px
+    &.facebook:hover
+      background: url(../images/social-sprite.png) no-repeat -75px -23px
+    &.twitter:hover
+      background: url(../images/social-sprite.png) no-repeat -108px -23px
+    &.gplus:hover
+      background: url(../images/social-sprite.png) no-repeat -142px -23px
+
+// CONTACT
+
+.contact input
+  -webkit-appearance: none
+  border: 0
+  background: #eee
+  padding: 15px
+  margin: 22px 0
+  width: 100%
+
+input#message
+  height: 165px
+
+label
+  position: absolute
+  top: 0px
+  left: 19px
+
+// Small screens
+@media only screen
+  .video-container .content
+    h1
+      font-size: 22px
+      margin: 30% 0.5em 0.5em
+    .cta
+      margin-left: 0.7em
+  div.feature-title
+    font-size: 30px
+
+// Medium screens (min-width 641px)
+@media only screen and (min-width: 40.063em)
+  .video-container .content h1
+    font-size: 30px
+    margin: 25% 0.5em 0.5em
+  div.feature-title
+    font-size: 40px
+  .video-container .content .cta
+    margin-left: 1.0em
+
+// Large screens (min-width 1025px)
+@media only screen and (min-width: 64.063em)
+  .video-container .content h1
+    font-size: 44px
+    margin: 34% 0 .5em
+  #menu .menu-content h2
+    margin-top: 280px
+  div.feature-title
+    font-size: 47px
+  .video-container .content .cta
+    margin-left: 0em
+
+// XLarge screens (min-width 1441px)
+@media only screen and (min-width: 90.063em)
+  body!
+
+// XXLarge screens (min-width 1921px)
+@media only screen and (min-width: 120.063em)
+  body!

@@ -1,0 +1,77 @@
+
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append "- Homepage" to the site title defined in base. #}
+{% block title %}Cramer. a marketing studio{% endblock %}
+
+{% set page = cms.home %}
+{% set pageName = 'home' %}
+{% set ogtitle = page.ogtitle %}
+{% set ogdescription = page.ogdescription %}
+{% set ogimage = page.ogimage.url %}
+{% set ogUrl = page.ogurl %}
+{% set metadescription = page.metadescription %}
+{% set metakeywords = page.metakeywords %}
+
+{% block head_extra %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "brand": "Cramer",
+  "name": "Cramer",
+  "description": "We are Cramer—a 150-person strong marketing studio with a 30-year legacy of delivering results for global businesses.",
+  "url": "http://cramer.com",
+  "logo": "http://cramer.com/static/images/cramer-logo.png",
+  "telephone": "+17812782300",
+  "sameAs": "http://en.wikipedia.org/wiki/Cramer_(marketing_studio)",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Norwood",
+    "addressRegion": "MA",
+    "postalCode": "02062",
+    "streetAddress": "425 University Avenue"
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="video-container">
+      <!-- start: from wistia -->
+      <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+      <div id="homepage_background_video" class="wistia_embed wistia_async_krc2hu3com videoFoam=true" style="width:640px;height:360px;">&nbsp;</div>
+      <!-- end: from wistia -->
+
+      <div class="row content">
+        <div class="large-8 large-centered columns body-home">
+          <div class="slate">
+            <h1>{{page.big_text_on_homepage|replace('<p>','','gim')|replace('</p>','','gim')|safe}}</h1>
+            <div class="cta">
+              <a href="/work/">See the work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}
+
+
+{% block footer_extra %}
+    <script>
+      // load the background video player
+      window.wistiaInitQueue = window.wistiaInitQueue || [];
+      window.wistiaInitQueue.push(function(W) {
+          hpVideo = W.api("homepage_background_video");
+          hpVideo.ready(function() {
+            hpVideo.volume(0);
+
+            // the video should start at a random place on each load
+            // possibilities include 0 - (max - 10 seconds)
+            hpVideoStart = Math.floor((Math.random() * (hpVideo.duration() - 10)));
+            hpVideo.time(hpVideoStart).play();
+          });
+      });
+    </script>
+{% endblock %}

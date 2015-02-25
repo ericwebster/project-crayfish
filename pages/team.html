@@ -1,0 +1,224 @@
+{# ------------------------------------------------------- #}
+{# ONE OFF VIEW team #}
+{# This page can use any data from http:localhost:2000/cms/#/form/team/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# You can copy/paste this line to any page on your site to access the team data. #}
+{% set item = get('team') %}
+{% set pageName = 'team' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage.url %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{# This sets our page <title>. It will append this team's name to the site title defined in base.html #}
+{% block title %} {{ item.name }} | {% parent %} {% endblock %}
+{% block content %}
+
+<div id="stage" class="row feature" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+  <div class="large-12 columns">
+    <div class="panel">
+      <div class="large-6 medium-8 columns end">
+        <div class="feature-title" style="color: {{item.hed_color}}">
+          <h1>{{ item.hed }}</h1>
+        </div>
+        <div class="featured-desc" style="color: {{item.hed_color}}">
+          <p>{{ item.dek }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="panel">
+				<p class="intro"><img src="/static/images/brand-slash.png" alt="Brand Slash">{{ item.intro_paragraph }}</p>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- /removed... for now
+    <div class="row teamFilter">
+      <div class="large-12 columns">
+        <div class="panel">
+          <form id="searchForm">
+            <label for="execTeam">Search by team</label>
+
+            {% set options = get('teams')|sort('title') %}
+
+            <select id="team_filter" name="execTeam">
+                <option id="default" value="all">Choose Team</option>
+
+                {% for option in options %}
+                    {% if option.show_in_teams_filter|lower != "false" %}
+                        <option value="{{ option.name }}">{{ option.title }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <div id="searchName">
+              <label for="firstname">Search by name</label>
+              <input id="firstname" class="firstName" type="text" name="firstname" placeholder="First Name">
+              <input id="lastname" class="lastName" type="text" name="lastname" placeholder="Last Name">
+              <input type="submit" name="nameSubmit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+                <p class="intro">{{ item.executive_team_header }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row teamWrapper">
+        <div class="large-12 columns">
+            <div class="panel">
+
+            {% set teammembers = cms.teammembers|sort('first_name') %}
+
+            {% for teammember in teammembers %}
+
+                        {% set teams = teammember.primary_team.name %}
+
+                        {% for relation in teammember.secondary_teams %}
+                            {% set teams += " " + relation.name %}
+                        {% endfor %}
+
+                        {% if teammember.is_a_member_of_executive_team === "True" %}
+                            {% include "templates/partials/includes/team-member-card.html" %}
+                        {% endif %}
+
+            {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+                <p class="intro">{{ item.extended_team_header }}</p>
+            </div>
+        </div>
+    </div>
+
+
+	<div class="row teamWrapper">
+		<div class="large-12 columns">
+			<div class="panel jscroll">
+
+			{% set teammembers = cms.teammembers|sort('first_name') %}
+
+			{% for teammember in teammembers %}
+
+                        {% set teams = teammember.primary_team.name %}
+
+                        {% for relation in teammember.secondary_teams %}
+                            {% set teams += " " + relation.name %}
+                        {% endfor %}
+
+                        {% if teammember.is_a_member_of_executive_team === "False" %}
+                            {% include "templates/partials/includes/team-member-card.html" %}
+                        {% endif %}
+
+			{% endfor %}
+
+			</div>
+		</div>
+	</div>
+ <div class="row focus-boxes-lead cta-globals">
+    <div class="large-12 columns">
+      <div class="panel">
+        <p class="lead-intro">{{item.focus_boxes_lead}}</p>
+      </div>
+    </div>
+  </div>
+	 {% include "templates/partials/includes/focus-boxes.html" %}
+
+</div>
+
+{% endblock %}
+
+{% block footer_extra %}
+    <script>
+      $(document).ready(function(){
+
+          $('.teamWrapper').on('mouseenter touchstart', '.memberTile', function(e){
+            el = $(e.target).parents(".memberTile");
+            var name = $(el).find( "p.name" ).text();
+
+            if ($(this).hasClass('active')) {
+              $(this).removeClass('active');
+            } else {
+              $('.memberTile').removeClass('active');
+              $(this).addClass('active');
+            }
+
+            cramer.gtm.ga.trackEvent('Team Member', 'Hover', name);
+            return false;
+          });
+
+          $('.teamWrapper').on('mouseleave', '.memberTile', function(){
+            $(this).removeClass('active');
+            return false;
+          });
+
+	      // $("#team_filter").change(function(e){
+	      // 	  $(".memberTile").show();
+	      // 	  $("#lastname, #firstname").val("");
+		     //  var show_team = $(e.currentTarget).val();
+		     //  if(show_team != "all"){
+		     //  		$(".memberTile:not(." + show_team +")").hide();
+		     //  		cramer.gtm.ga.trackEvent('Team Filter', 'Drop Down', show_team);
+		     //  } else {
+
+		     //  }
+	      // })
+
+	      $("#searchForm").submit(function(e){
+
+	      		$(".memberTile").show();
+
+	      		var str = "";
+	      		var lastname = $("#lastname").val();
+	      		var firstname =  $("#firstname").val();
+
+	      		if(lastname != undefined && lastname != ""){
+		      		str += ".ln-" + $("#lastname").val().toLowerCase()
+	      		}
+	      		if(firstname != undefined && firstname != ""){
+		      		str += ".fn-" + $("#firstname").val().toLowerCase();
+	      		}
+		  		//console.log(str);
+		  		if(str != ""){
+		  			console.log(str);
+			  		$(".memberTile").not(str).hide();
+			      		cramer.gtm.ga.trackEvent('Team Filter', 'Search', 'fn: ' + firstname + ' ln: ' + lastname);
+		  		} else {
+			  		$(".memberTile").show();
+		  		}
+
+		  		return false;
+	      });
+
+      });
+    </script>
+{% endblock %}

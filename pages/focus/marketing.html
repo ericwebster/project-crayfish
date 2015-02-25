@@ -1,0 +1,57 @@
+{% extends "templates/partials/base.html" %}
+{% set item = get('focusmarketing') %}
+{% block title %} {{ item.name }} | Our Focus | {% parent %} {% endblock %}
+{% set pageName = 'focus-detail focus-marketing' %}
+{% block content %}
+  <div id="stage" class="row feature" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-6 medium-8 columns end">
+          <div class="feature-title" style="color: {{item.hed_color}}">
+            <h5><a href="/focus/">Our Focus</a></h5>
+            <h2>{{ item.hed }}</h2>
+          </div>
+          <div class="featured-desc" style="color: {{item.hed_color}}">
+            {{ item.dek|safe }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="large-12 columns next-content">
+      <div class="panel">
+        <div class="large-7 columns">
+          <h1>{{ item.name }}</h1>
+        </div>
+        <div class="large-4 columns next-content">
+        </div>
+      </div>
+    </div>
+    <div class="large-12 columns focus-head-info">
+      <div class="panel">
+        <div class="large-6 columns">
+          {% if item.left_col_title != "" %}<h4>{{ item.left_col_title }}</h4>{% endif %}
+         {{ item.left_col_body|safe }}
+          <br>
+          <div class=" we-deliver bulleted-list">
+            <h5>{% if item.right_col_title != "" %}{{ item.right_col_title }}{% endif %}</h5>
+            {{ item.right_col_body|safe }}
+            <!-- remove for now
+            <button>More</button>
+            -->
+          </div>
+        </div>
+
+        {% include "templates/partials/includes/focus-featured-download.html" %}
+
+    </div>
+    <div class="large-12 columns focus-head-info">
+      <div class="panel">
+      </div>
+    </div>
+  </div>
+    {% include "templates/partials/includes/focus-clients.html" %}
+    {% include "templates/partials/includes/focus-work.html" %}
+    {% include "templates/partials/base_cta.html" %}
+{% endblock %}

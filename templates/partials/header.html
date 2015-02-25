@@ -1,0 +1,116 @@
+<header id="header">
+	<div class="panel">
+		<span id="menu-toggle">
+			<div></div>
+		</span>
+		<a class="logo" href="/" title="return to the Cramer home page">Cramer</a>
+		<nav>
+			<ul>
+				<li><a href="/about/" title="about Cramer and our team">About</a></li>
+				<li><a href="/focus/" title="capabilities, services, and disciplines">Focus</a></li>
+				<li><a href="/work/" title="clients, case studies, and showcases">Work</a></li>
+				<li><a href="/careers/" title="join our team">Careers</a></li>
+				<li><a href="/contact/" title="our contact info, locations, and directions">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+    <div id="menu">
+  		<div class="menu-content">
+
+  			<div class="row">
+				<div class="large-4 columns">
+
+					<div id="menuFeed">
+
+						<div class="scroller">
+			            <div class="scrollbar"><div class="track"><div class="trackline"></div><div class="thumb"><div class="end"></div></div></div></div>
+			            <div class="viewport">
+			                 <div class="overview">
+			                 	<div class="loading">
+			                 		Pulling the latest from <a href="https://circulate.it/" target="_blank">Circulate.it</a>
+			                 		<div class="spinner-box">
+										  <div class="spinner-axis">
+										    <div class="spinner">
+										      <div class="spinner-inner"></div>
+										    </div>
+										  </div>
+										</div>
+			                 	</div>
+							  		<ul>
+							  		<script id="feedTemplate" type="x-tmpl-theFeed">
+							  			<li>
+							  			<a href="[[rssLink]]" data-position="[[rssPosition]]" target="_blank" title="[[rssDesc]]">
+								  			<article>
+								  				<h5 class="time" date-time="[[rssPubDate]]">[[rssTimeFromNow]]</h5>
+								  				<h3>[[rssTitle]]</h3>
+								  				<h4>"[[rssComments]]"</h4>
+								  			</article>
+								  		</a>
+							  			</li>
+							  		</script>
+							  		</ul>
+							  		<div class="poweredby">
+							  			<p>
+								  			Powered by <a href="https://circulate.it/" target="_blank">Circulate.it</a>.
+								  		</p>
+							  		</div>
+			                </div>
+			            </div>
+			            </div>
+        			</div>
+				</div>
+
+				<div class="large-8 columns hed">
+					<h2>{{cms.home.big_text_on_menu|replace('<p>','','gim')|replace('</p>','','gim')|safe}}</h2>
+				</div>
+			</div>
+
+			<div class="newsletter-signup large-4">
+		  		<h3>Sign up for the newsletter</h3>
+			  	<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="//cramer.us8.list-manage.com/subscribe/post?u=e96c30ea414130ba85f593f1c&amp;id=87aa8371f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				   <div id="mc_embed_signup_scroll">
+					<div class="mc-field-group">
+						<input type="email" value="" name="EMAIL" class="required email" placeholder="you@yourdomain.com" id="mce-EMAIL">
+					</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_e96c30ea414130ba85f593f1c_87aa8371f6" tabindex="-1" value=""></div>
+				    <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button></div>
+				    </div>
+				</form>
+				</div>
+				<!--End mc_embed_signup-->
+
+			  	<ul class="social">
+			  		{% if cms.globalelements.linkedin_url %}
+			  			<li class="linkedin">
+			  				<a href="{{cms.globalelements.linkedin_url}}" target="_blank" title="Cramer on LinkedIn">LinkedIn</a>
+			  			</li>
+			  		{% endif %}
+		      		{% if cms.globalelements.twitter_url %}
+			  			<li class="twitter">
+			  				<a href="{{cms.globalelements.twitter_url}}" target="_blank" title="Cramer on Twitter">Twitter</a>
+			  			</li>
+			  		{% endif %}
+			  		{% if cms.globalelements.facebook_url %}
+			  			<li class="facebook">
+			  				<a href="{{cms.globalelements.facebook_url}}" target="_blank" title="Cramer on Facebook">Facebook</a>
+			  			</li>
+			  		{% endif %}
+			  		{% if cms.globalelements.google_url %}
+			  			<li class="google-plus">
+			  				<a href="{{cms.globalelements.google_url}}" target="_blank" title="Cramer on Google+">Google+</a>
+			  			</li>
+			  		{% endif %}
+	      		</ul>
+		  	</div>
+	  	</div>
+  	</div>
+

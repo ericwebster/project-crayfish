@@ -1,0 +1,637 @@
+/*
+   focus.css
+ */
+
+.focus small {
+    font-size: 22px;
+    font-family:'Univers LT W01 65 Bold', Arial, sans-serif;
+}
+
+.focus .feature p {
+    font-size: 34px;
+    font-family:'Serifa W01 45 Light',georgia,serif;
+}
+
+.focus .feature .feature-copy{
+    margin-top: 25px;
+    color: white;
+    line-height: 1;
+}
+
+.focus p, .focus ul {
+    padding-left: 0;
+}
+
+.we-deliver li {
+  font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+    float: left;
+}
+
+.focus-detail .feature-title h1, .focus-main .feature-title h1 {
+    max-width: 490px;
+}
+
+.focus-detail .focus .feature-title h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.focus-detail.focus-events .feature-title h2,
+.focus-detail.focus-content .feature-title h2 {
+    max-width: 460px;
+}
+
+.featured-desc p {
+    font-size: 34px;
+    line-height: 1.176;
+    margin:0;
+}
+
+.focus-detail .page h1 {
+    text-align: left;
+    padding-left: 0;
+    color: #444444;
+    font-size: 34px;
+    line-height: 1.357;
+    font-family: 'Serifa W01 45 Light',georgia,serif;
+    margin: 40px 0 0 0;
+}
+
+.large-4.columns.we-deliver h4 {
+    padding-left: 0;
+    color: #444444;
+    font-size: 34px;
+    line-height: 1.357;
+    font-weight: 100;
+    text-align: left;
+    font-family: 'Serifa W01 45 Light',georgia,serif;
+}
+
+.large-4.columns.we-deliver {
+    padding-left: 8%;
+    top: -44px;
+}
+
+.focus-detail ul li a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.focus-detail ul li a:hover {
+    text-decoration: none;
+}
+
+.focus-detail .row .gear p, .focus-detail .row .heart p {
+    width: 92%;
+}
+
+
+
+/******************
+*   Focus Boxes (grid of three)
+*******************/
+#focus-boxes .subnav {
+    background: #b5b6b5;
+    font-family:'Serifa W01 65 Bold',georgia,serif;
+    text-transform: uppercase;
+}
+#focus-boxes .subnav a{
+    color:#000000;
+    text-decoration: none;
+    padding:8px 36px;
+    display:block;
+}
+#focus-boxes .subnav .panel{
+    max-width:1400px;
+    overflow:visible;
+}
+#focus-boxes .subnav ul{
+    float:right;
+    margin:0;
+}
+#focus-boxes .subnav ul li{
+    display:inline;
+    float:left;
+}
+#focus-boxes .subnav ul li.active{
+    background:#ffffff;
+    position:relative;
+}
+#focus-boxes .subnav ul li.active::after{
+    content:url('../images/subnav-down-arrow.png');
+    position: absolute;
+    z-index: 1;
+    top: 38px;
+    left: 42%;
+}
+#focus-boxes .focus-feature .panel {
+    max-width:1400px;
+    overflow: hidden;
+    background-color: #000000;
+}
+#focus-boxes .focus-feature .panel .large-12 img {
+    width:100%;
+}
+#focus-boxes .head-content .focus-feature h1 {
+    font-family:'Univers LT W01 65 Bold', Arial, sans-serif;
+    font-size:16px;
+    line-height: 16px;
+    margin:0 0 10px 0;
+    font-weight: normal;
+    color:#b5b6b5;
+}
+#focus-boxes .head-content .focus-feature h2 {
+    font-family:'Serifa W01 65 Bold',georgia,serif;
+    font-size:47px;
+    line-height: 47px;
+    margin:5px 0 5px 0;
+    font-weight: normal;
+}
+#focus-boxes .head-content .focus-feature p {
+    font-family:'Serifa W01 45 Light',georgia,serif;
+    font-size:34px;
+    line-height: 34px;
+    margin:0;
+    font-weight: normal;
+    color:#b5b6b5;
+}
+
+.focus-detail .page p {
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+}
+
+body.focus-main p.intro {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+body.focus-main .focus-body {
+    text-align: left;
+    max-width: 975px;
+}
+
+body.focus-main .focus-body p {
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.focus-head-info {
+    padding: 23px 0 0 0;
+    background: #fff;
+    padding-bottom: 35px;
+}
+
+.focus-head-info h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.focus-detail .focus-head-info h5 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+}
+
+.focus-head-info p, .focus-head-info li {
+    font-size: 16px;
+}
+
+.focus-detail .page .next-content .next-content {
+    display: block;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.focus-main .display-header h3, .focus-detail .panel h3 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 1;
+    font-family:'Serifa W01 45 Light',georgia,serif;
+    font-weight:normal;
+    margin:70px 0 20px 0;
+}
+
+.focus-head-info button {
+    /*display: none;*/
+}
+
+.focus-detail p.cta-intro {
+    font-family: 'Serifa W01 45 Light',georgia,serif;
+}
+
+
+body.focus-detail .focus-whitepaper {
+    display: block;
+    overflow: hidden;
+    max-width: 280px;
+}
+
+body.focus-detail .focus-whitepaper a {
+    display: block;
+    overflow: hidden;
+    border: 1px solid #f4f4f4;
+    position: relative;
+}
+
+body.focus-detail .focus-whitepaper a .new-badge {
+    color: #fff;
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    text-transform: uppercase;
+    background: #ef2b35;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-size: 10px;
+    padding: 6px;
+}
+
+body.focus-detail .focus-whitepaper a img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+}
+
+body.focus-detail .focus-whitepaper a .caption {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+body.focus-detail .focus-whitepaper a .caption h5 {
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+body.focus-detail .focus-whitepaper a .caption h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+body.focus-detail .focus-whitepaper a .caption p {
+    font-family:'Univers LT W01 45 Light', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 5px 0;
+    margin: 0;
+}
+
+body.focus-detail .focus-whitepaper a:hover {
+    border: 1px solid #eaeaea;
+}
+
+body.focus-detail .focus-whitepaper a:hover .caption span.linkNext {
+    text-decoration: underline;
+}
+
+img.slash {
+    padding-right: 10px;
+}
+
+h2.large-title{
+    font-size: 46px;
+    line-height: 1;
+    font-family: 'Serifa W01 45 Light',georgia,serif;
+}
+
+.focus-detail .panel a {
+    text-decoration: none;
+}
+
+body.focus-main .panel a {
+    text-decoration: underline;
+}
+
+body.focus-detail .form-submit {
+    display: block;
+    overflow: hidden;
+    background: #f0efef;
+    padding: 40px;
+}
+
+body.focu-detail .form-submit p {
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+body.focu-detail a.subscribe {
+   background: #fc7706 url(../images/white-arrow-right.png)no-repeat 97px 7px;
+    padding: 5px 23px 5px 23px;
+    position: relative;
+    left: -5px;
+    color: #fff;
+    text-decoration: none;
+    background-size: 10px;
+}
+
+.focus-whitepaper a.link.linkNext {
+padding-left: 0;
+}
+
+.focus-detail a.link.linkNext a {
+    color: #000;
+}
+
+.focus-detail a.link.linkNext a:hover {
+    text-decoration: underline;
+}
+
+.focus-detail .detail-wrapper {
+    background: #f0efef;
+    padding-top: 40px;
+}
+
+.focus-detail .logo-row{
+    padding: 0 0 100px 0;
+}
+
+.form-submit .select {
+    background: #fc7706;
+    padding: 5px 12px;
+}
+
+.row.feature.feature-crop.crop {
+    transform: translate3d(0,0,0);
+    background: url(../images/orange-diagonal-crop.png) no-repeat -165px  0;
+    width: 190%;
+    height: 100%;
+}
+
+.focus .feature .large-12,#focus-boxes .feature .large-12 {
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.focus .feature.ready-text .large-12, #focus-boxes .feature.ready-text .large-12 {
+    opacity: 1;
+}
+
+.focus-head-info h1 {
+    margin:0;
+    font-size: 16px;
+    line-height: 16px;
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+}
+/*.focus-head-info .title h2 {
+    font-family:'Serifa W01 65 Bold',georgia,serif;
+}*/
+.focus-head-info h2 {
+    font-size: 28px;
+    /*line-height: 28px;*/
+    margin-bottom:10px;
+    font-weight: normal;
+    margin:0;
+}
+.focus-head-info .large-8 p:first-child {
+    margin-top:0;
+}
+
+.focus-detail .portfolio-grid .row {
+    padding-bottom: 40px;
+}
+.focus-detail .portfolio-grid .next-content {
+    text-align: right;
+    display: block;
+    padding-right: 7px;
+}
+.focus-detail .portfolio-grid .next-content button{
+    float: none;
+}
+#focus-boxes .focus-whitepaper p.intro {
+    text-align: left;
+    padding:0;
+    margin: 0;
+}
+.focus-whitepaper .large-5 a{
+    padding-right:20px;
+    background: url(../images/submit-arrow.png) no-repeat center right;
+}
+.focus-whitepaper .large-4 input{
+    padding:7px;
+}
+#focus-boxes .focus-whitepaper h2 {
+    margin: 0;
+    font-size: 42px;
+    line-height: 42px;
+}
+/*.focus-head-info .title {
+    padding-bottom:60px;
+}*/
+/*.focus-head-info .large-10 h2 {
+    font-size: 60px;
+    line-height:60px;
+}*/
+.focus-head-info .large-10 p {
+    font-size: 24px;
+    line-height:24px;
+    margin:0;
+}
+.focus-head-info p {
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-weight: normal;
+    margin:10px 0;
+}
+
+.focus-detail .focus-head-info p a {
+    text-decoration: underline;
+}
+
+.focus-head-info .large-2 span {
+    float:right;
+    clear:both;
+}
+.focus-head-info .large-2 {
+    padding-right:20px;
+  /*//  background: url(../images/submit-arrow.png) no-repeat center right;*/
+}
+.focus-head-info .large-2 span.page {
+    font-family:'Univers LT W01 65 Bold', Arial, sans-serif;
+}
+.focus-head-info p:nth-child(2){
+    margin-top:0;
+}
+#focus-boxes .detail-wrapper {
+    background-color:#f2f0f1;
+    overflow:hidden;
+}
+#focus-boxes p.intro{
+    margin-bottom:40px;
+}
+#focus-boxes p.intro img, #focus-boxes h2 img{
+    margin-right:10px;
+}
+#focus-boxes .head-content {
+    margin-top:85px;
+    padding-bottom:60px;
+}
+
+#focus-boxes .logo-row {
+    padding-bottom:70px;
+}
+#focus-boxes .logo-row .large-2 {
+    padding-bottom:40px;
+}
+#focus-boxes .portfolio-grid {
+    padding-bottom:55px;
+}
+.we-deliver button, .portfolio-grid button {
+    text-decoration: none;
+    padding:0 28px 0 0;
+    margin-bottom:0;
+    background: url(../images/cta-carat-down.png) no-repeat right center;
+    float:left;
+    clear:both;
+    color:#4d4d4d;
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size:14px;
+}
+#focus-boxes .we-deliver button {
+    float:left;
+}
+#focus-boxes .portfolio-grid button {
+    float:right;
+    margin-right: 15px;
+}
+#focus-boxes .we-deliver p, #focus-boxes .we-deliver ul {
+    font-weight: normal;
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+    margin-top:10px;
+    color:#4d4d4d;
+}
+.we-deliver ul{
+    padding-left:20px;
+}
+.aboutDetails h2 {
+    font-family: 'Serifa W01 55 Roman',georgia,serif;
+    padding-left: 50px;
+}
+.focus-main .row.aboutDetails .heart h2{
+    background: url(../images/heart.png) no-repeat 0 0;
+    background-size: 35px;
+}
+.focus-main .row.aboutDetails .gear h2{
+    background: url(../images/gear.png) no-repeat 0 0;
+    background-size: 35px;
+}
+
+.focus-main .row.aboutDetails {
+    margin-top: 43px;
+}
+
+.focus-main .aboutDetails ul {
+    padding-left: 65px;
+}
+
+.focus-main .aboutDetails ul li{
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+}
+
+.focus-detail .page button#mc-embedded-subscribe {
+    padding: 7px 9px 6px;
+    float: left;
+    background: #fc7706;
+    text-transform: uppercase;
+    font-size: 14px;
+    max-height: 29px;
+}
+
+.focus-detail .page input#mce-EMAIL {
+    float: left;
+    width: 180px;
+    padding: 5px;
+    position: relative;
+}
+
+
+/*FOCUS DETAIL PAGES*/
+
+.focus-detail .linkNext{
+    display: block;
+    overflow: hidden;
+}
+
+.focus-detail .linkNext a {
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../images/submit-arrow.png) no-repeat right 10px;
+    padding: 10px 20px 0 0;
+}
+
+.focus-detail .linkNext a:hover {
+   text-decoration: underline;
+}
+
+.next-content{
+    text-align: right;
+    padding-top: 10px;
+    background: #fff;
+}
+
+.focus-detail .linkNext{
+   background: url(../images/submit-arrow.png) no-repeat center right;
+    width: auto;
+    display: inline-block;
+    padding-right: 22px;
+}
+
+.focus-head-info.bulleted-list {
+    padding: 0 0 0 0;
+    background: #fff;
+    padding-bottom: 35px;
+}
+
+.large-4.columns.we-deliver.bulleted-list {
+    padding: 0;
+}
+
+.large-4.columns.we-deliver.bulleted-list li {
+    float: left;
+    width: 48%;
+    margin-right: 22px;
+}
+.bulleted-list li {
+    float: left;
+    width: 48%;
+    margin-right: 8px;
+}
+
+.focus-head-info {
+padding-bottom: 0px;
+}
+
+.focus-boxes-lead p.lead-intro {
+    font-family: 'Serifa W01 45 Light',georgia,serif!important;
+    margin-top: 35px;
+}
+
+.focus-head-info .large-6.columns {
+    margin-right: 120px;
+    width: 55%;
+}
+
+.we-deliver.bulleted-list {
+    width: 121%;
+}
+
+body.focus-detail #footer ul {
+    text-align: left;
+}

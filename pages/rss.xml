@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="http://cramer.com/rss.xml" xmlns:dc="http://purl.org/dc/elements/1.1/">
+{% set data = cms.story -%}
+{% set data = data|sort('publish_date', true) -%}
+{% set data = paginate(data, 20) -%}
+  <channel>
+    <title>Cramer</title>
+    <link>http://cramer.com/</link>
+    <description>Recently posted on Cramer.com</description>
+    <language>en</language>
+    {% for item in data %}
+      {% if item.syndicate == "Yes" -%}
+      <item>
+        <title>{% if item.alternative_promoteaser %}{{ item.alternative_promoteaser }}{% else %}{{ item.display_desktop }}{% endif %}</title>
+        <link><![CDATA[http://cramer.com{{ url(item) }}?utm_campaign=cramer-rss&utm_source=cramer-rss&utm_medium=rss]]></link>
+        <image>item.thumbnail|imageSize(300)</image>
+        <guid isPermaLink="true">http://cramer.com{{ url(item) }}</guid>
+        <description>
+          {% if item.lede %}{{ item.lede }}{% endif %}
+          {{ item.body }}
+        </description>
+        <pubDate>{{ item.publish_date|date("D, d M Y H:i:s O") }}</pubDate>
+      </item>
+      {% endif -%}
+    {% endfor -%}
+  </channel>
+</rss>

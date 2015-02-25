@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Cramer: Link Shortener</title>
+    <meta name="robots" content="none" />
+    <meta name="allow-search" content="no" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="../static/js/jquery.zclip.js"></script>
+    <link rel="stylesheet" href="../static/css/_shorten.css" />
+</head>
+<body>
+<div id="container_parent" class="clearfix">
+  <h1>Cramer Link Shortener (go.cramer.com)</h1>
+  <div id="formblock">
+    <form id="formShortener">
+      <input type="text" value="" placeholder="http://" onfocus="this.placeholder = '';" id="linkInputBox" />
+      <a href="#" id="submit">Shorten</a><br />
+		<!--
+		<input type="checkbox" id="linkSuprBox" value="1" />
+		<label for="linkSuprBox">add stumbleupon bar</label>
+		-->
+    </form>
+  </div>
+  <p id="sys_msg"></p>
+  <p id="linkblock"> <a href="" id="shortlink" target="_blank"></a> <br />
+    <a href="#" id="copyButton">Copy to Clipboard</a> </p>
+</div>
+<script>
+	$(document).ready(function(){
+
+		// set defaults
+		var defaults = {
+			bitly_login:	'cramer',
+			bitly_apiKey:	'R_083b6b7ab0954200917999343884c95e',
+			supr_login:		'NOT_USED_ON_THIS_SHORTENER',
+			supr_apikey:	'NOT_USED_ON_THIS_SHORTENER'
+		};
+
+		$("#formShortener").submit(function() {
+			// call a function to get short link
+			getShortLink();
+			return false;
+		});
+
+		$("#linkInputBox").focus(function(){
+			clearError();
+		});
+
+		$("#submit").click(function(){
+			// call a function to get short link
+			getShortLink();
+		});
+
+		$("#copyButton").hide();
+
+		function getShortLink() {
+
+			// defaults
+			var shortLink = "";
+			var longLink = "";
+			var validLongLink = false;
+			$("#copyButton").hide();
+
+			$("#sys_msg").removeClass("errorBoxShow");
+			$("#sys_msg").text("Shortening...");
+			$("#shortlink").text("");
+
+
+			// get and test longLink
+			longLink = $("#linkInputBox").val();
+			var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+			var urltest=urlRegex.test(longLink);
+			if (urltest) {
+				validLongLink = true;
+			} else {
+				throwError();
+			}
+
+
+			if (validLongLink) {
+				// should we first send to stumbleupon?
+				if ( $('#linkSuprBox').is(':checked') ) {
+					// Build the URL to query
+					var suprurl = "http://su.pr/api/simpleshorten?"
+					+"url="+longLink
+					+"&login="+defaults.supr_login
+					+"&apiKey="+defaults.supr_apikey;
+
+					getURL = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%20%3D%20%22"+encodeURIComponent(suprurl)+"%22";
+
+					$.ajax({
+						url: getURL,
+						dataType: "jsonp",
+						timeout: 5000,
+						success: function(data){
+							suprdata = $(data.results.toString()).text();
+
+							if ( suprdata.indexOf("ERROR") > 0 ) {
+								throwError();
+							} else {
+								// remove http://su.pr/
+								suprdata = suprdata.replace("http://su.pr/","").replace(/[^a-zA-Z0-9]+/g,"");
+
+								//build stumbleupon link
+								stumbleuponlink = "http://www.stumbleupon.com/su/" + suprdata + "/" + longLink;
+
+								//alert(stumbleuponlink);
+
+								// short this
+								bitlyShorten(stumbleuponlink);
+							}
+
+							//bitlyShorten(suprlink);
+						},
+						error: function(req,error){
+							throwError();
+						}
+					});
+				} else {
+					bitlyShorten(longLink);
+				}
+
+			} // validLongLink
+
+		}; // getShortlink
+
+		function throwError() {
+			$("#sys_msg").text("Error - please try again.");
+			$("#sys_msg").addClass("errorBoxShow");
+			$("#linkInputBox").addClass("errorBoxShow");
+		} // throwError
+
+		function clearError() {
+			$("#sys_msg").text("");
+			$("#sys_msg").removeClass("errorBoxShow");
+			$("#linkInputBox").removeClass("errorBoxShow");
+		}
+
+		function bitlyShorten(linkToShorten) {
+			// Utilize the bit.ly API
+			$.ajax({
+				url:"http://api.bit.ly/v3/shorten",
+				data:{longUrl:linkToShorten, apiKey:defaults.bitly_apiKey, login:defaults.bitly_login, format:"json",callback:"?"},
+				dataType:"jsonp",
+				success: function(results){
+					if (results.status_code === 200) {
+						// Make a good use of short URL
+						shortLink = results.data.url;
+
+						// set href and contents
+						$('#shortlink').attr('href', shortLink);
+						$('#shortlink').text(shortLink);
+
+
+						$("#sys_msg").text("");
+
+						if (navigator.userAgent.indexOf("MSIE") <= 0) {
+							$("#copyButton").show();
+						}
+
+						$('#copyButton').zclip({
+							path:'../static/js/ZeroClipboard.swf',
+							copy:function(){return $('#shortlink').text();}
+						});
+						// The link with ID "copy-description" will copy
+						// the text of the paragraph with ID "description"
+
+
+					} else {
+						throwError();
+					}
+				}
+			});
+		} // bitlyShorten
+	});
+</script>
+
+
+</body>
+</html>

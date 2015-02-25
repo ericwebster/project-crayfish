@@ -1,0 +1,874 @@
+{
+    "items": [
+        {
+            "title": "Lorem Ipsum This is a Placeholder Example Article Title",
+            "link": "http://www.google.com",
+            "guid": "AAAAfBYsAduEFexEvApdhLTg-0EVnAD30scQNIIKAJRVTrOnwAroPyBoaMgDbCDOeVdVoSclKo9XZiLjI2_iCNIO4ww",
+            "pubDate": "Tue, 20 Oct 2014 12:58:06 GMT",
+            "comment": "A comment about this piece would be shown right here.",
+            "description": "",
+            "enclosure": {
+                "-url": "http://davidwalsh.name/wp-content/themes/punky/images/sda/treehouse-banner.jpg"
+            }
+        },
+        {
+            "title": "Serve SVG as an Image on Apache with .htaccess",
+            "link": "http://davidwalsh.name/serve-svg-image",
+            "guid": "AAAAfBYAduEFexEvApdhLTg-0EVnAD30scQNIIKAJRVTrOnwAroPyBoaMgDbCDOeVdVoSclKo9XZiLjI2_iCNIO4ww",
+            "pubDate": "Tue, 08 Jul 2014 12:58:06 GMT",
+            "comment": "Have you seen the new DWB? extremly functional, here is an article to start reading there",
+            "description": "I found this .htaccess snippet update would allow SVG to be served as imagery on Apache servers.",
+            "enclosure": {
+                "-url": "http://davidwalsh.name/wp-content/themes/punky/images/sda/treehouse-banner.jpg"
+            }
+        },
+        {
+            "title": "A peek inside Microsoft's new 'design-first' development strategy",
+            "link": "https://gigaom.com/2013/10/13/a-peek-inside-microsofts-new-design-first-development-strategy/",
+            "guid": "AAAA5sh6z4PfLqbSwPZVCPu4kuFdK58szYK7DGzHHbBYPqRleo9GRf4Xh2G-tBZM0AljAi5TV805kU6OcJIZhP31lA",
+            "pubDate": "Tue, 14 Oct 2014 14:35:12 GMT",
+            "description": "Microsoft says it has seen the light in terms of designing software that business users actually want to use. For its new Q&A feature for visualizing Excel data, for example, the product team ...",
+            "enclosure": {
+                "-url": "https://gigaom2.files.wordpress.com/2013/10/olympic-medals1.jpg?w=708"
+            }
+        },
+        {
+            "title": "Microsoft's CEO Sent Out A Giant Manifesto To Employees About The Future Of The Company",
+            "link": "http://www.businessinsider.com/microsofts-ceo-email-2014-7",
+            "guid": "AAAAeuk1r9XxNaPg3W-ZEwNJJIwaOwf6h67Ywn0UX56wn7ERfpo93abZe5ZRUV8_EJJWcBdVvrn1p-7bFeSjeWvQ7w",
+            "pubDate": "Thu, 10 Jul 2014 14:56:51 GMT",
+            "comment": "looks like microsoft is finally looking ahead",
+            "description": "Satya Nadella lays out his vision for the company.",
+            "enclosure": {
+                "-url": "http://static4.businessinsider.com/image/53be93a76da811e35b57fd86/microsofts-ceo-sent-out-a-giant-manifesto-to-employees-about-the-future-of-the-company.jpg"
+            }
+        },
+        {
+            "title": "A Game Changer",
+            "link": "http://www.alliancetech.com/attendance14-4",
+            "guid": "AAAATlaN-7DQaINMeygbIN2VBpgLA6nf5AiL9hMQFOSKsTsh4-GNFgwsEhQ3CHUU8gelOoCcHQaDF2fGadHd7THUMw",
+            "pubDate": "Thu, 10 Jul 2014 15:25:49 GMT",
+            "comment": "very smart",
+            "description": "Alliance Tech leads the way again in technology with a new way to electronically track attendance at your conferences and events. With our exclusive RFID mats placed at the entrance of your ...",
+            "enclosure": {
+                "-url": "http://www.alliancetech.com/sites/default/files/logo_landing_Mat_Q3.jpg"
+            }
+        },
+        {
+            "title": "The Universal Typeface Experiment",
+            "link": "http://theuniversaltypeface.com/contribute",
+            "guid": "AAAAn_rkuAOpmm7QciDzeMir17kojEfk4ppJXz0yIRWwt1p-RK21Bpwuc6Edu_Shs97yCE3lH_ZhWWHkve6ZyQ8W7Q",
+            "pubDate": "Fri, 11 Jul 2014 17:47:18 GMT",
+            "description": "Help BIC unify the world's handwriting into a universal typeface. Explore existing contributions, or add your own writing to the experiment."
+        },
+        {
+            "title": "Introducing organic Tweet analytics | Twitter Blogs",
+            "link": "https://blog.twitter.com/2014/introducing-organic-tweet-analytics",
+            "guid": "AAAA8p5eijVqzmp5DDoWXtLrPihKwKikd7rGuWIe6AYc1m1HD1PzhzgRiEb_DtOnjSsAnxF2_-74z2zi41HoJwEB0A",
+            "pubDate": "Fri, 11 Jul 2014 18:03:37 GMT",
+            "comment": "finally!",
+            "description": "Optimize your creative with the new Tweet activity dashboard.",
+            "enclosure": {
+                "-url": "https://blog.twitter.com/sites/all/themes/gazebo/img/twitter-bird-white-on-blue.png"
+            }
+        },
+        {
+            "title": "The Boring Trait Google Looks For in Its Leaders",
+            "link": "http://blog.idonethis.com/google-most-important-leadership-trait/",
+            "guid": "AAAAaWfC27dWMXAgKuDtaZV0dR2b7q6FkUfLQvbOeQmnDJGCMm-QyAcdPyg1bGMmfWs4WHRoqq7yq6BsvQg2XhryjQ",
+            "pubDate": "Mon, 14 Jul 2014 00:12:52 GMT",
+            "comment": "The answer was not as predictable as I expected.",
+            "description": "At Google, they're obsessive about looking at data to determine employee success. What they found in the numbers about great leaders was surprising.",
+            "enclosure": {
+                "-url": "http://blog.idonethis.com/wp-content/uploads/2014/07/Google-autonomous-self-driving-car-Larry-Page-Eric-Schmidt-Sergey-Brin.jpg"
+            }
+        },
+        {
+            "title": "Content Used to Be King. Now It's the Joker.Â ",
+            "link": "https://medium.com/@amywestervelt/content-used-to-be-king-now-its-the-joker-d40703c18c73",
+            "guid": "AAAAIXYxZDKXGW9g8wkavf3pMBs4ncVss9aKq3UxLN02QGIfTWbZk-Aw1pc2iPJ_IKxbn6PKcR5vG8io9aZK-ToN9Q",
+            "pubDate": "Mon, 14 Jul 2014 00:16:07 GMT",
+            "description": "Why I've decided to stop taking â€œcontentâ€ gigs and other journalists should, too.Â ",
+            "enclosure": {
+                "-url": "https://d262ilb51hltx0.cloudfront.net/max/800/1*eXqH4-gMApU6wDE7jfSzCw.jpeg"
+            }
+        },
+        {
+            "title": "Writing tips from the CIA's ruthless style manual",
+            "link": "http://qz.com/231110/writing-tips-from-the-cias-ruthless-style-manual/",
+            "guid": "AAAADrwUz5p3X83ZbakFGQCTsWAvrjlXWMn8fNDTfuiJIQSu6ZqFCO3vG6tNspV0gGmybJ9h8QoZme8cT4KL4UiPnw",
+            "pubDate": "Mon, 14 Jul 2014 00:19:26 GMT",
+            "description": "This post has been updated. Strunk & White, it turns out, were CIA sources. The authorsÂ of The Elements of Style, aÂ classic American writingÂ guide,Â are cited alongside Henry Fowler, Wilson ...",
+            "enclosure": {
+                "-url": "http://img.qz.com/2014/07/cia-house-hearing.jpg?w=640"
+            }
+        },
+        {
+            "title": "Pomotodo Combines Pomodoro with a To-Do List that Tracks Your Progress",
+            "link": "http://lifehacker.com/pomotodo-combines-pomodoro-with-a-to-do-list-that-track-1604536855",
+            "guid": "AAAA84NWyXkloSvjWzDLm5koiqN7LjxfzAtzb1dA-sGj9u9zddQzPsF5u51nZ9Vmj-wZMBKZZbTGjx6vLbfwFmt3vw",
+            "pubDate": "Mon, 14 Jul 2014 13:07:13 GMT",
+            "comment": "may give todoist a run for its money! or perhaps they can work together",
+            "description": "Web/Android/iOS: We've talked earlier about the Pomodoro technique, the productivity method where you work in short bursts with small breaks in between.",
+            "enclosure": {
+                "-url": "http://i.kinja-img.com/gawker-media/image/upload/s--EPhJ3ohD--/hhjeayjezrwdhx2nyaah.png"
+            }
+        },
+        {
+            "title": "Are We Coming to the End of SEO?",
+            "link": "http://www.clickz.com/clickz/column/2354997/is-seo-dead",
+            "guid": "AAAAXoS9dZ72O17KnBwKRx_Lr65V8w-lRcp4x9-kwGUqjhJhCo8jpHoQ1N50HbURC0Fxi4bRw6wy2HjJMqENys4TBA",
+            "pubDate": "Tue, 15 Jul 2014 13:45:42 GMT",
+            "comment": "relevant, reliable, authoritative content will win",
+            "description": "What are you hoping for when you search for something on Google? Are you looking for a site that deployed every SEO tip and trick to game their way to the top of the list? Or a ...",
+            "enclosure": {
+                "-url": "http://rack.0.mshcdn.com/media/ZgkyMDE0LzA3LzE1LzgxL1Nwb29reUdvb2dsLjE0YTVkLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/50b981d9/f88/SpookyGoogleSeo.jpg"
+            }
+        },
+        {
+            "title": "Home Depot Shopping List: Shelving? Check. 3D Printers? Check.",
+            "link": "http://mashable.com/2014/07/14/home-depot-makerbot-3d-printers/",
+            "guid": "AAAAH6P9xIoWFKziFbaVJS-vTwYBpQq7kGurX6JkRrny6Kr6M-AYS-XBs_kmuqGY6uGmvlQ3gOhQDnJSmOdtG2KBng",
+            "pubDate": "Tue, 15 Jul 2014 19:42:24 GMT",
+            "comment": "i seriously doubt home depot shoppers have the coin or expertise to make this a hot ticket item, but i admire the forward progress!",
+            "description": "For those with ambitions of 3D-printing objects for the home, Home Depot may be your next stop: The store now sells MakerBot 3D printers.",
+            "enclosure": {
+                "-url": "http://rack.1.mshcdn.com/media/ZgkyMDE0LzA3LzE0L2UwL01ha2VyQm90MS5lOWYxZC5qcGcKcAl0aHVtYgkxMjAweDYyNyMKZQlqcGc/4be504da/48d/MakerBot1.jpg"
+            }
+        },
+        {
+            "title": "The Creative Class",
+            "link": "http://thecreativeclass.tv/",
+            "guid": "AAAAlxHMlJDCyNxeEoZp5kRarlOZYHVTbI9ORZhjt3F8X0_SoFx1KQsDfWh5vEgsnCfg8P26JTUddGwbk1CPadA3Xg",
+            "pubDate": "Fri, 18 Jul 2014 17:01:09 GMT",
+            "comment": "Minimal lean back experience.",
+            "description": "Getting inspired! Check out the online Creative Class series for some beautifully insightful interviews with Damon Albarn, Stefan Sagmeister and others."
+        },
+        {
+            "title": "How to choose the right UX metrics for your product",
+            "link": "http://www.gv.com/lib/how-to-choose-the-right-ux-metrics-for-your-product",
+            "guid": "AAAAV-IRp2JEMf7x5XujMSlD2jQGrSsiyNTabmuYR5R6ykJsKubSbvzMwDcOrhzdUenIypYXwYpVX0yt86_lw2DhOw",
+            "pubDate": "Mon, 21 Jul 2014 00:53:54 GMT",
+            "description": "When designing for the web, you can analyze usage data for your product and compare different interfaces in A/B tests. This is sometimes called â€œdata-driven designâ€, but I prefer to think of it ...",
+            "enclosure": {
+                "-url": "http://img.gv.com/wp-content/uploads/2012/03/metrics.jpg?w=640&s=acf8546af21ee6ff0e5aff43fba585c1"
+            }
+        },
+        {
+            "title": "The story of WebP: How Google wants to speed up the web, one image at a time ",
+            "link": "http://gigaom.com/2014/07/19/the-story-of-webp-how-google-wants-to-speed-up-the-web-one-image-at-a-time/",
+            "guid": "AAAAWYLVURbmwJo_T08la15aav6nz7zD8QrgwwpEcYf1h2bsJPgbbjvmn9xh_MpHE_Z_wlkhBevmyjPmtWSFCX05Qg",
+            "pubDate": "Mon, 21 Jul 2014 00:54:59 GMT",
+            "description": "Google wants WebP to become the internet's next dominant image file format. That's not likely going to happen anytime soon â€” but WebP could still have a huge impact.",
+            "enclosure": {
+                "-url": "http://gigaom2.files.wordpress.com/2014/07/shutterstock_149536739.jpg?w=708"
+            }
+        },
+        {
+            "title": "A Redesigned Parking Sign So Simple That You'll Never Get Towed | Design | WIRED",
+            "link": "http://www.wired.com/2014/07/a-redesigned-parking-sign-so-simple-youll-never-get-towed-again/",
+            "guid": "AAAAkwstjf9AVihDi-G5I3VR8kgiXWFPrHqNzW4-JJOJAZ-4YH-PFNtgTKtoreWxK_NIUD2BbCeg314rUduwsblgJA",
+            "pubDate": "Mon, 21 Jul 2014 01:05:10 GMT",
+            "description": "Like most urban drivers, Nikki Sylianteng was sick of getting tickets.",
+            "enclosure": {
+                "-url": "http://www.wired.com/wp-content/uploads/2014/07/redesigned-parking-ft.jpg"
+            }
+        },
+        {
+            "title": "The Ultimate List of IFTTT Recipes for Marketers | SEER Interactive",
+            "link": "http://www.seerinteractive.com/blog/ifttt-recipes-for-marketers",
+            "guid": "AAAAIhglYJ2d2uYd68GgeHHbIkCKPrLTHSBlJWWbt8H3paZS_bpYxicNA_22NI_PR_Clgfwbn8PSxs81Q8KIvwBsFA",
+            "pubDate": "Mon, 21 Jul 2014 01:55:35 GMT",
+            "description": "Here at SEER, we're big proponents of scaling and automating as many tasks as possible so that we can spend the bulk of our time strategizing for our clients.",
+            "enclosure": {
+                "-url": "http://www.seerinteractive.com/wp-content/uploads/2014/06/1018_IFTTT_Header_880x2972-880x297.jpg"
+            }
+        },
+        {
+            "title": "Visual Website Monitoring. Simplified.",
+            "link": "http://visualping.io/",
+            "guid": "AAAA8GCxKqK2fC9HEavMLR6Rr_fY2gKlpZywKLyeOxEhDSe-xmqx_HAyRyVN5FQvrkdYmf_TZEMzberH1IBC1l1bFw",
+            "pubDate": "Mon, 21 Jul 2014 01:56:43 GMT",
+            "description": "Get notified on visual changes of a website or website area. set check interval choose trigger It's amazing."
+        },
+        {
+            "title": "Tag management software as marketing middleware - Chief Marketing Technologist",
+            "link": "http://chiefmartec.com/2014/06/tag-management-software-marketing-middleware/",
+            "guid": "AAAAdl4jG_99kJ1HvJ8m_ZTR_beZDw8mPbt5ph7Vl5NyFIgE-lViuWSiyjcWZmM99Jholp0WOwfHzbrZXcSToEnzdA",
+            "pubDate": "Mon, 21 Jul 2014 01:59:35 GMT",
+            "description": "Tag management, at its core, is a relatively straightforward marketing technology â€” but one that has taken on new life with the rise of the home-grown, heterogeneous marketing cloud.",
+            "enclosure": {
+                "-url": "http://chiefmartec.com/wp-content/uploads/2014/06/byoc2_600.jpg"
+            }
+        },
+        {
+            "title": "The Noun Project",
+            "link": "http://thenounproject.com",
+            "guid": "AAAAvTXmCDKSTj0U--N0aK2T697AngYCwfebHxvHmnIRlOVfv8xkc86YCoXe8X3lar8dKPP69xo-E0L8GjfBhx0a8Q",
+            "pubDate": "Mon, 21 Jul 2014 02:02:21 GMT",
+            "description": "Creating, Sharing and Celebrating the World's Visual Language.",
+            "enclosure": {
+                "-url": "http://thenounproject.com/static/img/nounproject_logo.png"
+            }
+        },
+        {
+            "title": "Drunk User Testing - Test Your Site",
+            "link": "http://drunkusertesting.com/",
+            "guid": "AAAA0BGIHEWwd1zh9tgZ0qPLd-VSMEPA5djiX51r1t5I0zOb7Zem542cRLrQOb3z3nahjo5P3VSnA_k5p--SpHghIg",
+            "pubDate": "Mon, 21 Jul 2014 13:10:20 GMT",
+            "comment": "This may be a little novelty, but you are in denial if you think all your users are sober. just something to think about.",
+            "description": "About D.U.T. So you think you're ready to launch? You've put hours into designing, testing, and implementing your new website. You've done focus groups, A/B testing, and random user sampling to ..."
+        },
+        {
+            "title": "Can web animation save flat design?",
+            "link": "http://www.webdesignerdepot.com/2014/07/can-web-animation-save-flat-design/",
+            "guid": "AAAA-TX5ZwXcO0wLLj3vdf_9Luwj-QR-XVCHz8-HskU9nUkDFMBmg_Wus1in1InoQ0rlOkdnQOtSg8JR-CTCZvXDfg",
+            "pubDate": "Tue, 22 Jul 2014 12:19:03 GMT",
+            "comment": "..yes, A site needs to be clean, light, and if flat, a site needs to \"breathe\"",
+            "description": "As web designers, we need to make sure we keep our skills fresh and up-to-date. We don't need to follow every trend that comes alongÂ (like long shadows) but ",
+            "enclosure": {
+                "-url": "http://netdna.webdesignerdepot.com/uploads/2014/07/featured19-1024x583.jpg"
+            }
+        },
+        {
+            "title": "Transitional Interfaces",
+            "link": "https://medium.com/@pasql/transitional-interfaces-926eb80d64e3",
+            "guid": "AAAAciWyiJNPISF3rZgnkCoAZ2Y7ebinLEajN2OhyeWtaDPKUNempFvvAep808kEpMjX8YkXtA69mPYixY7CT6w4tg",
+            "pubDate": "Tue, 22 Jul 2014 15:31:53 GMT",
+            "description": "Designers love to sweat the details. Much time is spent pixel-fucking buttons, form styles, setting type, & getting thosâ€¦",
+            "enclosure": {
+                "-url": "https://d262ilb51hltx0.cloudfront.net/max/800/0*ScCkVKA-o9Mz2t4Z.gif"
+            }
+        },
+        {
+            "title": "LG's rollable TVs are (predictably) very flexible",
+            "link": "http://www.engadget.com/2014/07/22/lgs-rollable-tvs-are-very-flexible/",
+            "guid": "AAAAZQxTuoygZRah6H5xzmtH7mIVGU1aSRe7olXHi9I8acE_AI32epk3AtaEfUb10kr_wJpeJJYvAyXzwqViJI-HnA",
+            "pubDate": "Tue, 22 Jul 2014 17:47:39 GMT",
+            "description": "Remember when LG announced that it had managed to create a rollable 18-inch display? Well, here's the proof: a very much flexible OLED display. The"
+        },
+        {
+            "title": "QUIZ: Sci-Fi / Fantasy Author or Crazy Person?",
+            "link": "http://www.collegehumor.com/post/6980340/quiz-fantasy-writer-or-crazy-person",
+            "guid": "AAAAXqcY6Hf_ZoExohhGPTL_57VvYArvSAAG0rZKAD-SBXEIj5WabVILPdO0Su2FiEq9F__NWyCjyok5NeuT9HN1dw",
+            "pubDate": "Tue, 22 Jul 2014 17:59:11 GMT",
+            "comment": "This is a very nerdy quiz but i also liked the quiz tool. See here: https://www.qzzr.co/",
+            "description": "Can you tell the difference between Fantasy Authors and Certifiably Insane Humans?",
+            "enclosure": {
+                "-url": "http://2.media.collegehumor.cvcdn.com/35/74/a65331ff626b6f939f9a1163aa4e934a.jpg"
+            }
+        },
+        {
+            "title": "How to make whitespace work on the Web",
+            "link": "http://www.webdesignerdepot.com/2014/07/how-to-make-whitespace-work-on-the-web/",
+            "guid": "AAAAEdcPeumCCE5r0gSJEkCpJ417-nDX4bkUDVQAuwbIAKh0TIL_rPc93F8_HeYyS5hv3AW2h1hSjfF2gcnn8n9wrw",
+            "pubDate": "Wed, 23 Jul 2014 12:22:50 GMT",
+            "comment": "\"It's not the notes you play, it's the notes you don't play.\" ",
+            "description": "The term white space is sometimes used interchangeably with negative space, and the concept is the same. Though the term refers to â€œwhiteâ€ space in particul",
+            "enclosure": {
+                "-url": "http://netdna.webdesignerdepot.com/uploads/2014/07/featured20-1024x583.jpg"
+            }
+        },
+        {
+            "title": "Why You, Non-Nerd, Should Get Excited about Graphene",
+            "link": "https://www.yahoo.com/tech/why-you-non-nerd-should-get-excited-about-graphene-87271772974.html",
+            "guid": "AAAA5XOcZYnvJt4lKj_IyMyuMFriT0PFgES3fWCPHDOAKGeG48Zy4scCr_kOSWk-qVRRzdtwotdTjG-A4tFaWAblCA",
+            "pubDate": "Wed, 23 Jul 2014 18:22:35 GMT",
+            "description": "More:Â How to Win Reservations and Influence Waiters Your batteries will charge in seconds Researchers at UCLA turned graphene into a battery that charges in seconds and leaves no negative ...",
+            "enclosure": {
+                "-url": "https://s.yimg.com/cd/resizer/FIT_TO_WIDTH-w635/a27cba855225da560b6140016a61f4ab437fb930.jpg"
+            }
+        },
+        {
+            "title": "Four Things I Learned about UX at Universal Studios",
+            "link": "http://uxmag.com/articles/four-things-i-learned-about-ux-at-universal-studios",
+            "guid": "AAAAAGKwfzDZQPct7bGUGAjpj_Wc6VtM6wHhX4iVOVVQfQ_IkgKaZYmxYqOGji4_82n-nMxstCW8rG1shi--HIEbEA",
+            "pubDate": "Fri, 25 Jul 2014 13:48:53 GMT",
+            "description": "Home to The Wizarding World of Harry Potter, Diagon Alley, Universal Studios is also a source of guidance and inspiration for experience designers.",
+            "enclosure": {
+                "-url": "http://uxmag.com/sites/default/files/four-things-learned-universal-theme-park-banner.jpg"
+            }
+        },
+        {
+            "title": "Google's $1 Billion Acquisition of Twitch Reportedly a Go",
+            "link": "http://mashable.com/2014/07/24/googles-1-billion-acquisition-of-twitch-reportedly-a-go/",
+            "guid": "AAAAuzC5QkkIuf93-P5vGtKpXMFruPtuMcUU2G8ONEzyeBQYJwKjdRowOKmfrxTy31Q0-TAXvJmgLV4Gle53et448A",
+            "pubDate": "Fri, 25 Jul 2014 15:07:13 GMT",
+            "description": "Game on! Google's $1 billion acquisition of gaming video site Twitch is reportedly a done deal.",
+            "enclosure": {
+                "-url": "http://rack.0.mshcdn.com/media/ZgkyMDE0LzA3LzI0LzZhL1R3aXRjaC5kYTVkNC5qcGcKcAl0aHVtYgkxMjAweDYyNyMKZQlqcGc/8974302c/ac7/Twitch.jpg"
+            }
+        },
+        {
+            "title": "Are you a Verizon customer with unlimited data? Get ready to be throttled",
+            "link": "http://bgr.com/2014/07/25/verizon-unlimited-data-throttling/",
+            "guid": "AAAAGVQkakCVnrZuJpA-IbkgUsCWBXlrBdBIoi8pV2up9dZz7tvA2m3nbAvJFGQjZ3CcHiTxdl34Uq6npSmfVFLp3A",
+            "pubDate": "Fri, 25 Jul 2014 19:40:39 GMT",
+            "description": "As we learned from a recent study, Verizon has been remarkably efficient at convincing unlimited wireless data plan holders to switch to newer, more profitable data plans.",
+            "enclosure": {
+                "-url": "http://cdn.bgr.com/2012/04/verizon-execs110322122748.jpeg"
+            }
+        },
+        {
+            "title": "google/cayley",
+            "link": "https://github.com/google/cayley",
+            "guid": "AAAAHhUuaN72eJUGWB91rOa5SQo3-013kGvmztDsM374Dubd6R0VBsQ3lNYoIfpkjUenqr9oIJCDYSyLdhfoebfAOQ",
+            "pubDate": "Sun, 27 Jul 2014 23:50:40 GMT",
+            "comment": "Google's new graph database -- sure to build a following quickly.",
+            "description": "cayley - An open-source graph database",
+            "enclosure": {
+                "-url": "https://avatars0.githubusercontent.com/u/1342004?s=400"
+            }
+        },
+        {
+            "title": "Negotiating Is Not the Same as Haggling",
+            "link": "http://blogs.hbr.org/2014/06/negotiating-is-not-the-same-as-haggling/",
+            "guid": "AAAAvy2hW30VWXLpa-0B6BO0YFsyNCRLt4LMkj7H2U-t-Kg7IVpbOF127th8uuxxlLZP-hTr5wuxxtnPRIJidXfjAQ",
+            "pubDate": "Mon, 28 Jul 2014 00:04:49 GMT",
+            "description": "Forget the planned concessions and fake threats.",
+            "enclosure": {
+                "-url": "http://hbrblogs.files.wordpress.com/2014/05/acriticalshift.gif"
+            }
+        },
+        {
+            "title": "Why Your Entire Team Needs to Be on Social Media",
+            "link": "http://www.inc.com/jules-pieri/why-your-entire-team-needs-to-be-on-social-media.html",
+            "guid": "AAAANP5dctYJwmroLShDgykfMHQzUnhGfEYQe_rrVky8fTnV3cX7BpjKW7D7nDoQktCm2axsLWcQVs3sen4cE_FUeA",
+            "pubDate": "Tue, 29 Jul 2014 13:44:55 GMT",
+            "description": "Awake the sleeping giant within your own team, get them using social media."
+        },
+        {
+            "title": "Apps for the connected office",
+            "link": "https://robinpowered.com/apps",
+            "guid": "AAAAi2GNb7s-VUJ_FwufHkXr7t5zjnXjUpPdjMFiFjanD9IQw53_sy3fIeniCjlL7V9uzzoLnOqhPXXSiWlXMlXNQQ",
+            "pubDate": "Wed, 30 Jul 2014 12:21:39 GMT",
+            "description": "Presence-powered automation & intelligence for the workplace. How does a Robin Powered office work? Rooms detect people Using BLE/iBeacons with the latest sensors, Robin detects nearby people ...",
+            "enclosure": {
+                "-url": "https://robinpowered.com/img/robin-dashboard-browser.png"
+            }
+        },
+        {
+            "title": "Domini Veneti | Cantina Valpolicella Negrar",
+            "link": "http://www.cantinanegrar.it/it/dominiveneti/f2",
+            "guid": "AAAATy6BJHhYJWhGzmc7tWd26dOrfUrvp__Y009Mtc7jgK6YxszAdkuwzxB7-3SLlsQzKlW6XFYX0GDemXkXEihBqw",
+            "pubDate": "Wed, 30 Jul 2014 12:52:50 GMT",
+            "comment": "Do we have an opinion on full background video on websites? everyone is doing it, but that does not make it right",
+            "description": "progetto qualitÃ  Nel 1989 Cantina Valpolicella Negrar iniziava un articolato Progetto QualitÃ , attraverso l'individuazione di alcune aree particolarmente vocate della Valpolicella, dalle quali, ...",
+            "enclosure": {
+                "-url": "http://www.cantinanegrar.it/asset/images/descrizione-domini-veneti.jpg"
+            }
+        },
+        {
+            "title": "29 Eye-Tracking Heatmaps Reveal Where People Really Look",
+            "link": "http://www.businessinsider.com/eye-tracking-heatmaps-2014-7",
+            "guid": "AAAAPSbbSBkhyM2eTpiC6LG_YhnvcJRU-N_6_nDMA49N_XZ4-HbMYqB7nLxJCnCz85OMxfTPQbQ-UkHfyRLt1fYGtQ",
+            "pubDate": "Thu, 31 Jul 2014 20:15:33 GMT",
+            "description": "The eyes tell all.",
+            "enclosure": {
+                "-url": "http://static3.businessinsider.com/image/53d2614369beddd15682041b/29-eye-tracking-heatmaps-reveal-where-people-really-look.jpg"
+            }
+        },
+        {
+            "title": "UX Research Recruiting, User Research Recruiting, and Usability Recruiting",
+            "link": "http://ethn.io/",
+            "guid": "AAAA88ozhJkqUS9n6_ceCSWNRPOPd7QiXrRbM-hocXXkeYzHaC2NCNLjFmTFiHZo_8S52OiiLlyxe2pxi_waBSzSVg",
+            "pubDate": "Fri, 01 Aug 2014 01:21:42 GMT",
+            "comment": "Used by Acquia (and many others)",
+            "description": "We use ethnio when we need to talk to people that a recruiting agency just wouldn't be able to find.Linsey Donaldson Researcher, Shopify.com Time MattersThe exact moment when your users interact ...",
+            "enclosure": {
+                "-url": "http://ethnio-demo.s3.amazonaws.com/assets/marketing/slides/slide1-22a8ab694d33d3b0e392be67a60a4e06.jpg"
+            }
+        },
+        {
+            "title": "Agency Tries to Make an Ad That's All but Unskippable as YouTube Preroll",
+            "link": "http://www.adweek.com/adfreak/agency-tries-make-ad-thats-all-unskippable-youtube-preroll-159183",
+            "guid": "AAAA_1gtey_q8iXIEXdM5aNmbeabKMgrvTNp08cv-NsdMqW2PiruHFm9eUatTvVLPxd4nV0WfN1kj6iP2DsZ9L-XLw",
+            "pubDate": "Fri, 01 Aug 2014 13:58:14 GMT",
+            "comment": "Smart and funny use of YoutTube Ad Preroll",
+            "description": "The numbers don't lie: When a YouTube preroll ad comes on, users are primed to click the \"Skip Ad\" button the very millisecond it appears on screen. Research says 94 percent of preroll gets ...",
+            "enclosure": {
+                "-url": "http://www.adweek.com/files/blogs/nail-skip-ad-hed-2014.png"
+            }
+        },
+        {
+            "title": "The Most Powerful Ways to Start a Presentation",
+            "link": "http://www.inc.com/sims-wyeth/all-s-well-that-begins-well-the-power-of-first-impressions.html",
+            "guid": "AAAA3p0_LZO_EiT9vapnPwCnsXAGNnKo9TWFe_7uCCrmU_g_ytUxJ4yYNJK8KgcMT-DfsLxrqbi_xlgI0hgr6yW5OA",
+            "pubDate": "Fri, 01 Aug 2014 15:53:53 GMT",
+            "comment": "Before you can \"drop the mic\" think about how will you open the pitch",
+            "description": "The science is clear: People make decisions based on first impressions. As speakers, we need to take advantage of that."
+        },
+        {
+            "title": "Design Code: Design iOS apps with Swift",
+            "link": "http://designcode.io",
+            "guid": "AAAAqAL8XDWcd2xTLzAwJF4j8XMFoH12M-ADvx5D9z9sKv7INN6AUE9Zk0aLiK7SUeO6QLuXa05Uyl-Me0MbwrxJbw",
+            "pubDate": "Fri, 01 Aug 2014 15:55:26 GMT",
+            "description": "Build an iOS app using Sketch and Xcode 6. 66% discount.",
+            "enclosure": {
+                "-url": "http://cl.ly/image/2s2O0s1m2Z1Z/swift-chapter-cover-2.png"
+            }
+        },
+        {
+            "title": "Toggl",
+            "link": "https://www.toggl.com/app/projects/637521/list/page/1",
+            "guid": "AAAAAwRJHKrGxZkzisrno8bNWyo8TxfOpzhj7A0bZxAr-JWK6NxdIr3IYxDEnaKg3CJX81SHZfOOPWd7LC_Sr4OPTw",
+            "pubDate": "Mon, 04 Aug 2014 13:38:15 GMT",
+            "comment": "Track your time, stop watch style, for multiple projects"
+        },
+        {
+            "title": "Gimmick or Useful? Lollapalooza's Cashless Wristbands Enter Infancy",
+            "link": "http://mashable.com/2014/08/03/lollapaloozas-cashless-wristbands/",
+            "guid": "AAAAM041HYY4K8pF9_LEeWKTlbrDOsIGo8LJx9WS3L62ChFSIvGaT7ufy_ivPWzNggcGg9qcLYh9OojEByKznzNAUA",
+            "pubDate": "Mon, 04 Aug 2014 19:26:19 GMT",
+            "comment": "rfid payment wristbands",
+            "description": "The music festival industry has been headed in the cashless direction, including Lollapalooza. Here's how the Lolla's digital wristbands are faring.",
+            "enclosure": {
+                "-url": "http://rack.0.mshcdn.com/media/ZgkyMDE0LzA4LzA0LzBlL2xvbGxhcGFsb296LjFlYzQzLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/1bde269d/6de/lollapalooza-wristbands.jpg"
+            }
+        },
+        {
+            "title": "Never Say Never: Walmart Joins the Loyalty Landscape",
+            "link": "https://circulate.it/res/message/zfGzOkb0Tx6G1tDzpDMbyQAAAUenMxuZPHls9i29P3nZyhauQ_124wAA_xM/0",
+            "guid": "AAAADvU-HoawPRcBl4SPeZwuERQb3WnOErEri_RbvlZkpj_riFolult41gUVEA-eujdQXJfaA-MkvaeksaorvkYtzg",
+            "pubDate": "Tue, 05 Aug 2014 17:24:58 GMT",
+            "comment": "It surprises me that this Walmart's first step into loyalty programs. With their value prop/brand, I'd image this would have been something they would have pioneered.",
+            "description": "<p>I think everyone in retail circles sat up and took notice in June when Walmart announced the national launch of Savings Catcher, its first foray into loyalty after a successful test run with ...",
+            "enclosure": {
+                "-url": "http://www.loyalty.com/dotAsset/86794c0e-d0af-4dca-b967-9fbf52b06e5c.jpg"
+            }
+        },
+        {
+            "title": "Why The Most Successful Organizations Have Women And Millennials In Charge ",
+            "link": "http://www.fastcompany.com/3033950/the-future-of-work/why-the-most-successful-organizations-have-women-and-millennials-in-charg",
+            "guid": "AAAAobiV8WLCSBXCol35w7HnvCUrmSuwLBT_wBr6NPUZ3bG_8H_T9Nd664ugD-yOAi9xKAeB769MsukDj4NkHJETRg",
+            "pubDate": "Wed, 06 Aug 2014 10:59:32 GMT",
+            "description": "A new global study shows that when women and twenty-somethings lead, big things follow.",
+            "enclosure": {
+                "-url": "http://f.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/08/3033950-poster-p-1-why-the-most-successful-organizations-have-women-and-millennials-in-charg.jpg"
+            }
+        },
+        {
+            "title": "Humin",
+            "link": "https://www.humin.com/#/product",
+            "guid": "AAAAQSOV04-mlt9-8BjCVWfgauQAugyqYiXuw85f5ojUwu4mkLCk_zKSQth57NIGxNjz-wzCydhCWKlXhowYUAhAJw",
+            "pubDate": "Wed, 06 Aug 2014 12:23:33 GMT",
+            "comment": "quote: \"Humin is a new phone app that captures all of your contacts and remembers them in the way you naturally think.\""
+        },
+        {
+            "title": "The App That Brings a Doctor to Your Door @thefiscaltimes",
+            "link": "http://www.thefiscaltimes.com/Articles/2014/08/05/App-Brings-Doctor-Your-Door",
+            "guid": "AAAA1NSRo63w3clAnQcabey0JE2eFaT7pR96OazVVBciEQMYt1YqoiML4eZjCy_w-39pbSpfrd0ASFn8u2KP-DgByg",
+            "pubDate": "Wed, 06 Aug 2014 14:57:51 GMT",
+            "comment": "Healthcare now has an Uber",
+            "description": "A new Uber-like smartphone app that allows people to order a doctor to their home is gaining traction across the Northeast."
+        },
+        {
+            "title": "Agency Wants You to Hire Its Laid-Off Staffers, and Will Pay $5,000 If They Flop",
+            "link": "http://www.adweek.com/adfreak/agency-wants-you-hire-its-laid-staffers-and-will-pay-5000-if-they-flop-159324",
+            "guid": "AAAARw69cptIwx4QOnsqN3UQPi96Jx_EmcKOir7d2gqzbqa-s1BAnTol2NOdNvPu9s7BpjFyvUvC3q4PdriQdEw5TA",
+            "pubDate": "Thu, 07 Aug 2014 11:10:15 GMT",
+            "description": "Layoffs after client losses are a harsh reality of the ad business. But one agency leader is putting a $5,000 cash guarantee behind each of the 50 employees he has to let go because a major ...",
+            "enclosure": {
+                "-url": "http://www.adweek.com/files/blogs/ignite-social-media-hed-2014.png"
+            }
+        },
+        {
+            "title": "Secure Sites Will Show Up Higher in Google Search Results",
+            "link": "http://mashable.com/2014/08/07/google-prioritize-secure-sites/",
+            "guid": "AAAAAVqtl9Hi2AnEhzrQj0QIy96E8Wzp8_1cTU1XHYER0tSTA8KdeVwS-s-ucWrRfZd2sm2WPCQ2-5PAuQc2JI2Ogw",
+            "pubDate": "Thu, 07 Aug 2014 17:20:43 GMT",
+            "description": "Google will start prioritizing secure websites in its search results in its efforts to make the Internet a safer place.",
+            "enclosure": {
+                "-url": "http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzA3L2QxL0dvb2dsZV9TZWN1LjA5NDRkLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/a6904106/c86/Google_Secure.jpg"
+            }
+        },
+        {
+            "title": "Janet Iwasa: How animations can help scientists test a hypothesis",
+            "link": "https://www.youtube.com/watch?v=YvyeI-Axb70",
+            "guid": "AAAAAmMWGnG9A1OzAFkUQrJboMQF8BTAue_-uu9ieEEgbLTlP6qp4miThG1BFuvmWCCu9uhm8pbX39p44DciO1gavQ",
+            "pubDate": "Thu, 07 Aug 2014 17:34:07 GMT",
+            "description": "3D animation can bring scientific hypotheses to life. Molecular biologist (and TED Fellow) Janet Iwasa introduces a new open-source animation software design...",
+            "enclosure": {
+                "-url": "https://i.ytimg.com/vi/YvyeI-Axb70/maxresdefault.jpg"
+            }
+        },
+        {
+            "title": "The easiest way to save and share passwords securely",
+            "link": "https://www.mitro.co",
+            "guid": "AAAArlsR12r4m-WMgg-An_aO1Ka4ZueIOiTXi317UPZIBn9M18MmuTyW0QXHfxqsrnZcR8LMNCfY725nVz1Mv-jYHA",
+            "pubDate": "Thu, 07 Aug 2014 20:19:53 GMT",
+            "comment": "Free, open source, and recently purchased by Twitter.",
+            "description": "The easiest way to discover and try new startups without signing up.",
+            "enclosure": {
+                "-url": "https://www.mitro.co/img/ogMitroimage.png"
+            }
+        },
+        {
+            "title": "Dogs On Tinder, And Remembering Andy Murray: The Top 5 Ads Of The Week",
+            "link": "http://www.fastcocreate.com/3034153/dogs-on-tinder-and-remembering-andy-murray-the-top-5-ads-of-the-week",
+            "guid": "AAAAhz7NM273Dt0m3LvQTNrxd8mYGfbSmEjGGyZ2YoZXsvZB6IokCmr_AInd6-Th4yK5yTK1LOWZ0mw95m0oM0WUdA",
+            "pubDate": "Fri, 08 Aug 2014 14:45:12 GMT",
+            "comment": "Top 5 Ads of (Last) Week - by the time this Circulates",
+            "description": "Under Armour goes dancing, dogs invade Tinder, Bacardi gets graphic, WWI soldiers lend their names--and don't touch Craig Robinson's Dodge.",
+            "enclosure": {
+                "-url": "http://e.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/08/3034153-poster-p-1-top-5-ads-aug-8-week.jpg"
+            }
+        },
+        {
+            "title": "The Best Times for Tweets, Facebook Posts, Emails, and Blog Posts",
+            "link": "http://blog.bufferapp.com/best-time-to-tweet-post-to-facebook-send-emails-publish-blogposts",
+            "guid": "AAAABGRN3VyD3fMYFDqrXfBexxQvOF_IYp7OzeJJFC6zm-7XTmD0Rl2aHqoufhPcXv6Hk9U26kD7_zWZKvaLYpo28Q",
+            "pubDate": "Fri, 08 Aug 2014 15:54:11 GMT",
+            "comment": "the best times to share stuff",
+            "description": "When is the best time to tweet, best time to post to Facebook or the best time to send emails or best time to publish blogposts? We found out.",
+            "enclosure": {
+                "-url": "http://blog.bufferapp.com/wp-content/uploads/2013/08/best-time-to-tweet1.png"
+            }
+        },
+        {
+            "title": "Data Is Beautiful is a hidden gem for gorgeous data visualizations",
+            "link": "http://venturebeat.com/2014/08/09/data-is-beautiful-is-a-hidden-gem-for-gorgeous-data-visualizations/",
+            "guid": "AAAAG1gbaT2Yf9nUgYeCWYSyQL0-SWrVo-AnI_dh2huaXHNUTpZBv1iv-uIQ8xY_uz-HP_LR4UZo11qc6ekml-j_FQ",
+            "pubDate": "Mon, 11 Aug 2014 01:04:47 GMT",
+            "description": "Pretty. And pretty, informative",
+            "enclosure": {
+                "-url": "http://venturebeat.files.wordpress.com/2014/08/iheartdata.png"
+            }
+        },
+        {
+            "title": "Microsoft's found a way to smooth out your GoPro shakycam footage",
+            "link": "http://www.engadget.com/2014/08/11/microsofts-found-a-way-to-banish-gopro-shakycam-footage/",
+            "guid": "AAAAtXPOciKGvx7p6ofYCZgEEN5Iuc3hz-rZy8-_VsLdG6NLN5QlsE3Ivac-Nu1EgpOMUqQre_HIlLk_PuhLmi6bGA",
+            "pubDate": "Mon, 11 Aug 2014 13:44:17 GMT",
+            "description": "GoPro footage is great when well-shot, but the jittery results from less-talented individuals can induce nausea or seizures. If you're interested in"
+        },
+        {
+            "title": "'Enter Pyongyang': Time-lapse film gives rare look inside North Korean capital",
+            "link": "http://news.yahoo.com/enter-pyongyang-north-korea-timelapse-video-132954078.html",
+            "guid": "AAAAwyUXZk5XpwvQzfgmtF-UhwN0fPrAsQc9U4xwRkLOBvD18YMz456Dx1JrmGL_NBbbbRQkoKJ-B7bWgcaSLbJDDw",
+            "pubDate": "Mon, 11 Aug 2014 19:14:40 GMT",
+            "comment": "This actually makes me want to go to North Korea.",
+            "description": "To most people not named Dennis Rodman, North Korea remains a mystery. But a new time-lapse video produced by a pair of filmmakers for a North Korean tour company gives a rare glimpse inside the ...",
+            "enclosure": {
+                "-url": "http://l.yimg.com/bt/api/res/1.2/81I5U991YW6EEaB2Cjd58g--/YXBwaWQ9eW5ld3M7cT04NTt3PTYwMA--/http://l.yimg.com/os/mit/media/m/social/images/social_default_logo-1481777.png"
+            }
+        },
+        {
+            "title": "Knowledge Management Software | RightAnswers",
+            "link": "http://www.rightanswers.com/",
+            "guid": "AAAA_ny-kD6HX_Z7gqsYtskyG5x8_RawtWrz8wIkMzGPDMGLcLdyNGSwZ_OpQYZQiSPwSnOVANYgXXZYaPCnt48cDQ",
+            "pubDate": "Mon, 11 Aug 2014 20:08:51 GMT",
+            "comment": "i dig the web design/ux",
+            "description": "Your World, Our Technology â€“ Always the Perfect Fit Keep the systems you know and love. SmartService plugs into your environment, protecting the investments you've already made.",
+            "enclosure": {
+                "-url": "http://www.rightanswers.com/assets/gears1.jpg"
+            }
+        },
+        {
+            "title": "8 Pure CSS Mobile Devices from @marvelapp",
+            "link": "http://marvelapp.github.io/devices.css/",
+            "guid": "AAAAcnrBggLbIZAzkWx88iamgHnztUWxAqTW4Sz-J2cGUmzF-FImvbuVgYjNUEjtNstrhZULm32XGFACvkRzcxTjCw",
+            "pubDate": "Mon, 11 Aug 2014 21:30:34 GMT",
+            "description": "White White Yellow Green Blue Landscape"
+        },
+        {
+            "title": "Officelovin - discover the best tech and startup offices",
+            "link": "http://www.officelovin.com/",
+            "guid": "AAAACOEUumxuBExurG0lrNKeXE4cOk8b6gzlRepp7pIK21SxqkRibmDStf4q8znfWrbmp4dfREZn7Ad9nvMZSFi1Rg",
+            "pubDate": "Mon, 11 Aug 2014 21:52:22 GMT",
+            "description": "Officelovin is a place where you can discover the best startup and tech offices from all around the world.",
+            "enclosure": {
+                "-url": "http://www.officelovin.com/wp-content/uploads/2014/08/Milano_low-8-790x425.jpg"
+            }
+        },
+        {
+            "title": "The Virtual Assistant Could Be The Next Interpreter Of Enterprise Data, Starting With Google Now | TechCrunch",
+            "link": "http://techcrunch.com/2014/08/13/the-virtual-assistant-could-be-the-next-interpreter-of-enterprise-data-starting-with-google-now/",
+            "guid": "AAAA_58gYBoggPgDGrjGk9X88GO3GPZYdxHYIJLO6WHe9OT9LIvlHU8J3O-RwtmCUEIURC25wvLr_zKemQx_a7vAzw",
+            "pubDate": "Wed, 13 Aug 2014 19:21:46 GMT",
+            "description": "You can ask Siri, Google Now and Cortana about movies, weather and sports, but you can't yet ask them about your company's budget for the fiscal year, or your..",
+            "enclosure": {
+                "-url": "http://tctechcrunch2011.files.wordpress.com/2014/06/googlenow1.png?w=680"
+            }
+        },
+        {
+            "title": "Beacon Transmitter Service Ifinity Valued At $12M After Seed Round | TechCrunch",
+            "link": "http://techcrunch.com/2014/08/14/beacon-transmitter-service-ifinity-valued-at-12m-after-seed-round/",
+            "guid": "AAAAKnKIS_UA3tLYZULCF9zFgetCEsfvH_TZ_HbFV-j5UAndcWjB7DWL6VwxQKJM4pi70iJIR4COr-GG_Q0xZEq3LQ",
+            "pubDate": "Fri, 15 Aug 2014 14:22:43 GMT",
+            "description": "Apple's iBeacon tech is still in its early stages, but we're starting to see more people show interest in the idea of connecting their smartphones with..",
+            "enclosure": {
+                "-url": "http://tctechcrunch2011.files.wordpress.com/2014/08/beacon_virgo.png?w=680"
+            }
+        },
+        {
+            "title": "Find Out How Visitors Use Your Website With Hotjar Insights",
+            "link": "http://designshack.net/articles/software/find-out-how-visitors-use-your-website-with-hotjar-insights/",
+            "guid": "AAAAh6YxsGvOsIjxF8ZkJ0ZTZUjasxBBprshSbcMOKv-rLf7a8Ph1ncjtG2t4qg1YC7COeyM_MEu6ycS2G5iyyeUKg",
+            "pubDate": "Mon, 18 Aug 2014 12:52:30 GMT",
+            "comment": "Anyone have experience with hotjar? some unique page insights they claim to offer",
+            "description": "Having a website in today's market is not enough. You also need see how your visitors are really using your website. This information can help you better plan, create content and design for the ...",
+            "enclosure": {
+                "-url": "http://designshack.net/wp-content/uploads/hotjar1.jpg"
+            }
+        },
+        {
+            "title": "Report: Standing At Work Can Increase Coworkers' Disdain Up To 70%",
+            "link": "http://www.theonion.com/articles/report-standing-at-work-can-increase-coworkers-dis,36702/",
+            "guid": "AAAAJyd1rfadPZmhaUe5uHeh79w-Or4DWkvuxF7tbQ2-z_VXuNxFjYhIE4c5PyUqwyXRakziYYUk7-q2j89eIBV7Rg",
+            "pubDate": "Mon, 18 Aug 2014 13:08:15 GMT",
+            "comment": "Originally found by Loriann.",
+            "description": "GAINESVILLE, FLAccording to a comprehensive 18-month study released Friday, researchers at the University of Florida have determined that standing for the duration of the workday can increase ...",
+            "enclosure": {
+                "-url": "http://o.onionstatic.com/images/27/27042/2x1/1200.jpg?0603"
+            }
+        },
+        {
+            "title": "Embarrassing Social Media Blunders By Famous Brands",
+            "link": "http://www.digitalsherpa.com/blog/embarrassing-social-media-blunders-made-brands-know/",
+            "guid": "AAAAcP4vpLNHEAsRq1VW7QwOOd90nicKT9KhIY7NpAD2DfO6ysRmr7qIPj9UjQyv7W7KRrBNgTvp8gEpwkl6XZdjqQ",
+            "pubDate": "Mon, 18 Aug 2014 13:16:47 GMT",
+            "comment": "Recently emailed by Mark W",
+            "description": "Posted on Monday, July 28th, 2014. We all have our embarrassing moments from time to time, but nothing is worse than when it's broadcasted to the entire social media world.",
+            "enclosure": {
+                "-url": "http://www.digitalsherpa.com/blog/wp-content/uploads/2014/07/RED-CROSS-TWEET.jpg"
+            }
+        },
+        {
+            "title": "Designer's guide to DPI",
+            "link": "http://sebastien-gabriel.com/designers-guide-to-dpi/home",
+            "guid": "AAAAMKcsZBVqkzrvn_gY9s3qbaM_gITGzCF7yv5xTNP3g91weertPJvJdQ4rFHmix5fham2Syq1M3xEL1lH7vLbCAQ",
+            "pubDate": "Mon, 18 Aug 2014 13:23:12 GMT",
+            "comment": "Pixel pushing reference",
+            "description": "DPI or Dots Per Inch is a measure of spatial dot density initially used in print. It's the number of ink drops your printer can put in an inch . A smaller DPI yields a less-detailed image.",
+            "enclosure": {
+                "-url": "http://sebastien-gabriel.com/designers-guide-to-dpi/images/dpi-01.png"
+            }
+        },
+        {
+            "title": "Real Life Analytics",
+            "link": "http://www.reallifeanalytics.com/",
+            "guid": "AAAA98Gt6XUKW1MnoeemLJpY-epIdLIgZ5VHAwbDzQv5q09IgscsGTnWO3QzpZ_MNN93-XoIa1qfsjytk8hRVk-S_Q",
+            "pubDate": "Tue, 19 Aug 2014 19:20:40 GMT",
+            "comment": "Brent and I just had a call with Rob from Real Life Analytics (Name is Subject to Change) and I wanted to share the site and especially the \"teaser\" page http://www.reallifeanalytics.com/dashboard (must use Chrome and have a web cam) with you. This could be a neat concept to bring to events/meetings/booths and a cutting edge way to present a relevant message to the person who is viewing the screen. This technology can be used to establish baseline demographics and can also be a very powerful way to speak directly to a potential customer."
+        },
+        {
+            "title": "Using Git Inside of Sublime Text to Improve Workflow",
+            "link": "http://scotch.io/tutorials/using-git-inside-of-sublime-text-to-improve-workflow",
+            "guid": "AAAAS-qRFDvO57dgrDWgGeXWRXaWlT3c4efrx1NNRCOtFz9GosT5SAm4PFaPMuJU7RLeY_XkVFqwA4o4kBJ73SnmfA",
+            "pubDate": "Wed, 20 Aug 2014 14:57:22 GMT",
+            "comment": "a thought: switch to git, and lets all use the same IDE..",
+            "description": "Improving workflow and increasing productivity is very important to us developers. Every second counts since the time we spend on small tasks adds up. Small tasks like our Git commands are ...",
+            "enclosure": {
+                "-url": "http://scotch.io/wp-content/uploads/2014/08/git-sublime-text-workflow1.jpg"
+            }
+        },
+        {
+            "title": "Free Web & Mobile (iOS, Android) Prototyping and UI Mockup Tool | InVision",
+            "link": "http://www.invisionapp.com/",
+            "guid": "AAAAgoTt5ECPJSskMuPGoh5gbhsPeQWwiUJTW4IJla5KVCeo8xZ67q1MzBKg1tgRM4HvuaxnkEbG0_AEwR4mweVo9Q",
+            "pubDate": "Wed, 20 Aug 2014 17:26:03 GMT",
+            "comment": "Kevin found this awesome sauce! team collaboration to the max",
+            "description": "InVision lets you transform your designs into beautiful, interactive web & mobile (iOS, Android) mockups and prototypes!",
+            "enclosure": {
+                "-url": "http://www.invisionapp.com/assets/img/InVision-Logo.png"
+            }
+        },
+        {
+            "title": "Two Spaces After a Period: Why You Should Never, Ever Do It",
+            "link": "http://www.slate.com/articles/technology/technology/2011/01/space_invaders.html",
+            "guid": "AAAA74shKeRN2rJ3ilAbx-39MdDJ2KZ5bayzsvMOsiXM3qa_R3wS6RZIauHitq0_fpd7VWM4xB2TFwnjv2xkfKDMRg",
+            "pubDate": "Wed, 20 Aug 2014 21:01:40 GMT",
+            "comment": "Are you a two spacer?",
+            "description": "Can I let you in on a secret? Typing two spaces after a period isÂ totally, completely, utterly, and inarguably wrong. And yet people who use two spaces are everywhere, their ugly error crossing ..."
+        },
+        {
+            "title": "VirginAmerica.com's New Look",
+            "link": "http://www.virginamerica.com",
+            "guid": "AAAAIrf32SpJcB3rWMAJTura3QP2oQAE_3H-19vpKMNIc9-wUgyTc2Xj97J7jNnTPqo8oyNQr0qSI8CaaHzjRgVpbw",
+            "pubDate": "Thu, 21 Aug 2014 01:02:34 GMT",
+            "comment": "The experience of booking travel on here is beautiful, brilliant, and inspirational. Give it a spin.",
+            "description": "Check out Virgin America's fly new website at virginamerica.com on your desktop, mobile device, or tablet! #VXnewlook",
+            "enclosure": {
+                "-url": "https://www.virginamerica.com/images/vx-share.jpg"
+            }
+        },
+        {
+            "title": "Sunday Bucket â€“ Once in a Lifetime, Once a Week",
+            "link": "http://sundaybucket.com/book/",
+            "guid": "AAAA9xRk7MdRFQ9ZmHE8UMPDjVMXQDO8Gbh9yJTjCMeiAojcb0btdPihjgExRTwb1cs-EzYVQHE73vAZ_IA4CvsX0Q",
+            "pubDate": "Thu, 21 Aug 2014 16:59:38 GMT",
+            "comment": "Awesome FREE ebook that gets you checking items off the bucket list!",
+            "description": "On a mobile device and can't see the form? Click here.",
+            "enclosure": {
+                "-url": "http://sundaybucket.com/wp-content/uploads/2014/08/bookandbucket-300x251.png"
+            }
+        },
+        {
+            "title": "Estimote Sticker Beacons - Introducing Nearables",
+            "link": "https://www.youtube.com/watch?v=JrRS8qRYXCQ",
+            "guid": "AAAAl_Kf-p74I_NWHZtRBBffevwGOSPIYvNx2Ygr9wn3aEmdRxbbxmlKnlq2L-d9uXOxq5oM_tsqg1fNlzJRvyxjuw",
+            "pubDate": "Fri, 22 Aug 2014 01:09:46 GMT",
+            "description": "Estimote Beacons and Stickers are small wireless sensors that you can attach to any location or object. They broadcast tiny radio signals which your smartpho...",
+            "enclosure": {
+                "-url": "https://i.ytimg.com/vi/JrRS8qRYXCQ/maxresdefault.jpg"
+            }
+        },
+        {
+            "title": "Who We Are - SumAll",
+            "link": "https://sumall.com/about",
+            "guid": "AAAAGYvq8nCqJRRdLBS4ArSc3poNkEs-BiAPcsF0fTxdI-Mk_E6UOAx6IOzYstjoiHoMSudF9ieR2XdWwGRoB4UTGw",
+            "pubDate": "Fri, 22 Aug 2014 12:23:43 GMT",
+            "comment": "Go to the Original site on this one and check out how they do their team/bios. Simple, but something I've never seen before.",
+            "description": "SumAll is a company focused on delivering you the best social media analytics dashboard and monitoring tools. Learn more about us and give us a try today.",
+            "enclosure": {
+                "-url": "https://s3.amazonaws.com/sumall-wordpress/prod/wp-content/uploads/2014/07/about-hero-two.jpg"
+            }
+        },
+        {
+            "title": "go-martini/martini",
+            "link": "https://github.com/go-martini/martini",
+            "guid": "AAAAQq-KeoRN7tH2S5lX2XfgEb5SKJpGMFfueE2rHIxs0NJ3THqrqk-vkhqcfF9pBLlKbjY5BbtEPZ0tgPpU4n7nrg",
+            "pubDate": "Fri, 22 Aug 2014 15:16:57 GMT",
+            "comment": "a reminder to pay attention to go: has anyone played with some frameworks?",
+            "description": "martini - Classy web framework for Go"
+        },
+        {
+            "title": "Top 10 CodePens of the Week #2",
+            "link": "http://scotch.io/bar-talk/top-10-codepens-of-the-week-2",
+            "guid": "AAAAoQLmcFoudQ5q67pmYK9VXnP6FIidYh8HnkbUtHpjykLbuGHAHMl9n6SfgVOqpzkVFfDsh-2HZ1bmrttNI9I1UA",
+            "pubDate": "Fri, 22 Aug 2014 16:02:12 GMT",
+            "comment": "required reading for front-end and designers.",
+            "description": "Here's our list of top 10 Codepens of the week. We missed last weeks, so you might see some from 2 weeks ago on here. We're showcasing the coolest and best things creative people have created.",
+            "enclosure": {
+                "-url": "http://scotch.io/wp-content/uploads/2014/08/codepen2.jpg"
+            }
+        },
+        {
+            "title": "When the Matrix meets sports broadcasting",
+            "link": "https://www.youtube.com/watch?v=iz9l7IlLtrQ&list=UU5fniymL41G6OiRRaQM9izg",
+            "guid": "AAAAhPXH8xK-gLO25JP52rg6RuPmGR9gP3uBC4jVRgkmfCXexr5qjOOqvam_6s_SQ0a8srYZ-bFNgEgKckSJuc56cg",
+            "pubDate": "Sun, 24 Aug 2014 17:27:38 GMT",
+            "comment": "video",
+            "description": " ",
+            "enclosure": {
+                "-url": "https://i.ytimg.com/vi/iz9l7IlLtrQ/hqdefault.jpg"
+            }
+        },
+        {
+            "title": "Transition Design as Postindustrial Interaction Design?",
+            "link": "https://medium.com/@camerontw/transition-design-as-postindustrial-interaction-design-6c8668055e8d",
+            "guid": "AAAAcKfESEMbdKgwiF2LWy8yFGIvjYwVVXX76kvWKj5DRA85p7ri6FX9vnpvZ12nCLVsuzJUgSzzGAjU8QhjQZAviQ",
+            "pubDate": "Sun, 24 Aug 2014 23:13:47 GMT",
+            "description": "Transition Design is a name for designing in conditions of constant transition, creating the interactions that can guideâ€¦",
+            "enclosure": {
+                "-url": "https://d262ilb51hltx0.cloudfront.net/max/800/1*t0wtSYcyyX-KKRxpxnRNcQ.png"
+            }
+        },
+        {
+            "title": "These High School Students Just Created a Search Engine That May Take Out Google",
+            "link": "http://getprismatic.com/story/1408045288344",
+            "guid": "AAAAXPcgsTWWc0Xw5qkrNUuTlv5ReIV838P1Ytt9UjqteWxkbbEh9YT-C0SZSnRKsiF_40PvfM_AzngFddSU-QRGCg",
+            "pubDate": "Sun, 24 Aug 2014 23:15:58 GMT",
+            "description": "These three kids combined could become the next Mark Zuckerbergâ€¦ and they're still in high school. Last month, New York TechDay brought together 400 exhibitors and 10,000 attendees for a day ...",
+            "enclosure": {
+                "-url": "http://capitalismisfreedom.com/wp-content/uploads/2014/08/high-school-search-engine.jpg"
+            }
+        },
+        {
+            "title": "There's Finally A Modern Typeface For Programmers",
+            "link": "http://www.fastcodesign.com/3033983/theres-finally-a-modern-typeface-for-programmers",
+            "guid": "AAAAgA935Y0OE2NlHK67m8ynJ5NxKkI5XruC2ltT7OfOeMzF7groi_95EstLovQcAhyhrqiBU2AgBX_FRa6EbsYt3g",
+            "pubDate": "Sun, 24 Aug 2014 23:17:17 GMT",
+            "description": "Input is a \"matter-of-fact\" font optimized for coders, not writers.",
+            "enclosure": {
+                "-url": "http://c.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/08/3033983-poster-p-type-computer.jpg"
+            }
+        },
+        {
+            "title": "There's Finally A Modern Typeface For Programmers",
+            "link": "http://www.fastcodesign.com/3033983/theres-finally-a-modern-typeface-for-programmers",
+            "guid": "AAAAH150hkhB5ARNWUoc5Gv1--ZbzOARxnJY9pJ8O4HNgJDFYCAfZw00_hnznoL1L5Bjmq6znjDbSxinfaiOvnNUEQ",
+            "pubDate": "Sun, 24 Aug 2014 23:18:35 GMT",
+            "description": "Input is a \"matter-of-fact\" font optimized for coders, not writers.",
+            "enclosure": {
+                "-url": "http://c.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2014/08/3033983-poster-p-type-computer.jpg"
+            }
+        },
+        {
+            "title": "Even If You Hate Greenpeace and Love Lego, You Have to Admire This Gorgeous Attack Ad",
+            "link": "http://www.adweek.com/adfreak/even-if-you-hate-greenpeace-and-love-lego-you-have-admire-gorgeous-attack-ad-158809",
+            "guid": "AAAAYlW_4krXYUNCsH51RIl69UhoKLjPjjaKQQyRhCpE76S0TVV9I23qs-_41tqqs8AUtNvve4TX6i22VW7ATqMjVA",
+            "pubDate": "Thu, 10 Jul 2014 13:49:44 GMT",
+            "comment": "It's easy to attack  Shell...but not Lego. Well played by the agency Don't Panick...very emotional ad.",
+            "description": "Greenpeace takes a page from Chipotle's marketing playbookhaunting animation plus a distressing cover of a well-known songin its continuing assault on Lego for partnering with Shell on a set of ...",
+            "enclosure": {
+                "-url": "http://www.adweek.com/files/blogs/greenpeace-lego-ad-hed-2014.png"
+            }
+        },
+        {
+            "title": "Qwilr - Paid Advertising Calculator",
+            "link": "http://ad-spend-calculator.qwilr.com/",
+            "guid": "AAAAteRd73xpXlvNhSu-FU8OkL_okzvdNDGQ0913ZDXG_mnDTSbjQNzBMxQQSS5Rpjq1UlDx4V4hjH8O9aoMEtnmYw",
+            "pubDate": "Sun, 24 Aug 2014 23:36:16 GMT",
+            "comment": "\"Should my startup pay to advertise?\""
+        },
+        {
+            "title": "Quartz has a new lookâ€”and for the first time, a homepage",
+            "link": "http://qz.com/246831/quartz-has-a-new-look-and-for-the-first-time-a-homepage/",
+            "guid": "AAAAzDMw-2D2MoWX9YZk43lGAPb9x9aVyVurEXwZQjN53lj2coO9kRrZZjZ_FeGXWDKYhDvOKD399x6zRPw5xp7TlQ",
+            "pubDate": "Mon, 25 Aug 2014 13:06:06 GMT",
+            "description": "We just shipped version 3.0 of Quartz, which you are looking at right now. It's our second major redesign in as many years, a rapid pace of reinvention that makes good on our promise to ...",
+            "enclosure": {
+                "-url": "http://img.qz.com/2014/08/1-quartz_the_brief.jpg?w=640"
+            }
+        },
+        {
+            "title": "Marketing Email Year-Over-Year Benchmarks and Trends",
+            "link": "http://www.marketingprofs.com/charts/2014/25862/marketing-email-yoy-benchmarks-and-trends",
+            "guid": "AAAAhv8BpJy53bZ7BEhRGXk10gbTwkN7-X-N9omfoh-sYzxswCm9Ne02r44DXTHq-11vjUWmS7QPF80DeozKLK9wTA",
+            "pubDate": "Mon, 25 Aug 2014 14:22:28 GMT",
+            "comment": "Email volume has increased - subscriber engagement is still strong, but getting that click is becoming more and more difficult.",
+            "description": "Email Marketing - Consumers are now getting more marketing emails than a year ago, and a higher percentage of those emails remain unopened; however, the subscribers who are engaged are opening ...",
+            "enclosure": {
+                "-url": "http://i.marketingprofs.com/assets/images/daily-data-point/250814-ddp-lg.jpg"
+            }
+        },
+        {
+            "title": "Business Cards: Now Loaded With Suspense!",
+            "link": "http://www.cmo.com/articles/2014/8/22/business_cards_now_l.html",
+            "guid": "AAAAckoqyw-16JVgCaxHGrdXm5TKXvZWpc2nTlV5PG3QLXZ8I0l2b-OHaWqd-0pryGFPQDu0eVupNkMdiwwfOyxdeQ",
+            "pubDate": "Mon, 25 Aug 2014 15:23:23 GMT",
+            "comment": "Not just a business card...a portal to a marketing platform. Cool.",
+            "description": "Either turn your resume into a business plan that's all about what a CEO needs to make the company more successfuland how you're going to helpor throw your resume in the trash."
+        },
+        {
+            "title": "Heck House",
+            "link": "http://heckhouse.com/",
+            "guid": "AAAA3lQJlNZpDh6VaxkoTsIvOyVj2WOzpoemPEahP4EyImFJLcuAufMSMBjM6ZUdeHJC5kKIpAoGJ3sKzPxK2aEVMg",
+            "pubDate": "Tue, 26 Aug 2014 12:51:48 GMT",
+            "comment": "another beautiful site. a designer was here...",
+            "description": "This is the portfolio of Bethany Heck, a designer working in Austin at the Mobile Innovation Lab. Thank you for visiting!",
+            "enclosure": {
+                "-url": "http://heckhouse.com/content/uploads/2014/08/halfliner1.jpg"
+            }
+        },
+        {
+            "title": "With Money Tight, HubSpot Looks To Tap Public Markets | TechCrunch",
+            "link": "http://techcrunch.com/2014/08/25/with-money-tight-hubspot-looks-to-tap-public-markets/",
+            "guid": "AAAA6pfuymaTWMnBiWY4JnhH3gTeUjp9AKU05-G_A0wfI5A14QYCEJoX3H110q0RsOxg0hibVbfFaao1_kvaJW5ivQ",
+            "pubDate": "Tue, 26 Aug 2014 13:50:54 GMT",
+            "description": "With $7.3 million in cash on hand, and losses of $17.77 million in the first half of 2014, HubSpot has filed to go public. HubSpot's slim cash load and..",
+            "enclosure": {
+                "-url": "http://tctechcrunch2011.files.wordpress.com/2014/05/screen-shot-2014-05-19-at-12-24-05-pm.png?w=680"
+            }
+        },
+        {
+            "title": "Home  Marketers First Virtual Event, 9.10.2014 | Marketo",
+            "link": "http://virtual.marketo.com/marketers-first/",
+            "guid": "AAAAVd63HuXVndq7MccDVZmVznXk995FLdYp7LAiDfOhStzNKL_3Znw0-SN1xtDPNa1wH3P5yXvayAm6FuK0kknyaw",
+            "pubDate": "Tue, 26 Aug 2014 17:19:11 GMT",
+            "comment": "Virtual Event for Marketers - It's Free!"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<div class="memberTile large-3 columns {{teams|lower}} fn-{{ teammember.first_name|lower }} ln-{{ teammember.last_name|lower }}" style="background-image: url({{ teammember.headshot|imageCrop(300)|default('image.jpg')}};)">
+  <div class="memberWrapper">
+    <div class="teamMember">
+      <div class="nameDept">
+        <span>{{ teammember.first_name }}</span> / {{ teammember.primary_team.title }}
+      </div>
+      <div class="bio">
+        <img class="closeButton" src="/static/images/close-button.png" alt="Close Buttons">
+        <p class="name">{{ teammember.first_name }} {{ teammember.last_name }}</p>
+        <p class="title">{{ teammember.job_title }} </p>
+        <p class="info">
+            {% if teammember.quote %}
+                <p>{{ teammember.quote }}</p>
+            {% endif %}
+          <ul class="social">
+              {% if teammember.linkedin_profile_name %}
+             <li class="linkedin">
+                  <a href="{{ teammember.linkedin_profile_name }}" target="_blank" title="Linked In">Linked In</a>
+              </li>
+              {% endif %}
+              {% if teammember.twitter_name %}
+              <li class="twitter">
+                  <a href="http://twitter.com/{{ teammember.twitter_name }}" target="_blank" title="Twitter">Twitter
+                  </a>
+              </li>
+              {% endif %}
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="teamBorder"></div>
+</div>

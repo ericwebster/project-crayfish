@@ -1,0 +1,49 @@
+/*
+    about.css
+ */
+
+.about .feature .panel .large-12 {
+    margin-left:150px;
+}
+.about p.intro, .about p.second_intro {
+    margin: 60px 0 44px 0;
+    color: #444444;
+    font-size: 34px;
+    line-height: 1.357;
+    padding: 0 80px;
+    text-align: center;
+    font-family:'Serifa W01 45 Light',georgia,serif;
+}
+
+.about p.intro {
+    margin-bottom: 20px;
+}
+
+.about p.second_intro {
+    margin: 80px 0 20px 0;
+    font-size: 34px;
+}
+.aboutDetails p {
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    padding-left:55px;
+}
+.aboutDetails .results p {
+    background: url("../images/lightbulb-ongray_icon.gif") no-repeat top left;
+}
+.aboutDetails .creative p {
+    background: url("../images/BoltIcon-ongray-icon.gif") no-repeat top left;
+}
+.aboutDetails .tinker p {
+    background: url("../images/Head-ongray-icon.gif") no-repeat top left;
+}
+
+body.about .feature-title h1 {
+    max-width: 425px;
+}
+
+.about .featured-desc p {
+    font-size:34px;
+    line-height: 1.176;
+    color:#444444;
+    margin:0;
+}

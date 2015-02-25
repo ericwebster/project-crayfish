@@ -1,0 +1,140 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+  {% set site_title = getSetting('site_name')%}
+  {% set ogURL = "http://cramer.com" + getCurrentUrl() %}
+  {% set site_description = getSetting('site_description')%}
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{% block title %}{{ site_title|default('Cramer') }}{% endblock %}</title>
+
+    {% block meta %}
+    <meta name="description" content="{{ metadescription }}">
+    <meta name="keywords" content="{{ metakeywords }}">
+    <meta property="og:updated_time" content="{{ ogUpdatedTime }}" />
+    <meta property="og:title" content="{{ ogtitle|default('Cramer | a marketing studio') }}" />
+    <meta property="og:description" content="{{ ogdescription }}" />
+    <meta property="og:image" content="{{ ogimage }}" />
+    {% endblock %}
+
+    <link rel="canonical" href="{{ ogURL }}" />
+    <link rel="shortlink" href="{{ ogURL }}" />
+    <meta property="og:url" content="{{ ogURL }}" />
+    <link rel="alternate" type="application/rss+xml" title="Cramer RSS" href="http://cramer.com/rss.xml" />
+
+    <meta name="robots" content="NOODP,NOYDIR" />
+    <meta name="twitter:site" content="@WeAreCramer" />
+    <meta name="twitter:site:id" content="15032069" />
+
+    <script src="/static/js/vendor/modernizr.js"></script>
+    <script src="/static/js/vendor/modernizr-test.js"></script>
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/53991ada-2157-4adb-8acf-308aad9a0f52.js"></script>
+    <script>
+      dataLayer = []; // used for Google Tag Manager
+    </script>
+
+    <link href="/static/images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/static/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="/static/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="/static/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- build:css /static/css/main-min.css -->
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <!-- build:css /static/css/main-min.css -->
+
+    {% for customStylesheet in customStylesheets %}
+      <link rel="stylesheet" href="{{customStylesheet}}" />
+	{% endfor%}
+
+   	{% block head_extra %}{% endblock %}
+  </head>
+  <body class="{{ pageName|default('') }}">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T5VGJT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5VGJT');</script>
+    <!-- End Google Tag Manager -->
+
+  {% block body %}
+
+    {% include "templates/partials/header.html" %}
+
+  	{# By default, your inner pages will load into this block. #}
+
+    {% block content %}{% endblock %}
+
+    {% include "templates/partials/footer.html" %}
+
+    <noscript>
+      <section id="noscript" class="warning visible">
+        <p><strong>Some features on this site require JavaScript.</strong> Please turn JavaScript on and reload this site. <a href="http://www.enable-javascript.com" target="_blank">See how to enable JavaScript</a>.</p>
+      </section>
+    </noscript>
+
+    <section id="unsupported-browser" class="warning">
+      <p>
+        <strong>Unsupported browser:</strong> Your browser does not meet modern web standards. <a href="http://html5test.com/" target="_blank">See how it scores &raquo;</a>
+      </p>
+    </section>
+
+    <!--[if lt IE 9]>
+    <section id="unsupported-browser" class="warning visible">
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    </section>
+    <![endif]-->
+
+    <footer id="footer">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+              <ul>
+                {% set now = Date() -%}
+                <li>&copy; {{ now|date('Y') }}</li>
+                <li><a href="/terms/">Terms</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+	<!-- build:js /static/js/compiled.js -->
+    <script src="/static/js/vendor/jquery.js"></script>
+    <script src="/static/js/foundation/foundation.js"></script>
+    <script src="/static/js/jquery.tinyscrollbar.js"></script>
+    <script src="/static/js/moment/min/moment.min.js"></script>
+    <script src="/static/js/jquery.validate.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <!-- endbuild -->
+
+    <script src="//src.responsive.io/r.js"></script>
+
+    {% for customScript in customScripts %}
+    <script src='{{customScript}}'></script>
+		{% endfor%}
+
+    <script>
+		$(document).foundation();
+    </script>
+
+    {% block footer_extra %}{% endblock %}
+
+    {% endblock %}
+  </body>
+</html>

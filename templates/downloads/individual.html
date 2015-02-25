@@ -1,0 +1,174 @@
+{% extends "templates/partials/base.html" %}
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% set pageName = "download" %}
+{# This sets our page <title>. It will append this showcases's name to the site title defined in base.html #}
+{% block title %} {{ item.name }} | Downloads | Cramer {% endblock %}
+{% block content %}
+
+
+<div class="contents">
+
+<div class="download-wrapper">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <h5>{{ item.type }}</h5>
+        <h1 class="hed">{{ item.hed }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel">
+
+      <div class="row">
+        <div id="download-page">
+          <div class="large-6 columns">
+            <!-- purposefully removed / layout not working
+            {% if item.intro_image %}
+              <img src="{{ item.intro_image.url }}" />
+            {% endif %}
+            -->
+
+            <h2>{{ item.intro|safe }}</h2>
+            {{ item.main_body|safe }}
+          </div>
+
+          <div class="large-6 columns">
+            <!--<h3>{{ item.form_cta }}</h3>-->
+
+              <script src="//app-ab08.marketo.com/js/forms2/js/forms2.js"></script>
+              <form id="mktoForm_1012">
+              </form>
+          </div>
+        </div>
+      </div>
+
+
+        <div id="thank-you-page" style="display: none;">
+          <div class="row">
+            <div class="ty-dek large-12 column">
+              {{ item.thank_you_dek|safe }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 column">
+              <a class="download-btn" href="{{item.asset_to_be_downloaded.url }}" target="_blank">{{item.button_text}}</a>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <p class="intro">{{ item.intro_paragraph }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row goBoxes">
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-4 medium-4 columns">
+          <div class="goBox">
+            <a href="/work/" class="work">
+              <div class="triangle-topright"></div>
+              <div class="go-text-wrapper">
+                <h2>Work</h2>
+                <p>See What We Do</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="large-4 medium-4 columns">
+          <div class="goBox">
+            <a href="/team/" class="team">
+              <div class="triangle-topright"></div>
+              <div class="go-text-wrapper">
+                <h2>Team</h2>
+                <p>Meet Our People</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="large-4 medium-4 columns">
+          <div class="goBox">
+            <a href="/contact/" class="contact">
+              <div class="triangle-topright"></div>
+              <div class="go-text-wrapper">
+                <h2>Contact</h2>
+                <p>Get in touch</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /contents -->
+
+
+{% endblock %}
+
+{% block footer_extra %}
+
+<script>
+
+
+
+function downloadSubmit(isSuccess) {
+  if ( isSuccess ) {
+  // success
+    $(".download .contents .hed").html("{{item.thank_you_hed}}");
+    $("#download-page").hide();
+    $("#thank-you-page").show();
+
+    // download tracking
+    cramer.gtm.ga.trackPageview('{{ getCurrentUrl() }}thankyou/', 'Thank You | {{ item.name|escape('js') }} | Downloads | Cramer');
+
+    {% if item.tracking_scripts %}
+      $('<iframe>', {
+         id:  'successiFrame',
+         frameborder: 0,
+         scrolling: 'no'
+         }).appendTo('body');
+      $("#successiFrame").contents().find("body").append('{{ item.tracking_scripts|safe|escape('js') }}');
+    {% endif %}
+
+    // open doc
+    window.open ("{{ item.asset_to_be_downloaded.url }}","{{ item.asset_to_be_downloaded.url }}");
+    window.scrollTo(0, 0);
+
+  } else {
+  // failed
+    $(".download .contents .hed").html("{{item.thank_you_hed}} - error");
+    $('#download-page').hide();
+    $("#thank-you-page").show();
+  }
+} // downloadSubmitSuccess
+
+
+</script>
+<script>MktoForms2.loadForm("//app-ab08.marketo.com", "144-RPY-247", 1012, function(form){
+    //Add an onSuccess handler
+  form.onSuccess(function(values, followUpUrl){
+    downloadSubmit(true);
+    return false;
+  });
+  
+  });
+</script>
+{% endblock %}

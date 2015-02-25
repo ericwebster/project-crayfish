@@ -1,0 +1,55 @@
+{# ------------------------------------------------------- #}
+
+{# 404 PAGE #}
+
+{# This is the 404 page that will display on the live site for users. #}
+{# It does not appear when you run your site locally. #}
+
+{# ------------------------------------------------------- #}
+
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{% set pageName = '404' %}
+
+{% block content %}
+
+	<div id="stage" class="row feature" style="background-image: url(/static/images/404-sophie.jpg);">
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-6 medium-8 columns end">
+          <div class="feature-title" style="color: #fff">
+	          <h1>We could not find the page you are looking for.</h1>
+	        </div>
+	        <div class="featured-desc">
+	          <p style="color: #fff">Neither could Sophie.</p>
+	        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <p class="intro">Would you like one of these pages instead?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns" id="nav-404">
+          <p><a href="/">Home</a>/<a href="/about/">About</a>/<a href="/team/">Team</a>/<a href="/focus/">Focus</a>/<a href="/work/">Work</a>/<a href="/careers/">Careers</a>/<a href="/contact/">Contact</a></p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+{% endblock %}
+
+

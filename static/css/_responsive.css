@@ -1,0 +1,605 @@
+
+/* Small screens */
+@media only screen {
+    body.home .video-container .body-home .slate {
+        max-width: 80%;
+    }
+
+    .video-container .content h1{
+        font-size: 30px;
+    }
+
+    div.feature-title {
+        font-size: 30px;
+    }
+    .logo-grid .large-2.columns {
+        width: 16%;
+        float: left;
+    }
+
+
+}
+
+/* Medium screens */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+
+    div.feature-title {
+        font-size: 40px;
+    }
+
+   .row.showcase-grid {
+        width: 326px;
+        margin: 0 auto;
+    }
+    .logo-grid .large-2.columns {
+        width: 16%;
+        float: left;
+    }
+
+}
+
+/* Large screens */
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+
+    body.home .video-container .body-home .slate {
+        max-width: 940px;
+    }
+
+    body.home .video-container .content h1{
+        font-size: 44px;
+    }
+
+    #menu .menu-content h2{
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    div.feature-title {
+        font-size: 47px;
+    }
+
+     .row.showcase-grid {
+        width: 100%;
+        margin: 0 auto;
+    }
+       .large-4.columns.we-deliver {
+        top: 0;
+    }
+}
+
+
+
+/* XLarge screens */
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) {
+    body{
+
+    }
+}
+
+
+/* XXLarge screens */
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {
+    body{
+
+    }
+}
+
+
+@media only screen and (max-width: 1348px) {
+    .row.showcase-grid {
+        width: 977px!important;
+        margin: 0 auto;
+    }
+    .teamWrapper .panel{
+         width: 1003px!important;
+         margin: 0 auto;
+    }
+
+    .focus-detail .page .next-content .large-7 {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1216px) {
+   .focus-head-info .large-6.columns {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .focus-detail .form-submit {
+        width:33%;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .focus-head-info .large-6 {
+        width:50%;
+    }
+    .focus-detail .page .next-content .next-content {
+        display: none;
+    }
+
+    .focus-detail .large-4.columns.we-deliver {
+        padding-left: 15px;
+    }
+
+    .logo-grid .large-2.columns, .logo-row .large-2.columns {
+        width: 33%;
+        float: left;
+    }
+
+    #header nav ul {
+        margin:0;
+        padding-top:20px;
+    }
+    #header nav ul li{
+        padding-left:0;
+    }
+    .focus-detail .page input#mce-EMAIL {
+        float: none;
+        width: 50%;
+        margin-top: 7px;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .focus-detail .form-submit {
+        text-align: center;
+    }
+    .focus-detail .page button#mc-embedded-subscribe {
+        padding: 4px 9px;
+        float: none;
+        background: #fc7706;
+        position: relative;
+        top: 15px;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+        left: inherit;
+    }
+    .we-deliver ul {
+        padding-left: 20px;
+        text-align: center;
+        list-style-type: none;
+    }
+    .we-deliver.bulleted-list {
+        width:100%;
+        margin:0 auto;
+    }
+    .bulleted-list ul{
+        text-align: left;
+        list-style-type: disc;
+    }
+    .bulleted-list ul li{
+        width:48%;
+    }
+
+    body.inside-the-studio .inside-body p,
+    body.work .work-body,
+    body.focus-main .focus-body {
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1014px) {
+    .row.showcase-grid {
+        width: 653px!important;
+        margin: 0 auto;
+    }
+    .teamWrapper .panel{
+        width: 749px!important;
+    }
+    .large-4.columns.we-deliver {
+        top: 0;
+    }
+    .goBox a h2 {
+        font-size: 40px;
+    }
+    .focus-main .display-header h3, .focus-detail .panel h3 {
+         padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .focus-detail .form-submit {
+        width:100%;
+        margin-top: 50px;
+    }
+    .focus-head-info .large-6.columns {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .focus-detail .page h1 {
+        text-align: center;
+    }
+    .bulleted-list h5 {
+        width:60%;
+        margin:0 auto;
+        margin-bottom:20px;
+    }
+    .bulleted-list ul {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .focus-whitepaper {
+        float: none;
+        width: 50%;
+        margin:0 auto 0 auto;
+    }
+    .focus-whitepaper .large-10.columns {
+        width: 90%;
+        margin-top:50px;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .bulleted-list ul {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .bulleted-list h5 {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    p.intro img {
+        display:none;
+    }
+    .goBox a h2 {
+        font-size: 30px;
+    }
+   .logo-grid .large-2.columns, .logo-row .large-2.columns {
+        width: 50%;
+        float: left;
+    }
+
+    div#download-page {
+        padding: 15px;
+    }
+
+    .download .contents .large-6 {
+        width: 89%;
+        padding: 15px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .download .contents .large-12 .large-6 {
+        width: 100%;
+        padding-right: 0;
+    }
+    .download .large-12 .mc-field-group {
+        width: 100%;
+    }
+    .download .large-12.column.checkbox {
+        width: 79%;
+        text-align: center;
+        float: none;
+    }
+    .download .large-12.submit.column {
+        width: auto;
+        margin: 22px auto;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .teamWrapper .memberTile {
+        margin: 20px auto;
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .row.showcase-grid {
+        width: 100%!important;
+        margin: 0 auto;
+    }
+    .teamWrapper .panel{
+         width: 100%!important;
+    }
+
+    .logo-grid .large-2.columns {
+        width: 50%;
+        float: left;
+    }
+    .portfolio-case {
+        margin: 15px auto;
+        float: none!important;
+    }
+    .portfolio-grid .large-12 {
+        padding:0;
+    }
+    .mktoForm div, .mktoForm span, .mktoForm label, .mktoForm p {
+        float: left;
+    }
+    body.contact .mktoFormCol {
+        width: 100%!important;
+    }
+    body.contact .mktoFormRow {
+        display: block!important;
+    }
+    body.contact .mktoForm #contactUsQuestion {
+        width: 100%!important;
+        margin-top: 5px!important;
+    }
+    body.contact .mktoForm input.mktoField, body.contact .mktoForm select.mktoField {
+        margin-bottom:10px!important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .bulleted-list ul {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bulleted-list ul li {
+        text-align: center;
+        list-style: none;
+        width:100%;
+    }
+    .focus-detail .logo-row .large-2.columns {
+        width: 50%;
+    }
+    .bulleted-list h5 {
+        width: 100%;
+    }
+    .focus-whitepaper {
+        width: 80%;
+        padding-left:0;
+    }
+    .focus-whitepaper h2{
+        text-align: left;
+    }
+    .focus-whitepaper .large-10.columns {
+        width: 100%;
+    }
+    .goBox {
+        margin-bottom:20px;
+    }
+    .goBox a h2 {
+        font-size: 40px;
+    }
+     #stage .panel {
+        margin-top: 130px!important;
+     }
+     #stage {
+        min-height:1px!important;
+        height:auto!important;
+        bottom:auto;
+        padding-bottom: 50px;
+     }
+     .page {
+        position: static;
+        margin-top:0!important;
+     }
+     .feature {
+        position: static;
+     }
+     .downbounce {
+        display:none!important;
+     }
+     .about p.second_intro {
+        margin: 30px 0 20px 0;
+    }
+    .about p.intro, .about p.second_intro {
+        margin: 45px 0 44px 0;
+    }
+    .cta-case, .portfolio-case {
+        margin: 15px auto;
+        float: none!important;
+    }
+     body.about .feature-title h1 {
+         width: auto;
+    }
+    .feature-title h1, .feature-title h2 {
+        font-size: 32px;
+    }
+     .aboutDetails p {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 50px;
+     }
+    .focus-detail .aboutDetails p, .focus-main .aboutDetails p {
+        text-align: left;
+     }
+     .aboutDetails .results p, .aboutDetails .creative p, .aboutDetails .tinker p {
+        overflow: visible;
+        background-position: top 0px center;
+    }
+    .aboutImages .large-4 {
+        margin-bottom:20px;
+    }
+    .aboutImages h2 a {
+        min-height: 240px;
+    }
+    .about p.intro, .about p.second_intro {
+        font-size: 36px;
+        padding: 0 10px;
+    }
+    .contact-form .large-6 {
+        padding-left: 0.9375em;
+        padding-right: 0.9375em;
+    }
+    .contact .large-6 .large-6 {
+        padding: 0;
+    }
+    .contact .large-6 .last-name {
+        padding-right: 0;
+    }
+    .google-map {
+        display:none;
+    }
+    .focus-main #stage {
+        position: relative;
+    }
+    .focus-detail .focus-main .feature-title h1 {
+        width: 100%;
+        font-size: 32px;
+    }
+    .cta-globals p.cta-intro, .cta-globals p.lead-intro {
+        margin: 40px auto 30px auto;
+    }
+    .cta-globals p.cta-intro img, .cta-globals p.lead-intro img {
+        display:none;
+    }
+    .focus-detail .aboutDetails ul {
+        padding-left: 20px;
+    }
+    .focus-detail .aboutDetails h2 {
+        padding: 40px 0 0 0;
+    }
+    .focus-detail .row.aboutDetails .heart h2, .focus-detail .row.aboutDetails .gear h2 {
+        background-position: top 0 center;
+        text-align: center;
+    }
+    .focus-detail .aboutDetails p {
+        padding-top: 20px;
+    }
+    .careers-detail-cta .apply a, .careers-detail-cta .apply p {
+        float: left;
+        margin-top:15px;
+    }
+    .careers-detail-cta .cta {
+        margin-left: 15px;
+    }
+    .careers-wrapper .large-3 {
+         padding-left: 0px;
+    }
+     .cta-globals .cta a {
+        max-width: 80%;
+        display: block;
+         margin: 0 auto;
+    }
+    body.about .feature-title h1 {
+        text-align: center;
+        width: 100%;
+    }
+      h1 img, h2 img, h3 img, h4 img, h5 img {
+        display: none;
+    }
+    h1, h2, h3, h4, h5{
+        text-align: center;
+    }
+    .featured-desc{
+        text-align: center;
+    }
+    .about p.intro, .about p.second_intro {
+        font-size: 26px;
+        padding: 0 10px;
+    }
+    .logo-grid .large-2.columns {
+		width: 50%;
+		float: left;
+	}
+	.work .display-header h3 {
+		text-align: center;
+		font-size: 32px;
+		width: 100%;
+		line-height: 1;
+		font-family: 'Serifa W01 45 Light',georgia,serif;
+		font-weight: normal;
+		margin: 70px 0 20px 0;
+	}
+}
+@media only screen and (max-width: 480px) {
+    .mktoForm div {
+         float: none; 
+    }
+    body.contact .mktoForm input.mktoField {
+        min-height:48px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .goBox {
+        margin-bottom:0px;
+    }
+    body.focus-main .focus-body {
+        max-width:90%;
+    }
+    .bulleted-list ul, .focus-whitepaper {
+        width: 100%;
+    }
+    .row.showcase-grid {
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .goBox a {
+        min-height: 250px;
+    }
+    .portfolio-case {
+        margin: 15px auto;
+        float: none!important;
+        width:90%;
+    }
+    .aboutImages .large-4 {
+        margin-bottom:0px;
+    }
+    h1 img, h2 img, h3 img, h4 img, h5 img {
+        display: none;
+    }
+    h1, h2, h3, h4, h5{
+        text-align: center;
+    }
+    .featured-desc{
+        text-align: center;
+    }
+   .row.showcase-grid {
+        width: 100%!important;
+        margin: 0 auto;
+    }
+
+    .about p.intro, .about p.second_intro {
+        font-size: 26px;
+        padding: 0 10px;
+    }
+
+    .row h3 {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .cta-globals .cta a {
+        min-width: 100%;
+        display: block;
+    }
+    .cta-globals .cta{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .focus-detail .cta-globals .cta{
+        margin: 0 auto;
+        width: 74%;
+    }
+    div#homepage_background_video_grid_main {
+        width: 100%!important;
+        height: auto!important;
+    }
+    #homepage_background_video_grid_wrapper {
+        width: 100%!important;
+        height: auto!important;
+    }
+    #homepage_background_video, #homepage_background_video * {
+		display: none;
+	}
+    .video-container {
+        height: 279px!important;
+    }
+    .video-container .content{
+        /*background: transparent;*/
+    }
+    .video-container .large-8.large-centered.columns {
+        /*color: #000!important;*/
+        top: 60px;
+    }
+    .video-container .content .cta a {
+       /*color: #000!important;*/
+    }
+}

@@ -1,0 +1,47 @@
+/***************************************************************************************************************************
+	BODY SET UP
+ ***************************************************************************************************************************/
+	html {min-height:100%;margin-bottom:1px;}
+	body,th,td,tbody,p {font:14px Verdana, Arial;color:#444444; }
+	body {background:#999999;} 
+
+/***************************************************************************************************************************
+	DEFAULT LIBRARY 
+ ***************************************************************************************************************************/
+	p {font-size:14px;line-height:160%;color:#666666;}
+	a {color:#162732;font-weight:normal;text-decoration:underline;}
+	a:link, a:visited, a:active {color:#333333;text-decoration:none;}
+	a:hover {color:#111;text-decoration:underline;}
+	ul {list-style-type:disc;}
+	li {}
+	em {font-style:italic;}
+	strong {font-weight:bold;}
+	
+	h1,h2,h3,h4,h5,h6{font-family:Arial, Verdana;}
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	
+	
+/***************************************************************************************************************************
+	PAGE STYLES
+ ***************************************************************************************************************************/
+
+/* container_parent */
+	#container_parent	{position:relative;margin-left:100px;width:800px;height:100%;text-align:left;padding-top:100px;}
+	#container_parent h1 {color:#444444;font-weight:bold;font-size:40px;}
+	
+	#linkInputBox {border:1px solid #888888;padding:10px;width:550px;font-size:20px;background:#cccccc;color:#555555;height:23px;}
+	#formblock a {border:1px solid #888888;padding:9px;font-size:20px;background:#bbbbbb;color:#666666;}
+	#formblock a:hover {background-color:#dddddd;text-decoration:none;}
+
+	#shortlink {font-size:30px;margin:20px 10px;line-height:120%;}
+	
+	#copyButton	{margin:20px 10px;}
+	#copyButton a {color:#444;}
+	
+	.errorBoxShow {color: red;}
+	
+	#copyButton {position:absolute;left:1px;top:300px;}

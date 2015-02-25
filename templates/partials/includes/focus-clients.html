@@ -1,0 +1,22 @@
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <h3>{{ item.headline_above_client_logos }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns logo-row">
+      <div class="panel">
+        {% set clientsMax = 6 %}
+        {% set clientsShown = 0 %}
+        {% for client in item.clients %}
+          {% if clientsShown < clientsMax %}
+            <div class="large-2 columns"><img src="{{client.logo.url}}" alt="{{ client.client_name }} Logo"></div>
+            {% set clientsShown = clientsShown + 1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>

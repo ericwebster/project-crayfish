@@ -1,0 +1,4632 @@
+{
+  "contentType": {
+    "about": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "About",
+      "oneOff": true,
+      "oneOffMD5": "e2a32b27ea20c86bf99b94fc573064ab"
+    },
+    "careers": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Hed",
+          "locked": false,
+          "name": "hed",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Dek",
+          "locked": false,
+          "name": "dek",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "1600 x 900 pixels",
+          "hidden": false,
+          "label": "Stage Image",
+          "locked": false,
+          "name": "stage_image",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Intro Paragraph",
+          "locked": false,
+          "name": "intro_paragraph",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "wysiwyg",
+          "hidden": false,
+          "label": "Sidebar",
+          "locked": false,
+          "meta": {
+            "image": true,
+            "link": true,
+            "quote": true,
+            "table": true,
+            "video": true
+          },
+          "name": "sidebar",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "instruction",
+          "help": "Each job description page will have an \"apply now\" button, below you can edit that text on that button and also the action related to clicking the button",
+          "hidden": false,
+          "label": "Apply now",
+          "locked": false,
+          "name": "apply_now",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Button CTA",
+          "locked": false,
+          "name": "button_cta",
+          "placeholder": "Appply now",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Button HREF",
+          "locked": false,
+          "name": "button_href",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "instruction",
+          "hidden": false,
+          "label": "Meta Fields",
+          "locked": false,
+          "name": "meta_fields",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Page Title",
+          "locked": false,
+          "name": "page_title",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "OG: Title",
+          "locked": false,
+          "name": "og_title",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "OG: Description",
+          "locked": false,
+          "name": "og_description",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Meta Description",
+          "locked": false,
+          "name": "meta_description",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Careers",
+      "oneOff": true,
+      "oneOffMD5": "f8338d50f6c195367183117d41964438"
+    },
+    "clients": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Client Name",
+          "locked": false,
+          "name": "client_name",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "300 x 300 pixels",
+          "hidden": false,
+          "label": "Logo",
+          "locked": false,
+          "name": "logo",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "select",
+          "hidden": false,
+          "label": "Feature on homepage",
+          "locked": false,
+          "meta": {
+            "defaultValue": "False",
+            "options": [
+              {
+                "value": "True"
+              },
+              {
+                "value": "False"
+              }
+            ]
+          },
+          "name": "feature_on_homepage",
+          "placeholder": "",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "individualMD5": "b53c9768c83b42641787d6ffdf4526a9",
+      "listMD5": "ea9c278fa023596b73b011708865d643",
+      "name": "Clients",
+      "oneOff": false
+    },
+    "contact": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Contact",
+      "oneOff": true,
+      "oneOffMD5": "22e8533bd71eae831eb8a21198db8f88"
+    },
+    "focus": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Focus",
+      "oneOff": true,
+      "oneOffMD5": "0da152e0fab17fc319b294ff9603a261"
+    },
+    "globalelements": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "url",
+          "help": "",
+          "hidden": false,
+          "label": "Twitter URL",
+          "locked": false,
+          "name": "twitter_url",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "url",
+          "hidden": false,
+          "label": "Linkedin URL",
+          "locked": false,
+          "name": "linkedin_url",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "url",
+          "hidden": false,
+          "label": "Facebook URL",
+          "locked": false,
+          "name": "facebook_url",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "url",
+          "hidden": false,
+          "label": "Google+ URL",
+          "locked": false,
+          "name": "google_url",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Global Elements",
+      "oneOff": true,
+      "oneOffMD5": "fa4dec67981dccd8f4cf3402e14a8e22"
+    },
+    "home": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Page Title",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "help": "This is displayed on the navigation overlay on the homepage",
+          "hidden": false,
+          "label": "Hed",
+          "locked": false,
+          "name": "hed",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "wysiwyg",
+          "help": "This is displayed on the homepage on page load over the video",
+          "hidden": false,
+          "label": "Dek",
+          "locked": false,
+          "meta": {
+            "image": false,
+            "link": false,
+            "quote": false,
+            "table": false,
+            "video": false
+          },
+          "name": "dek",
+          "placeholder": "You've entered...",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "OG: Title",
+          "locked": false,
+          "name": "og_title",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "OG: Description",
+          "locked": false,
+          "name": "og_description",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "1600px by 900px",
+          "hidden": false,
+          "label": "OG: Image",
+          "locked": false,
+          "name": "og_image",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Home",
+      "oneOff": true,
+      "oneOffMD5": "457aceb455a91ca1fa83975a3ca138f8"
+    },
+    "jobdescription": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Joe Title",
+          "locked": false,
+          "name": "joe_title",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Short Description",
+          "locked": false,
+          "name": "short_description",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "wysiwyg",
+          "hidden": false,
+          "label": "Job Description",
+          "locked": false,
+          "meta": {
+            "image": true,
+            "link": true,
+            "quote": true,
+            "table": true,
+            "video": true
+          },
+          "name": "job_description",
+          "required": true,
+          "showInCms": false
+        }
+      ],
+      "individualMD5": "573228920411c4c6282f545d017b7a75",
+      "listMD5": "c8f2f5ba533c017caafcaec80cd91d66",
+      "name": "Job Description",
+      "oneOff": false
+    },
+    "news": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Short Description",
+          "locked": false,
+          "name": "short_description",
+          "required": false,
+          "showInCms": true
+        }
+      ],
+      "individualMD5": "020699c662e94cec7b6a2ca5d333cd83",
+      "listMD5": "22d7489b568a1ad3d4f3b7c3866c82cc",
+      "name": "News",
+      "oneOff": false
+    },
+    "showcases": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Client Name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "help": "This is displayed on hover",
+          "hidden": false,
+          "label": "Short Description",
+          "locked": false,
+          "meta": {
+            "min": ""
+          },
+          "name": "short_description",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "help": "This is displayed if the user takes a direct link into the showcase from an email.",
+          "hidden": false,
+          "label": "Showcase Overview",
+          "locked": false,
+          "name": "showcase_overview",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "select",
+          "help": "Chagnes the interface of the tile to use either the image or logo and CTA",
+          "hidden": false,
+          "label": "Tile View",
+          "locked": false,
+          "meta": {
+            "defaultValue": "Image",
+            "options": [
+              {
+                "value": "Image"
+              },
+              {
+                "value": "Logo/CTA"
+              }
+            ]
+          },
+          "name": "tile_view",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "300 x 300 pixels",
+          "hidden": false,
+          "label": "Tile image",
+          "locked": false,
+          "name": "tile_image",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "250 x 60 pixels",
+          "hidden": false,
+          "label": "Client Logo",
+          "locked": false,
+          "name": "client_logo",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "textfield",
+          "help": "\"Groundbreaking Product Launch\"",
+          "hidden": false,
+          "label": "CTA text",
+          "locked": false,
+          "meta": {
+            "max": "100"
+          },
+          "name": "cta_text",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "select",
+          "hidden": false,
+          "label": "Media Format",
+          "locked": false,
+          "meta": {
+            "defaultValue": "Slides/Images",
+            "options": [
+              {
+                "value": "Slides/Images"
+              },
+              {
+                "value": "Video"
+              }
+            ]
+          },
+          "name": "media_format",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "gallery",
+          "help": "Please upload images, please add caption to the images",
+          "hidden": false,
+          "label": "Slides/Images",
+          "locked": false,
+          "name": "slidesimages",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "wysiwyg",
+          "help": "",
+          "hidden": false,
+          "label": "Video Embed",
+          "locked": false,
+          "meta": {
+            "image": true,
+            "link": true,
+            "quote": true,
+            "table": true,
+            "video": true
+          },
+          "name": "video_embed",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "number",
+          "hidden": false,
+          "label": "Priority",
+          "locked": false,
+          "meta": {
+            "max": "5000",
+            "min": "1"
+          },
+          "name": "priority",
+          "required": true,
+          "showInCms": false
+        }
+      ],
+      "individualMD5": "9e8d596082948ef20f2dc4bdf1e4ae20",
+      "listMD5": "434527ae956e5811997396a6487d82ec",
+      "name": "Showcases",
+      "oneOff": false
+    },
+    "team": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "help": "Does not show up in website, purely an refrence",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Page Title",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Hed",
+          "locked": false,
+          "name": "hed",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Dek",
+          "locked": false,
+          "name": "dek",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Intro Paragraph",
+          "locked": false,
+          "name": "intro_paragraph",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "1900 x 600 pixels",
+          "hidden": false,
+          "label": "Stage Image",
+          "locked": false,
+          "name": "stage_image",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "instruction",
+          "help": "The fields below do not show up on the page but are used to increase search engine optmization",
+          "hidden": false,
+          "label": "Search Information",
+          "locked": false,
+          "name": "search_information",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "OG: Title",
+          "locked": false,
+          "name": "og_title",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "image",
+          "help": "1600 x 900 pixels",
+          "hidden": false,
+          "label": "OG: image",
+          "locked": false,
+          "name": "og_image",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "OG: Description",
+          "locked": false,
+          "name": "og_description",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Page Title",
+          "locked": false,
+          "name": "page_title",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Meta Description",
+          "locked": false,
+          "name": "meta_description",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Team",
+      "oneOff": true,
+      "oneOffMD5": "73bd8fb004e1921ae0b0253f5541fa40"
+    },
+    "teammembers": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "help": "",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "help": "",
+          "hidden": false,
+          "label": "First Name",
+          "locked": false,
+          "name": "first_name",
+          "placeholder": "First Name",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Last Name",
+          "locked": false,
+          "name": "last_name",
+          "placeholder": "Last Name",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "checkbox",
+          "help": "Please choose which groups this team member is in",
+          "hidden": false,
+          "label": "Group",
+          "locked": false,
+          "meta": {
+            "options": [
+              {
+                "label": "Account Services"
+              },
+              {
+                "label": "Administration"
+              },
+              {
+                "label": "Analytics and Accountability"
+              },
+              {
+                "label": "Business Solutions"
+              },
+              {
+                "label": "CEO"
+              },
+              {
+                "label": "Chairman"
+              },
+              {
+                "label": "Chief Client Officer"
+              },
+              {
+                "label": "Creative"
+              },
+              {
+                "label": "Delivery"
+              },
+              {
+                "label": "Engineering"
+              },
+              {
+                "label": "Events"
+              },
+              {
+                "label": "Experience"
+              },
+              {
+                "label": "Finance"
+              },
+              {
+                "label": "Food Services"
+              },
+              {
+                "label": "Human Resources"
+              },
+              {
+                "label": "Information Technology"
+              },
+              {
+                "label": "Marketing"
+              },
+              {
+                "label": "Marketing & Technology"
+              },
+              {
+                "label": "Marketing Studio"
+              },
+              {
+                "label": "Operations"
+              },
+              {
+                "label": "Partner"
+              },
+              {
+                "defaultValue": false,
+                "label": "Post Production"
+              },
+              {
+                "label": "President"
+              },
+              {
+                "label": "Production"
+              },
+              {
+                "label": "Strategy and Planning"
+              },
+              {
+                "label": "Technology"
+              },
+              {
+                "label": "Video"
+              },
+              {
+                "label": "Executive Team"
+              }
+            ]
+          },
+          "name": "group",
+          "placeholder": "",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "number",
+          "help": "Sor sorting: the higher the number the higher the priority",
+          "hidden": false,
+          "label": "Priority",
+          "locked": false,
+          "meta": {
+            "max": "5000",
+            "min": "1"
+          },
+          "name": "priority",
+          "placeholder": "",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Job Title",
+          "locked": false,
+          "name": "job_title",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Quote",
+          "locked": false,
+          "name": "quote",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "help": "\"ericwebster\" for @ericwebster",
+          "hidden": false,
+          "label": "@Twitter name",
+          "locked": false,
+          "name": "twitter_name",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "help": "\"ericwebster\" for http://www.linkedin.com/in/ericwebster",
+          "hidden": false,
+          "label": "LinkedIn profile name",
+          "locked": false,
+          "name": "linkedin_profile_name",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "300 x 300 pixels",
+          "hidden": false,
+          "label": "Headshot",
+          "locked": false,
+          "name": "headshot",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "relation",
+          "hidden": false,
+          "label": "Primary Team",
+          "locked": false,
+          "meta": {
+            "contentTypeId": "teams",
+            "reverseName": "team_members_primary_team"
+          },
+          "name": "primary_team",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "relation",
+          "hidden": false,
+          "label": "Secondary Teams",
+          "locked": false,
+          "meta": {
+            "contentTypeId": "teams",
+            "reverseName": "team_members_secondary_teams"
+          },
+          "name": "secondary_teams",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "select",
+          "hidden": false,
+          "label": "Is a member of Executive team?",
+          "locked": false,
+          "meta": {
+            "defaultValue": "False",
+            "options": [
+              {
+                "value": "True"
+              },
+              {
+                "value": "False"
+              }
+            ]
+          },
+          "name": "is_a_member_of_executive_team",
+          "required": true,
+          "showInCms": false
+        }
+      ],
+      "individualMD5": "28f9598e24f997599025ecdb71b479ff",
+      "listMD5": "1b4a2149d61646117920fa28159ce8f2",
+      "name": "Team Members",
+      "oneOff": false
+    },
+    "teams": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "help": "",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Name",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "relation",
+          "hidden": false,
+          "label": "Team Members (Primary Team)",
+          "locked": false,
+          "meta": {
+            "contentTypeId": "teammembers",
+            "reverseName": "primary_team"
+          },
+          "name": "team_members_primary_team",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "relation",
+          "hidden": false,
+          "label": "Team Members (Secondary Teams)",
+          "locked": false,
+          "meta": {
+            "contentTypeId": "teammembers",
+            "reverseName": "secondary_teams"
+          },
+          "name": "team_members_secondary_teams",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Teams",
+      "oneOff": false
+    },
+    "thepulse": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "help": "does not show up in UI",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Title",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "select",
+          "hidden": false,
+          "label": "Source",
+          "locked": false,
+          "meta": {
+            "defaultValue": "Cramer.com",
+            "options": [
+              {
+                "value": "Twitter"
+              },
+              {
+                "value": "Circulate.it"
+              },
+              {
+                "value": "Cramer.com"
+              }
+            ]
+          },
+          "name": "source",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "wysiwyg",
+          "hidden": false,
+          "label": "The Content",
+          "locked": false,
+          "meta": {
+            "image": true,
+            "link": true,
+            "quote": true,
+            "table": true,
+            "video": true
+          },
+          "name": "the_content",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "individualMD5": "684de1f4e72130e2b84a1d8d26824e4e",
+      "listMD5": "f643e7b34889814b87114b8cf89cc0d4",
+      "name": "The Pulse",
+      "oneOff": false
+    },
+    "work": {
+      "controls": [
+        {
+          "controlType": "textfield",
+          "help": "This does not matter",
+          "hidden": false,
+          "label": "Name",
+          "locked": true,
+          "name": "name",
+          "placeholder": "Page Title",
+          "required": true,
+          "showInCms": true
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Create Date",
+          "locked": true,
+          "name": "create_date",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Last Updated",
+          "locked": true,
+          "name": "last_updated",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "datetime",
+          "hidden": true,
+          "label": "Publish Date",
+          "locked": true,
+          "name": "publish_date",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Preview URL",
+          "locked": true,
+          "name": "preview_url",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": true,
+          "label": "Slug",
+          "locked": true,
+          "name": "slug",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Hed",
+          "locked": false,
+          "name": "hed",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "wysiwyg",
+          "hidden": false,
+          "label": "Dek",
+          "locked": false,
+          "meta": {
+            "image": true,
+            "link": true,
+            "quote": true,
+            "table": true,
+            "video": true
+          },
+          "name": "dek",
+          "required": false,
+          "showInCms": true
+        },
+        {
+          "controlType": "image",
+          "help": "1600 x 900 pixels",
+          "hidden": false,
+          "label": "Stage Image",
+          "locked": false,
+          "name": "stage_image",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "wysiwyg",
+          "help": "This content shows up to the left of the client logos.",
+          "hidden": false,
+          "label": "Clients Description text",
+          "locked": false,
+          "meta": {
+            "image": true,
+            "link": true,
+            "quote": true,
+            "table": true,
+            "video": true
+          },
+          "name": "clients_description_text",
+          "required": true,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Showcase Title",
+          "locked": false,
+          "name": "showcase_title",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "Page Title",
+          "locked": false,
+          "name": "page_title",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textfield",
+          "hidden": false,
+          "label": "OG: Title",
+          "locked": false,
+          "name": "og_title",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "OG: Description",
+          "locked": false,
+          "name": "og_description",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "image",
+          "help": "1600 X 900 pixels",
+          "hidden": false,
+          "label": "OG: Image",
+          "locked": false,
+          "name": "og_image",
+          "required": false,
+          "showInCms": false
+        },
+        {
+          "controlType": "textarea",
+          "hidden": false,
+          "label": "Meta Description",
+          "locked": false,
+          "name": "meta_description",
+          "required": false,
+          "showInCms": false
+        }
+      ],
+      "name": "Work",
+      "oneOff": true,
+      "oneOffMD5": "cd8419fd228b009d2435e6eccdbaeb72"
+    }
+  },
+  "data": {
+    "clients": {
+      "-JYIKWsAN4yHeJR9-JvI": {
+        "_sort_create_date": 1412294880,
+        "_sort_last_updated": 1412294880,
+        "_sort_publish_date": 1412294880,
+        "client_name": "Test",
+        "create_date": "2014-10-02T20:08:00-04:00",
+        "feature_on_homepage": "True",
+        "last_updated": "2014-10-02T20:08:00-04:00",
+        "logo": {
+          "height": 120,
+          "resize_url": "http://lh4.ggpht.com/FHOXyUd_dbqbH-NZhhmJyJ0KzqByWrxZDjINeVjYp6hiB1HUCzgqwkFmZabTbDnkWafnTnK2yboBY-FMSM5fY1pYUYWgmQ",
+          "size": 7943,
+          "type": "image/gif",
+          "url": "/webhook-uploads/1412294894595_tedx.gif",
+          "width": 400
+        },
+        "name": "Ted",
+        "preview_url": "31b4f167-16e2-9cf1-54b2-a13498515aa3",
+        "publish_date": "2014-10-02T20:08:00-04:00"
+      }
+    },
+    "home": {
+      "_sort_create_date": 1412108700,
+      "_sort_last_updated": 1412108700,
+      "create_date": "2014-09-30T16:25:00-04:00",
+      "dek": "<p>You've Entered ...</p>",
+      "last_updated": "2014-09-30T16:25:00-04:00",
+      "name": "Homepage",
+      "preview_url": "9d831823-062e-2029-9042-fff934916950"
+    },
+    "showcases": {
+      "-JYI520wUDqM1MFo8z_s": {
+        "_sort_create_date": 1412290800,
+        "_sort_last_updated": 1412291640,
+        "_sort_publish_date": 1412290800,
+        "client_logo": {
+          "height": 177,
+          "resize_url": "http://lh3.ggpht.com/4DBMibwpMJBTaWsQXmv7WGsaQn7gCbvn5ZWQJCPlCyDbZp0YxyhANDnQbPIJCV38Y7FY8RCmWTWe3vdA7sZW6NQycdBhpQ",
+          "size": 10225,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412290427769_aquabot%20logo.png",
+          "width": 528
+        },
+        "create_date": "2014-10-02T19:00:00-04:00",
+        "cta_text": "Rebranding with a splash",
+        "isDraft": false,
+        "last_updated": "2014-10-02T19:14:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Acquabot",
+        "preview_url": "72b4f049-cd90-dc28-db68-067c1ad25030",
+        "publish_date": "2014-10-02T19:00:00-04:00",
+        "short_description": "Rebranding with a splash",
+        "showcase_overview": "Robotic pool cleaning pioneer Aquabot needed to stand out in a competitive market. A rebrand inspired by what really matters to pool owners—clean, refreshing water—was the answer. With a new manifesto, position, logo, visual language, and brand voice, the result was a revitalized brand with clearer market recognition.",
+        "slidesimages": [
+          {
+            "caption": "We dove deep and found the reasons the consumer cares about their pool. It's about emotion not tech specs.",
+            "height": 844,
+            "resize_url": "http://lh5.ggpht.com/d5gl4-uNMPLk_UYE5a23StwR_8Y3Qwe0yw9mwbT82HpInOgiYGYpawnYPAurGcm-IqCrQ57p4BNaZ_gzfz0kwPkhx6Km",
+            "size": 62107,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412290621243_girl.jpg",
+            "width": 1265
+          },
+          {
+            "caption": "The audience needed to feel the new Aquabot brand.",
+            "height": 291,
+            "resize_url": "http://lh6.ggpht.com/w4khO0yk9N1f_fjHJsM2uc3yED3yI7X90bNqyUfhrJTEpdFB4Ma4XtJTfJ931TTd8vMHAZv_DwcE2dejRAhvWiqRN3GOvA",
+            "size": 23370,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412290609442_purechildhood.jpg",
+            "width": 436
+          },
+          {
+            "caption": "A new website communicated the new market positioning",
+            "height": 1126,
+            "resize_url": "http://lh3.ggpht.com/xkuF_iZFvmWqHZtO4Di901KBQwP3oF_OjGNRNvq6EuFdCpN1L41spCT6qvvXJ2HBan-Ugc1uT_84MEwvK_sQwHfd_yuf",
+            "size": 310883,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412290469178_aquabot%20hero.jpg",
+            "width": 1295
+          }
+        ],
+        "tile_image": {
+          "height": 1126,
+          "resize_url": "http://lh5.ggpht.com/NGUbUPzEdKyZzqPA4pHClUlPTAQg1boSDpbcsyd74fyMkIw2gsQCJ2rJ6XawxhYNA0xNUS_aCi_UVrk2CB0ZPvO3IIgN",
+          "size": 310883,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412290420938_aquabot%20hero.jpg",
+          "width": 1295
+        },
+        "tile_view": "Logo/CTA"
+      },
+      "-JYI7sJgoqnXEMWLOa3E": {
+        "_sort_create_date": 1412291580,
+        "_sort_last_updated": 1412291580,
+        "_sort_publish_date": 1412291580,
+        "client_logo": {
+          "height": 136,
+          "resize_url": "http://lh6.ggpht.com/66-rguTTRlfO-XQN9ea7d3GYGvqiYpmgtJ5kCC6Iv6dUro2R6NO7jmeptra0xJ1MyYr_a8zdSRdfKW03iL8-x8ndl1E",
+          "size": 7861,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412291566255_hxgn%20logo.jpg",
+          "width": 332
+        },
+        "create_date": "2014-10-02T19:13:00-04:00",
+        "cta_text": "Mind-blowing projection mapping",
+        "last_updated": "2014-10-02T19:13:00-04:00",
+        "media_format": "Video",
+        "name": "Hexagon",
+        "preview_url": "e1b43cba-186e-70ca-1fd6-f6ce852f1552",
+        "publish_date": "2014-10-02T19:13:00-04:00",
+        "short_description": "Mind-blowing projection mapping",
+        "showcase_overview": "For HxGN LIVE 2014, we went big. Real big. We designed an incredibly dynamic set with seven projection zones, allowing us to create a projection-mapping experience unlike anything done before. The mind-blowing visuals opened Hexagon’s conference with a bang, and the live-streaming microsite hooked in more than 7,000 viewers from 83 different countries.",
+        "tile_image": {
+          "height": 1006,
+          "resize_url": "http://lh3.ggpht.com/_M2eOWE2ZsJ9Mz9_MhQUn9Wb2kDlM8tN9KYlT4kHk8V7VhYg_cVwvvUX0DKQ4IE6vy1S3w5IdQEm1GV7MFE64O_pg2Ao4A",
+          "size": 263154,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412291561165_hxgn%20hero.jpg",
+          "width": 1950
+        },
+        "tile_view": "Image",
+        "video_embed": "<p>http://youtu.be/_iKCk6RjhFc?list=UUc_jkz-t--7bzF6sL-jBGcg</p>"
+      },
+      "-JYI9C7cfvkb3TsdCqHm": {
+        "_sort_create_date": 1412291940,
+        "_sort_last_updated": 1412291940,
+        "_sort_publish_date": 1412291940,
+        "client_logo": {
+          "height": 142,
+          "resize_url": "http://lh5.ggpht.com/x4dNdHRqXUd3OgAk3icw6tKWm7NXlBJjYp9u0lhm1blmdLs58sVpF9lFDn6lTeRtWluJZViw3uclS4TynEP3ycVh_5Zf",
+          "size": 8133,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412291812151_ADI_Logo_Black%20%5BConverted%5D.png",
+          "width": 501
+        },
+        "create_date": "2014-10-02T19:19:00-04:00",
+        "cta_text": "Taking over Times Square",
+        "last_updated": "2014-10-02T19:19:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Analog Devices",
+        "preview_url": "0fac1034-dbc2-522c-de0b-2962b49c5c25",
+        "publish_date": "2014-10-02T19:19:00-04:00",
+        "short_description": "Taking over Times Square",
+        "showcase_overview": "At Analog Devices, the future is now in progress. We themed Analyst Day 2014 after this very fact and we took over the NASDAQ building to get the message across.",
+        "slidesimages": [
+          {
+            "caption": "Analyst Day 2014 deserved a big stage. We thought Times Square would do.",
+            "height": 4288,
+            "resize_url": "http://lh3.ggpht.com/X-w3UB53KqYXZPn_78bz6s6XIvksRPG2L3CEo6BgSX2fK4qqLXoK4UV-mPEe4Fs_WNGDLblc9spzVPuodoYl8jBMoA",
+            "size": 5084953,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412291767529_DSC_0330.JPG",
+            "width": 2848
+          }
+        ],
+        "tile_image": {
+          "height": 4288,
+          "resize_url": "http://lh5.ggpht.com/qBXLSKsLlZ50jlf9wxDdEe4mZP64kVomJQpqxWDpCuKlw1pzIc4L7idRmJyPll5WZfoR3gzK8_mHxtHH_OhZWPEzWJ5aRA",
+          "size": 5084953,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412291804180_DSC_0330.JPG",
+          "width": 2848
+        },
+        "tile_view": "Image"
+      },
+      "-JYIAc76eOKV76grg-9O": {
+        "_sort_create_date": 1412292300,
+        "_sort_last_updated": 1412292300,
+        "_sort_publish_date": 1412292300,
+        "client_logo": {
+          "height": 298,
+          "resize_url": "http://lh4.ggpht.com/G0TFxOkOPjB2E2WoaD20_u9rglTVcH9Beo2CihlnH6gBErjZ1OC2eIOigx1T5ORGqG1k5gnybrrqP2rOxWJbtUkUVswv",
+          "size": 20735,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412292295862_cynosure%20logo.jpg",
+          "width": 744
+        },
+        "create_date": "2014-10-02T19:25:00-04:00",
+        "cta_text": "The journey to beautiful",
+        "last_updated": "2014-10-02T19:25:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Cynosure",
+        "preview_url": "93953364-397b-d3de-6743-3207c9f91aac",
+        "publish_date": "2014-10-02T19:25:00-04:00",
+        "short_description": "The journey to beautiful",
+        "showcase_overview": "To prepare for the acquisition of Palomar, one of its main competitors, Cynosure partnered with Cramer to develop marketing assets that would communicate the value proposition of this new brand. Cramer wrote a powerful brand manifesto to extol the virtues of the newly combined company for customers, prospects, partners, and analysts. Then we launched a website to solidify the brand positioning.",
+        "slidesimages": [
+          {
+            "caption": "A brand new site communicated the new Cynosure brand values and positioning.",
+            "height": 645,
+            "resize_url": "http://lh6.ggpht.com/xOAYinzUxuZ_m3RGbGpmap1cP0X2iPbZpOcScVj7FQ9RcJzP1RNIEquTB7ookTDxJlmD2rEU36NgcfzQa7dWMf_bRUOg",
+            "size": 918344,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412292242599_cynosure%20hero.png",
+            "width": 1268
+          }
+        ],
+        "tile_image": {
+          "height": 645,
+          "resize_url": "http://lh5.ggpht.com/mycO7Uvc9mysV7_xM3vzEmowPIzC1v14PK_FRrohqNmY0mgNjjnj-PXw8a8eUsdmiHLXHfwBTGLe02ivgNUImi_OBCA",
+          "size": 918344,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412292292326_cynosure%20hero.png",
+          "width": 1268
+        },
+        "tile_view": "Logo/CTA",
+        "video_embed": "<p><u>http://youtu.be/iembJu9hxU4</u></p>"
+      },
+      "-JYIC-jVqewnuXAoC0Kv": {
+        "_sort_create_date": 1412292660,
+        "_sort_last_updated": 1412292660,
+        "_sort_publish_date": 1412292660,
+        "client_logo": {
+          "height": 195,
+          "resize_url": "http://lh5.ggpht.com/Hcg8jpvuKId7GZFWXJWqgVrUHTExP_5YDYzuscg8T1Wj-OkJUuOu77XMtFOrUGHdpUzogvxtYoyYcONVUrmiufx3veZk-A",
+          "size": 22117,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412292487344_luxottica%20logo.jpg",
+          "width": 581
+        },
+        "create_date": "2014-10-02T19:31:00-04:00",
+        "cta_text": "Removing the blinders on a new global vision",
+        "last_updated": "2014-10-02T19:31:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Luxottica",
+        "preview_url": "5c5db86d-bd6c-d881-944f-cae2cabb3a7c",
+        "publish_date": "2014-10-02T19:31:00-04:00",
+        "short_description": "Removing the blinders on a new global vision",
+        "showcase_overview": "At its 2014 National Sales Meeting in Kapalua, Maui, Luxottica needed to align its teams around a new global vision and messaging platform. Cramer helped by integrating Hawaiian culture and style into every pre-show, at-show, and post-show experience to take this group of 450 eyewear fashion leaders on a journey from their past to their future brand.",
+        "slidesimages": [
+          {
+            "caption": "At Luxottica's 2014 National Sales Meeting, we had the team say \"Aloha\" to their new future",
+            "height": 1133,
+            "resize_url": "http://lh4.ggpht.com/mK2zFzlPawW-JpsrHsvNyLg6SivUFMBP8CZJVPt9x0NeKWj1jEBzHjEJbAGhu0BZM37XMO0gNNiBaL_AXFQ97JqN83MRig",
+            "size": 560192,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412292500249_luxottica%20hero.jpg",
+            "width": 2006
+          },
+          {
+            "caption": "Attendees rode the wave of a new company wide vision",
+            "height": 1000,
+            "resize_url": "http://lh3.ggpht.com/ZKp-wcD558uU2KSInIkDrLKJw4lBUdvRzbRm_tOjh5mtb3PdIFd46HEQE-zqoV4fMiaC_1cpempn58CNfaqTbYl6hVw",
+            "size": 340276,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412292559625_lux2.jpg",
+            "width": 1950
+          }
+        ],
+        "tile_image": {
+          "height": 1133,
+          "resize_url": "http://lh6.ggpht.com/e19MjghLNP9s7a71j2BQkA8m1rMmzNRxNLIio85p5e7b60A-_4bP3WbqCpDRsD2zVI5PrkIXj5dv0yol-41uQd73atcabA",
+          "size": 560192,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412292479662_luxottica%20hero.jpg",
+          "width": 2006
+        },
+        "tile_view": "Image"
+      },
+      "-JYIDJ9XiOPustiNddNd": {
+        "_sort_create_date": 1412292960,
+        "_sort_last_updated": 1412292960,
+        "_sort_publish_date": 1412292960,
+        "client_logo": {
+          "height": 120,
+          "resize_url": "http://lh6.ggpht.com/WzIkAviSv3o59OViyXYUc76PmI2VamGjMK-nwLeQSPXGEgppxvnmlSu66zfCvEf4KtWW7f3aq_tW26hV-LE4dYfGuzY",
+          "size": 9485,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412292863438_Pri-Med%20Logo%20Small.png",
+          "width": 326
+        },
+        "create_date": "2014-10-02T19:36:00-04:00",
+        "cta_text": "Improving patient care through intuitive design",
+        "last_updated": "2014-10-02T19:36:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Pri-Med",
+        "preview_url": "64d8f900-3472-7267-71a3-4c280f25c663",
+        "publish_date": "2014-10-02T19:36:00-04:00",
+        "short_description": "Improving patient care through intuitive design",
+        "showcase_overview": "Pri-Med's InLight is a cloud-based EHR access platform that takes the headaches out of medical care.",
+        "slidesimages": [
+          {
+            "height": 559,
+            "resize_url": "http://lh3.ggpht.com/clpePLfrVOeRW2Rx2qtfLJX3QnsvPhzPtncY4FGCiJ84PChoBOSH1tgbr3emEImbMxKf7Du6HEORPugyokQPIsyoWYrS",
+            "size": 337985,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412292880381_inlight.png",
+            "width": 1342
+          }
+        ],
+        "tile_image": {
+          "height": 559,
+          "resize_url": "http://lh6.ggpht.com/BecBoNrRYwA2zZkMRsMoGY2tLQBEv1hBUyVL7GOV8-qhi_xa37wBuFZztsYof1OuWYmK5CnBRDAnJFD_0fHAkETx7I6Vjg",
+          "size": 337985,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412292850905_inlight.png",
+          "width": 1342
+        },
+        "tile_view": "Logo/CTA"
+      },
+      "-JYIFoOY-xfHWOPsx7FN": {
+        "_sort_create_date": 1412293620,
+        "_sort_last_updated": 1412293620,
+        "_sort_publish_date": 1412293620,
+        "client_logo": {
+          "height": 276,
+          "resize_url": "http://lh6.ggpht.com/KpBwEXlF-T5g19cMZFlNA-i4V0bFXA14cO938XX3t7_Yu96mbW1jnkDm-e_MPhsLUmay5HfRwYBUpxPtHbbomH_mMQBdQg",
+          "size": 43687,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412293184505_vce.jpg",
+          "width": 276
+        },
+        "create_date": "2014-10-02T19:47:00-04:00",
+        "cta_text": "A superhero sized campaign",
+        "last_updated": "2014-10-02T19:47:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "VCE",
+        "preview_url": "1396035a-42d5-33bb-583e-3e8bbd1b633d",
+        "publish_date": "2014-10-02T19:47:00-04:00",
+        "short_description": "A superhero sized campaign",
+        "showcase_overview": "In a dark time of static and inflexible data centers, where imposters peddling inferior IT products lurk behind every corner, only one man has the powers to defend our precious world from infrastructure disaster. He has dedicated his life to right IT wrongs and to promote product truth, customer justice, and the VCE way. As long as there is IT injustice in the world, he’ll be there with VCE’s true converged infrastructure on his side. He is: Vblock Man.",
+        "slidesimages": [
+          {
+            "caption": "Vblock Man. Defending our world from IT infrastructure disasters.",
+            "height": 843,
+            "resize_url": "http://lh4.ggpht.com/Qfra9Xko54dp2M2Mw4qHp-nDQtvhjmTQk_hqSn0WCjeE0zE1Vt0XMz2YGncblz2gCi9LZWPCH8-9SCH-eNkPUrp_Hmk",
+            "size": 122428,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412293220085_vce%20vblockman.jpg",
+            "width": 605
+          }
+        ],
+        "tile_image": {
+          "height": 843,
+          "resize_url": "http://lh3.ggpht.com/P0qQtOuLTROE0S8c-iYUV6qgtWA4XB-LRWcw4GGb3RU3pPZzxnf7keUCQ4anezuF46l57bp8rk1V8T8r_gbqZIKRe9iNEA",
+          "size": 122428,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412293189007_vce%20vblockman.jpg",
+          "width": 605
+        },
+        "tile_view": "Image",
+        "video_embed": "<p><u>http://youtu.be/pFGKmeD4mjU</u></p>"
+      },
+      "-JYIGnl1adrYqmzHrkuK": {
+        "_sort_create_date": 1412293920,
+        "_sort_last_updated": 1412294580,
+        "_sort_publish_date": 1412293920,
+        "client_logo": {
+          "height": 144,
+          "resize_url": "http://lh4.ggpht.com/eISIjEqZQxFTtS7h5yO7To_MHmA2gb3p3MqO9aM5WD313VEkXR6pmb4i_Q0F29D7Ndo4o_voHlcl2o7L0HGvkB9BnAIQ",
+          "size": 10791,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412293735948_FIDELITY.png",
+          "width": 612
+        },
+        "create_date": "2014-10-02T19:52:00-04:00",
+        "cta_text": "Redefining the personas of retirement",
+        "isDraft": false,
+        "last_updated": "2014-10-02T20:03:00-04:00",
+        "media_format": "Video",
+        "name": "Fidelity",
+        "preview_url": "15cac504-a784-a75c-6ad1-d3a240b7cfa3",
+        "priority": 2,
+        "publish_date": "2014-10-02T19:52:00-04:00",
+        "short_description": "Redefining the personas of retirement",
+        "showcase_overview": "Fidelity came to Cramer looking to produce a video campaign that spoke to their three key demographic personas when it came to retirement planning. We brought these pieces to life with a RED camera shoot.",
+        "slidesimages": [
+          {
+            "caption": " ",
+            "height": 683,
+            "resize_url": "http://lh3.ggpht.com/dsEBc9tw2Un_u7WH_sjF1lkTo773R4dl-sLFufEjohgX73ualfsbPIT0CTx9wzDcbMwOybbbSuptKkufMNMVZL-LgTHp9A",
+            "size": 1234045,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412293851751_fidelity%20videograb.png",
+            "width": 1221
+          }
+        ],
+        "tile_image": {
+          "height": 683,
+          "resize_url": "http://lh3.ggpht.com/PzQMP3nhwGtbjDiZgNk7qZhlZXXy56ERCendQqWTELRL8sm3tUhYGVijyPwyM9G2QOx5wv121paSOpzR9EcJwc0eBRI",
+          "size": 1234045,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412293733205_fidelity%20videograb.png",
+          "width": 1221
+        },
+        "tile_view": "Image",
+        "video_embed": "<p><u></u><p><u><u>http://youtu.be/eW7KqPB1v3w</u></u></p><p></p>"
+      },
+      "-JYILJV8M78Z8VKSYvC8": {
+        "_sort_create_date": 1412295060,
+        "_sort_last_updated": 1412295060,
+        "_sort_publish_date": 1412295060,
+        "client_logo": {
+          "height": 289,
+          "resize_url": "http://lh5.ggpht.com/YfamVIRKofmn3jnERG4Zl67N2sDl05dry3wd2pCdKA9h686R_VDlGhcATirXFjLARwLB9zh4trrOcF04bnQ7JzrhTDjB",
+          "size": 18730,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412294819878_bg%20med.jpg",
+          "width": 662
+        },
+        "create_date": "2014-10-02T20:11:00-04:00",
+        "cta_text": "Getting to the heart of the problem",
+        "last_updated": "2014-10-02T20:11:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "BG Medicine",
+        "preview_url": "f8578155-4579-9753-9c51-c75a13a12cdb",
+        "priority": 9,
+        "publish_date": "2014-10-02T20:11:00-04:00",
+        "short_description": "Getting to the heart of the problem",
+        "showcase_overview": "With the development of the first blood test for galectin-3 mediated heart failure, BG Medicine needed to address the human need head-on. Cramer helped the company transform its science-driven story into a commercial one. We used this story arc to guide content strategy, a website redesign, and video animation that won three Telly awards.",
+        "slidesimages": [
+          {
+            "caption": "So when BG Medicine came to us for a website refresh and clinical animation, we quickly saw they needed an important element: a story. We created a narrative—disease, impact, test—that explained how this new advancement has the potential to change the way we think about chronic heart failure. And this guided everything, from the site design to content strategy to the clinical animation.",
+            "height": 1102,
+            "resize_url": "http://lh6.ggpht.com/mX_pHm3RfkVOJtqE_GYFOGKRyGUnXvZgflLJMJyHdGd5ONCI4prlwOyZ6rlMcbdJooHfrsmic4l7O77R7i_hrrmGVxw",
+            "size": 3511420,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412294992571_bg%20med%20grab.png",
+            "width": 1913
+          }
+        ],
+        "tile_image": {
+          "height": 1102,
+          "resize_url": "http://lh5.ggpht.com/rJ_EtkKFwjBWojeeHLg6NMwwUEds6MmzAs-Fp77T7uQ9ta-eUy8gPlurF_G5DKb5KCeuV9mBNfr5WbnoR3j62Xrq1t4h",
+          "size": 3511420,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412294811163_bg%20med%20grab.png",
+          "width": 1913
+        },
+        "tile_view": "Image"
+      },
+      "-JYINpmeLHUgD6sL6z-S": {
+        "_sort_create_date": 1412295720,
+        "_sort_last_updated": 1412295720,
+        "_sort_publish_date": 1412295720,
+        "client_logo": {
+          "height": 122,
+          "resize_url": "http://lh5.ggpht.com/jZ5gwDzhjZmv6Ml1gTpOAyKSMUDniK-ua151QsTz-3BTJURI14a_mC7VPlAIp_ujWxOM_z-I4GkkC3Ze7BNXyFzr8Sc",
+          "size": 36248,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412295353559_solidworks.png",
+          "width": 201
+        },
+        "create_date": "2014-10-02T20:22:00-04:00",
+        "cta_text": "Inspiring innovation from inside the studio",
+        "last_updated": "2014-10-02T20:22:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Solidworks",
+        "preview_url": "3fe5f5c5-e1eb-f2e1-03c2-222da7d22cd9",
+        "priority": 3,
+        "publish_date": "2014-10-02T20:22:00-04:00",
+        "short_description": "Inspiring innovation from inside the studio",
+        "showcase_overview": "SOLIDWORKS 2015 inspires design and business innovation with new tools and capabilities to improve everyday productivity, optimize development from design to downstream production, and expand into new markets. We brought this vision to life from within the Cramer studio walls with a live record projection mapped environment.",
+        "slidesimages": [
+          {
+            "caption": "A dynamic projection mapped environment brought this demo to life",
+            "height": 612,
+            "resize_url": "http://lh5.ggpht.com/hKKuQsO9NfLRGj077IvzHjMLkJCIoEteWPO_UtVxpEouBDNDRJIvi43eASmfwmbxshNXdh7KzhS7tnwdbZDPtcU7ZK8__Q",
+            "size": 506261,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412295370887_solidworks%20grab.png",
+            "width": 852
+          }
+        ],
+        "tile_image": {
+          "height": 612,
+          "resize_url": "http://lh5.ggpht.com/LV_jz8VyGAkHDlNz-_B6Grfh2L0ZPoydMQA0syQxmP0iE0NvE3T3zNpOCWO8iwgYIu3nI-XAwJi--uffGnkNKAa7wAU",
+          "size": 506261,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412295348130_solidworks%20grab.png",
+          "width": 852
+        },
+        "tile_view": "Image",
+        "video_embed": "<p><u>http://youtu.be/1X1ZA9hLVd8</u></p>"
+      },
+      "-JYIQT5PrFSQZr53r92z": {
+        "_sort_create_date": 1412296440,
+        "_sort_last_updated": 1412296440,
+        "_sort_publish_date": 1412296440,
+        "client_logo": {
+          "height": 159,
+          "resize_url": "http://lh4.ggpht.com/NXp_767tUOp6GYdyINmBV_z9N1kZb4d48dTozq5hIWx7H5bPsZmYQjYuAczLVGR9DIcN4e_TrU797ZLfk9EVjULvJ6xizg",
+          "size": 42334,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412295953617_Qlik%20logo.png",
+          "width": 432
+        },
+        "create_date": "2014-10-02T20:34:00-04:00",
+        "cta_text": "Going virtual, with real results",
+        "last_updated": "2014-10-02T20:34:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Qlik",
+        "preview_url": "fa33281e-c708-f134-0341-719fe85c5e02",
+        "priority": 7,
+        "publish_date": "2014-10-02T20:34:00-04:00",
+        "short_description": "Going virtual, with real results",
+        "showcase_overview": "For Qlik, a web analytics company, generating more leads for its marketing dollar meant transitioning its road show to a virtual space. QlikView—our customer-facing, fully integrated virtual event experience—accrued registrants and attendees 40% over the goal, surging past expectations.",
+        "slidesimages": [
+          {
+            "caption": "Qlik has pioneered new ways of transforming data into meaningful information in order to drive smarter, faster decisions. Now they needed a new way to generate sales and engage customers and prospects.",
+            "height": 840,
+            "resize_url": "http://lh5.ggpht.com/DWy2b6L6hF4SU5soPREJ4_ajtwWF45OxKOEI_dUz-gdhnQQ1WirgRfHRiLjJBnMDDJJ5OT2iYeWO9oN20QLhzQ_cmP7E",
+            "size": 1887118,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412295964309_Qlik%20hero.png",
+            "width": 1496
+          },
+          {
+            "height": 843,
+            "resize_url": "http://lh5.ggpht.com/6Kr1lsTZkPVIdN4l3fFqNA8XYnECcS-9nw9IYFoO0FyLfe32woGsUjh41AqK8pYO4LnzvJdhMF7CJxmwNCHOGkTzy2A",
+            "size": 2346800,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412296298360_Picture1.png",
+            "width": 1266
+          }
+        ],
+        "tile_image": {
+          "height": 840,
+          "resize_url": "http://lh6.ggpht.com/KD8L0iH-KPwmB17L4ZkIE1bEnUFZshehMhGmZ2FXBwwz3ED4XFA_qKTbduh9F2P8erUeuckqzWedAFr7efu4tYaF5eqwlg",
+          "size": 1887118,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412295952602_Qlik%20hero.png",
+          "width": 1496
+        },
+        "tile_view": "Image"
+      },
+      "-JYIRGL1jsNI0FdLwOqZ": {
+        "_sort_create_date": 1412296620,
+        "_sort_last_updated": 1412296620,
+        "_sort_publish_date": 1412296620,
+        "client_logo": {
+          "height": 1904,
+          "resize_url": "http://lh3.ggpht.com/PnochbLBx4Brpk0p1lfOvjVRP89m4-0Hm9IsulejmL1sesU4K1bKD-edZBw-oTdfiyomjdhCXcMAEs07qPXRdzFs-xPbUw",
+          "size": 764399,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412296574603_bbh%20logo.jpg",
+          "width": 3000
+        },
+        "create_date": "2014-10-02T20:37:00-04:00",
+        "cta_text": "A touching brand experience",
+        "last_updated": "2014-10-02T20:37:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "BBH",
+        "preview_url": "2c730012-1caa-ce56-f9f3-b7c9722a3da9",
+        "priority": 5,
+        "publish_date": "2014-10-02T20:37:00-04:00",
+        "short_description": "A touching brand experience",
+        "showcase_overview": "Brown Brothers Harriman needed a unique interactive display built to communicate their company history and brand values to key stakeholders and prospects. We gave them a beautifully innovative experience.",
+        "slidesimages": [
+          {
+            "height": 1080,
+            "resize_url": "http://lh6.ggpht.com/dVF3aO0WdLtTaDbh6mR7oT3Q_lWb0liUOypRfUvn-s7YXLOR7s4sRsiyKwpkz74M_OI58ggVQuRhADA_hPrGnVtx46Vw",
+            "size": 2370176,
+            "type": "image/png",
+            "url": "/webhook-uploads/1412296561423_BBH_innovation_r2_Page_4.png",
+            "width": 1920
+          }
+        ],
+        "tile_image": {
+          "height": 1080,
+          "resize_url": "http://lh3.ggpht.com/T8KtQK6hnUjqJy_1yblYzn0gokOBk_TtDYUVODhZoML3foF2uI3kWbvzSdR2gzO0Vhp_6OL0pbqzanU-msZwVC_8Nt4b",
+          "size": 2370176,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412296578097_BBH_innovation_r2_Page_4.png",
+          "width": 1920
+        },
+        "tile_view": "Image"
+      },
+      "-JYISS-XFkZfvh0Amg7l": {
+        "_sort_create_date": 1412296980,
+        "_sort_last_updated": 1412296980,
+        "_sort_publish_date": 1412296980,
+        "client_logo": {
+          "height": 108,
+          "resize_url": "http://lh5.ggpht.com/0c29GoayQQFU4aR1fMTxWS4iKODiJploiTOuEeofxsMUE0gOmfswVdu2LR-si9FDldpIQkNABQolZcmfgmcLKPkq2Gg",
+          "size": 9745,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412296792064_adp.png",
+          "width": 219
+        },
+        "create_date": "2014-10-02T20:43:00-04:00",
+        "cta_text": "A workforce focused Rube Goldberg machine",
+        "last_updated": "2014-10-02T20:43:00-04:00",
+        "media_format": "Video",
+        "name": "ADP",
+        "preview_url": "52209678-9132-437f-caa0-ad4c4e6a0fb1",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:43:00-04:00",
+        "short_description": "A workforce focused Rube Goldberg machine",
+        "showcase_overview": "You've seen these machines done by Rube Goldberg. They're pretty cool. Well, we animated one for ADP. And yes, it's pretty cool.",
+        "tile_image": {
+          "height": 703,
+          "resize_url": "http://lh3.ggpht.com/624qQImghvstcaBFqwg8XVjGhMbIaSP2r73U6605grkF4qyAVNvKUFPft22_NBiblb0webGoFgAVBqefaS-oRG0lHAO-",
+          "size": 1292369,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412296786365_adp%20hr.png",
+          "width": 1251
+        },
+        "tile_view": "Image",
+        "video_embed": "<p><u>http://youtu.be/Yzw0_xRAVSs</u></p>"
+      },
+      "-JYIT0C45_8OLHFKGVYu": {
+        "_sort_create_date": 1412297100,
+        "_sort_last_updated": 1412297100,
+        "_sort_publish_date": 1412297100,
+        "client_logo": {
+          "height": 461,
+          "resize_url": "http://lh4.ggpht.com/MnKPDi1jsLHxxaxLdTbK8J0xeObsX_gdGRB-MucsZAlq-xVoRCOzt7UeS7izohvk8MjHWS59U69_qE0P0ryYAnHxrGr4Hw",
+          "size": 37979,
+          "type": "image/png",
+          "url": "/webhook-uploads/1412297073772_EARX%20logo-01.png",
+          "width": 2786
+        },
+        "create_date": "2014-10-02T20:45:00-04:00",
+        "cta_text": "Bringing skin health expertise to the table and beyond",
+        "last_updated": "2014-10-02T20:45:00-04:00",
+        "media_format": "Slides/Images",
+        "name": "Elizabeth Arden Rx",
+        "preview_url": "0a21a4e3-aae1-9ac1-f656-5c1cc8ae8bda",
+        "priority": 8,
+        "publish_date": "2014-10-02T20:45:00-04:00",
+        "short_description": "Bringing skin health expertise to the table and beyond",
+        "showcase_overview": "Lorem ipsum stuff and more",
+        "slidesimages": [
+          {
+            "height": 1027,
+            "resize_url": "http://lh5.ggpht.com/zcKNwCTPAMxsoXWcAUoWQMrtcP-h6EhrYnYTxjztXcONQMRJTOXIKxFzSqFXY2Zu-nmceAlE5WpjSTGS7CnBuWMb9_aKsQ",
+            "size": 887279,
+            "type": "image/jpeg",
+            "url": "/webhook-uploads/1412297058694_Tabletop_Rough.jpg",
+            "width": 2036
+          }
+        ],
+        "tile_image": {
+          "height": 1027,
+          "resize_url": "http://lh5.ggpht.com/PfS-R3NVtSNQo2rxK7-wth_PvN7OpubFNZlPyQSo9UBhaibblnqj2e6ObbP016qJKK79HjQS25_4W951DT3DFj-Ys2vtlw",
+          "size": 887279,
+          "type": "image/jpeg",
+          "url": "/webhook-uploads/1412297078396_Tabletop_Rough.jpg",
+          "width": 2036
+        },
+        "tile_view": "Image"
+      }
+    },
+    "team": {
+      "_sort_create_date": 1412287260,
+      "_sort_last_updated": 1412295480,
+      "create_date": "2014-10-02T18:01:00-04:00",
+      "dek": "the people who spend their days writing on walls and wrangling with the toughest challenges in the business.",
+      "hed": "This is our team,",
+      "intro_paragraph": "We’re an eclectic family with electric chemistry. A multi-disciplinarian smorgasbord working in harmony to create the memorable experiences that elevate brands.",
+      "last_updated": "2014-10-02T20:18:00-04:00",
+      "meta_description": "These are people who spend their days writing on walls and wrangling with the toughest challenges in the business. We’re an eclectic family with electric chemistry. A multi-disciplinarian smorgasbord working in harmony to create the memorable experiences that elevate brands.",
+      "name": "Team",
+      "og_description": "These are the people who spend their days writing on walls and wrangling with the toughest challenges in the business. We’re an eclectic family with electric chemistry. A multi-disciplinarian smorgasbord working in harmony to create the memorable experiences that elevate brands.",
+      "og_image": {
+        "height": 801,
+        "resize_url": "http://lh3.ggpht.com/6zU8g4GN2OVvL2FWJ4BKVlgi0SDJ5yzPbdEJBG28gSo-yYsweJf482CHJQbQzT919hamIZ4Pzp6Moa4iSEmeMVbUbra6pQ",
+        "size": 169656,
+        "type": "image/jpeg",
+        "url": "/webhook-uploads/1412295070129_team-feature.jpg",
+        "width": 1303
+      },
+      "og_title": "Team",
+      "page_title": "Team",
+      "preview_url": "252a9ddb-9713-00f1-49dd-2b762643ef29",
+      "stage_image": {
+        "resize_url": "http://lh4.ggpht.com/rDpCW6yh1-QeZExuo45y2vhO951eJkVl13jPY99Ic0X8EATZvYP52LwnfN2P7XCaaw95FeQ-CeLT7Uyu5K16yv4FqM8oPw",
+        "size": 169656,
+        "type": "image/jpeg",
+        "url": "/webhook-uploads/1412295490708_team-feature.jpg"
+      }
+    },
+    "teammembers": {
+      "-JYI--cuOYkOqecg6-2k": {
+        "_sort_create_date": 1412289240,
+        "_sort_last_updated": 1412294580,
+        "_sort_publish_date": 1412289240,
+        "create_date": "2014-10-02T18:34:00-04:00",
+        "first_name": "Ann",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": true
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "isDraft": false,
+        "job_title": "EVP, Business Solutions",
+        "last_name": "Cave",
+        "last_updated": "2014-10-02T20:03:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/in/acave",
+        "name": "Ann Cave",
+        "preview_url": "8e6f4ebd-278f-0d1f-511c-3dbd9f21291a",
+        "priority": 1,
+        "publish_date": "2014-10-02T18:34:00-04:00",
+        "quote": "Baseball-watching, chocolate enthusiast who believes life is too short to drink bad wine.",
+        "slug": ""
+      },
+      "-JYI71vYK1qmxS7g5ePP": {
+        "_sort_create_date": 1412291340,
+        "_sort_last_updated": 1412296380,
+        "_sort_publish_date": 1412291340,
+        "create_date": "2014-10-02T19:09:00-04:00",
+        "first_name": "Brent",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": true
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "isDraft": false,
+        "job_title": "VP, Solutions",
+        "last_name": "Turner",
+        "last_updated": "2014-10-02T20:33:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/in/brentrt",
+        "name": "Brent Turner",
+        "preview_url": "8dcee377-58a0-340c-2542-7a8559c89ef1",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:09:00-04:00",
+        "quote": "Overseer of family Lego projects who aspires to be Coach Taylor of “Friday Night Lights.”",
+        "twitter_name": "brentrt"
+      },
+      "-JYI9thaCzkpKNdd2tAX": {
+        "_sort_create_date": 1412292120,
+        "_sort_last_updated": 1412335680,
+        "_sort_publish_date": 1412292120,
+        "create_date": "2014-10-02T19:22:00-04:00",
+        "first_name": "Greg",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": true
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "isDraft": false,
+        "is_a_member_of_executive_team": "True",
+        "job_title": "SVP, Finance",
+        "last_name": "Martin",
+        "last_updated": "2014-10-03T07:28:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/pub/greg-martin/52/319/590",
+        "name": "Greg Martin",
+        "preview_url": "4b3eecb5-f88f-192e-91bc-6341cb43b50f",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:22:00-04:00",
+        "quote": "Avid golfer and skier who derives his energy from Chicken Parm and often has to say, “Let’s go. The bus is leaving.”"
+      },
+      "-JYIAyZg-64sKWUnYZKN": {
+        "_sort_create_date": 1412292360,
+        "_sort_last_updated": 1412294640,
+        "_sort_publish_date": 1412292360,
+        "create_date": "2014-10-02T19:26:00-04:00",
+        "first_name": "Julie",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": true
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": true
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "isDraft": false,
+        "job_title": "SVP, Client Services",
+        "last_name": "Ogles",
+        "last_updated": "2014-10-02T20:04:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/pub/julie-ogles/0/75b/49a",
+        "name": "Julie Ogles",
+        "preview_url": "7fa7b761-8658-8279-244e-87efd4aefdd4",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:26:00-04:00",
+        "quote": "Cheers on her children from the sidelines of various fields while dreaming of eating ice cream in a sugar cone somewhere warm with an ocean view."
+      },
+      "-JYIDEMoVMDeM0aSeYjR": {
+        "_sort_create_date": 1412292960,
+        "_sort_last_updated": 1412294340,
+        "_sort_publish_date": 1412292960,
+        "create_date": "2014-10-02T19:36:00-04:00",
+        "first_name": "Pat",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": true
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": true
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "isDraft": false,
+        "job_title": "Senior Account Director",
+        "last_name": "Martin",
+        "last_updated": "2014-10-02T19:59:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/pub/patrick-martin/10/6a2/32",
+        "name": "Pat Martin",
+        "preview_url": "c4dd1fdd-94a1-00e3-7474-4c3324cb532a",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:36:00-04:00",
+        "quote": "Golfer who golfs with friends, golfs with his kids, watches golf, and organizes his golf clubs when he isn’t golfing."
+      },
+      "-JYIEWMNCtXeXrB_3A8I": {
+        "_sort_create_date": 1412293320,
+        "_sort_last_updated": 1412294760,
+        "_sort_publish_date": 1412293320,
+        "create_date": "2014-10-02T19:42:00-04:00",
+        "first_name": "Rich",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": true
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": true
+          },
+          {
+            "label": "Experience",
+            "value": true
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": true
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": true
+          },
+          {
+            "label": "Production",
+            "value": true
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": true
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "isDraft": false,
+        "job_title": "President",
+        "last_name": "Sturchio",
+        "last_updated": "2014-10-02T20:06:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/pub/rich-sturchio/4/441/a0",
+        "name": "Rich Sturchio",
+        "preview_url": "4c0f0c90-c7c5-5825-e0b8-464bae134dcc",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:42:00-04:00",
+        "quote": "Cook, gardener, and tinkerer on an old British car who never met a pasta he didn’t love.",
+        "twitter_name": "richsturchio"
+      },
+      "-JYIGsPBSifLyNjz10LB": {
+        "_sort_create_date": 1412293920,
+        "_sort_last_updated": 1412293920,
+        "_sort_publish_date": 1412293920,
+        "create_date": "2014-10-02T19:52:00-04:00",
+        "first_name": "Thom",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": true
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "job_title": "CEO",
+        "last_name": "Faria",
+        "last_updated": "2014-10-02T19:52:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/pub/thom-faria/41/8b4/434",
+        "name": "Thom Faria",
+        "preview_url": "1a0d96e2-e0e5-e3d6-ecca-fe10f61557cb",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:52:00-04:00",
+        "quote": "Proud husband, father, and grandfather who sees no reason to live anywhere but New England and believes that it’s not how you fall in life, but how you get up that counts."
+      },
+      "-JYII3sk-sco0SepZr74": {
+        "_sort_create_date": 1412294220,
+        "_sort_last_updated": 1412294220,
+        "_sort_publish_date": 1412294220,
+        "create_date": "2014-10-02T19:57:00-04:00",
+        "first_name": "Tim",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": true
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": true
+          }
+        ],
+        "job_title": "EVP, Operations",
+        "last_name": "Martin",
+        "last_updated": "2014-10-02T19:57:00-04:00",
+        "linkedin_profile_name": "http://www.linkedin.com/pub/tim-martin/a/46/a05",
+        "name": "Tim Martin",
+        "preview_url": "35be3b8d-ba69-d163-ff7c-6c5d21795c10",
+        "priority": 1,
+        "publish_date": "2014-10-02T19:57:00-04:00",
+        "quote": "World-traveling, sailing lover who draws inspiration from the great Bobby Orr while winning the State Father Son Golf Tournament."
+      },
+      "-JYIMOugtybpVN1kIPvK": {
+        "_sort_create_date": 1412295360,
+        "_sort_last_updated": 1412295360,
+        "_sort_publish_date": 1412295360,
+        "create_date": "2014-10-02T20:16:00-04:00",
+        "first_name": "Cassie",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": true
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "Account Manager",
+        "last_name": "Villa",
+        "last_updated": "2014-10-02T20:16:00-04:00",
+        "name": "Cassie Villa",
+        "preview_url": "8c64031d-6022-dbc0-9e8d-6bb258a7064e",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:16:00-04:00"
+      },
+      "-JYINVph-ZnqV6KWg4CQ": {
+        "_sort_create_date": 1412295660,
+        "_sort_last_updated": 1412295660,
+        "_sort_publish_date": 1412295660,
+        "create_date": "2014-10-02T20:21:00-04:00",
+        "first_name": "Dana",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": true
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "Account Services",
+        "last_name": "Jasilli",
+        "last_updated": "2014-10-02T20:21:00-04:00",
+        "name": "Dana Jasilli",
+        "preview_url": "c32f1d1a-7346-1fa3-51e7-2259c98f11c2",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:21:00-04:00"
+      },
+      "-JYINmhY73u8Li0CpC_a": {
+        "_sort_create_date": 1412295720,
+        "_sort_last_updated": 1412295720,
+        "_sort_publish_date": 1412295720,
+        "create_date": "2014-10-02T20:22:00-04:00",
+        "first_name": "Danielle",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": true
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "Account Manager",
+        "last_name": "Gorman",
+        "last_updated": "2014-10-02T20:22:00-04:00",
+        "name": "Danielle Gorman",
+        "preview_url": "94f59dac-9bb4-172a-9854-0a494f226cc0",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:22:00-04:00"
+      },
+      "-JYIOLoSVSgJOurC2WdL": {
+        "_sort_create_date": 1412295900,
+        "_sort_last_updated": 1412295900,
+        "_sort_publish_date": 1412295900,
+        "create_date": "2014-10-02T20:25:00-04:00",
+        "first_name": "Edward",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": true
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": true
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "isDraft": false,
+        "job_title": "Account Director",
+        "last_name": "Feather",
+        "last_updated": "2014-10-02T20:25:00-04:00",
+        "name": "Edward Feather",
+        "preview_url": "2fe73b52-456d-99d7-fed2-f67663c2df3a",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:25:00-04:00"
+      },
+      "-JYIOpMs6UZMrw1yuQCF": {
+        "_sort_create_date": 1412296020,
+        "_sort_last_updated": 1412296020,
+        "_sort_publish_date": 1412296020,
+        "create_date": "2014-10-02T20:27:00-04:00",
+        "first_name": "Mary",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "VP, Account Director",
+        "last_name": "Poluikis",
+        "last_updated": "2014-10-02T20:27:00-04:00",
+        "name": "Mary Poluikis",
+        "preview_url": "a0026a2d-e2aa-2604-c2b7-92f0733ae7f2",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:27:00-04:00"
+      },
+      "-JYIPEaxSG3ZRQ3InqQn": {
+        "_sort_create_date": 1412296140,
+        "_sort_last_updated": 1412296140,
+        "_sort_publish_date": 1412296140,
+        "create_date": "2014-10-02T20:29:00-04:00",
+        "first_name": "Michael",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": true
+          },
+          {
+            "label": "Administration",
+            "value": false
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "Senior Account Director",
+        "last_name": "Horton",
+        "last_updated": "2014-10-02T20:29:00-04:00",
+        "name": "Michael Horton",
+        "preview_url": "dc0b868d-53c7-14eb-3167-4edcf322a3de",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:29:00-04:00"
+      },
+      "-JYIP_xpidwDSzlp-ABx": {
+        "_sort_create_date": 1412296200,
+        "_sort_last_updated": 1412296200,
+        "_sort_publish_date": 1412296200,
+        "create_date": "2014-10-02T20:30:00-04:00",
+        "first_name": "Holly",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": true
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "Receptionist/Administrative Assistant",
+        "last_name": "Haas",
+        "last_updated": "2014-10-02T20:30:00-04:00",
+        "name": "Holly Haas",
+        "preview_url": "e7c883bc-4edc-0a17-49b4-dc048e108168",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:30:00-04:00"
+      },
+      "-JYIPoI79eUfzt7224P6": {
+        "_sort_create_date": 1412296260,
+        "_sort_last_updated": 1412296260,
+        "_sort_publish_date": 1412296260,
+        "create_date": "2014-10-02T20:31:00-04:00",
+        "first_name": "Susan",
+        "group": [
+          {
+            "label": "Account Services",
+            "value": false
+          },
+          {
+            "label": "Administration",
+            "value": true
+          },
+          {
+            "label": "Analytics and Accountability",
+            "value": false
+          },
+          {
+            "label": "Business Solutions",
+            "value": false
+          },
+          {
+            "label": "CEO",
+            "value": false
+          },
+          {
+            "label": "Chairman",
+            "value": false
+          },
+          {
+            "label": "Chief Client Officer",
+            "value": false
+          },
+          {
+            "label": "Creative",
+            "value": false
+          },
+          {
+            "label": "Delivery",
+            "value": false
+          },
+          {
+            "label": "Engineering",
+            "value": false
+          },
+          {
+            "label": "Events",
+            "value": false
+          },
+          {
+            "label": "Experience",
+            "value": false
+          },
+          {
+            "label": "Finance",
+            "value": false
+          },
+          {
+            "label": "Food Services",
+            "value": false
+          },
+          {
+            "label": "Human Resources",
+            "value": false
+          },
+          {
+            "label": "Information Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing",
+            "value": false
+          },
+          {
+            "label": "Marketing & Technology",
+            "value": false
+          },
+          {
+            "label": "Marketing Studio",
+            "value": false
+          },
+          {
+            "label": "Operations",
+            "value": false
+          },
+          {
+            "label": "Partner",
+            "value": false
+          },
+          {
+            "label": "Post Production",
+            "value": false
+          },
+          {
+            "label": "President",
+            "value": false
+          },
+          {
+            "label": "Production",
+            "value": false
+          },
+          {
+            "label": "Strategy and Planning",
+            "value": false
+          },
+          {
+            "label": "Technology",
+            "value": false
+          },
+          {
+            "label": "Video",
+            "value": false
+          },
+          {
+            "label": "Executive Team",
+            "value": false
+          }
+        ],
+        "job_title": "Receptionist/Administrative Assistant",
+        "last_name": "Sexton",
+        "last_updated": "2014-10-02T20:31:00-04:00",
+        "name": "Susan Sexton",
+        "preview_url": "e4b0a6a9-44cc-d3c4-ac72-303d62322065",
+        "priority": 1,
+        "publish_date": "2014-10-02T20:31:00-04:00"
+      }
+    },
+    "teams": {
+      "-JYKjza6-M_YelCfRCkd": {
+        "_sort_create_date": 1412335380,
+        "_sort_last_updated": 1412335380,
+        "_sort_publish_date": 1412335380,
+        "create_date": "2014-10-03T07:23:00-04:00",
+        "last_updated": "2014-10-03T07:23:00-04:00",
+        "name": "Executive",
+        "preview_url": "fd4c3835-fb6c-1fef-bb8b-643e7a2ee12a",
+        "publish_date": "2014-10-03T07:23:00-04:00"
+      },
+      "-JYKkDqutrdrrYJ-NFMm": {
+        "_sort_create_date": 1412335440,
+        "_sort_last_updated": 1412335440,
+        "_sort_publish_date": 1412335440,
+        "create_date": "2014-10-03T07:24:00-04:00",
+        "last_updated": "2014-10-03T07:24:00-04:00",
+        "name": "Account Services",
+        "preview_url": "4a9909de-71d7-9208-e9cc-6f617ff1c1cc",
+        "publish_date": "2014-10-03T07:24:00-04:00"
+      }
+    },
+    "work": {
+      "_sort_create_date": 1412287020,
+      "_sort_last_updated": 1412287020,
+      "clients_description_text": "<p>Our work represents more than our partnerships with some of the world’s best-known brands. These brands are symbols of meaningful relationships, many of which span across several decades. They are the clients who come to us with their most complex brand challenges.</p><p>And, together, we solve them.</p><p>Because behind each of our engagements is the story of audience insights and our expertise in using these insights to transform audience behavior and build brand loyalty. Our clients know how the content-oriented, brand experiences we create deliver results.</p>",
+      "create_date": "2014-10-02T17:57:00-04:00",
+      "dek": "<p>virtual universities, journeys through the human body, pop up cities, a five-part exploration of cyber threats, 80 foot executive presentations, sports hero documentaries, cinema spoofs, musical interludes, superhero social media campaigns, identity transformations, and just about anything else we’ve dreamed up for our clients. Take a look around to see what we can do for you.</p>",
+      "hed": "We spend our days with futuristic robots,",
+      "last_updated": "2014-10-02T17:57:00-04:00",
+      "name": "Work",
+      "og_description": "Our work represents more than our partnerships with some of the world’s best-known brands. These brands are symbols of meaningful relationships, many of which span across several decades. They are the clients who come to us with their most complex brand challenges.",
+      "og_title": "Work",
+      "page_title": "Work",
+      "preview_url": "09c251e4-d422-74ce-c92d-6ffb7c8f8d27"
+    }
+  },
+  "settings": {
+    "general": {
+      "site_name": "Cramer 2015"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@media print {
+
+/* DEFAULT PRINT RESET STYLES */
+
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  h2, h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid; }
+
+  p {
+    orphans: 3;
+    widows: 3; }
+
+  pre, blockquote {
+    border: 1px solid #cccccc;
+    page-break-inside: avoid; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr {
+    page-break-inside: avoid; }
+
+  body {
+    width: 675px !important;
+    min-width: 675px !important; }
+
+/* START CRAMER TEMPLATE SPECIFIC */
+
+  #menu-toggle,
+  #homepage_background_video,
+  .video-container .cta
+  {
+    display: none;
+  }
+
+  #header {
+    background: transparent !important;
+    position: static !important;
+  }
+
+  #header .logo {
+    background: transparent url(../images/cramer-logo.png) no-repeat center center !important;
+    margin-top: 0;
+  }
+
+  #header .panel {
+    padding: 0;
+  }
+
+  .feature {
+    position: static !important;
+    background-image: none !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .feature-title {
+    margin: 0 !important;
+  }
+
+  div.panel div.large-6 {
+    width: 100% !important;
+  }
+
+  .page {
+    margin-top: auto !important;
+    min-height: auto !important;
+  }
+
+  .social .bar {
+    display: none !important;
+  }
+
+}

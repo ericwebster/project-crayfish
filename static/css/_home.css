@@ -1,0 +1,124 @@
+/*
+   home.css
+ */
+
+body.home {
+    height: 100%;
+}
+
+.video-container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+#homepage_background_video,
+#homepage_background_video_grid_wrapper{
+    position: absolute !important;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto !important;
+  height: auto !important;
+  overflow: hidden
+}
+
+#homepage_background_video_grid_wrapper video{
+    object-fit: cover;
+}
+
+.video-container .content{
+    color: #fff;
+    background: url(../images/home-overlay.png) no-repeat top center;
+    background-size: cover;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+body.home .video-container .body-home {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body.home .video-container .body-home .slate {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.video-container .content h1 {
+    font-size: 45px;
+    padding-bottom: 15px;
+    line-height: 1.111;
+    text-align: left;
+}
+
+.video-container .content h1 a,
+.video-container .content h1 strong{
+    color: #fc7706;
+    text-decoration: none;
+}
+
+.video-container .content h1 a:hover strong {
+    color: #fc4006;
+}
+
+.video-container .content .cta {
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    text-align: left;
+    text-align: left;
+}
+
+.video-container .content .cta a {
+    color: #fff;
+    text-decoration: none;
+    background: url(../images/cta-carat.png) no-repeat right center;
+    padding: 5px 25px 5px 0;
+    line-height: 1;
+}
+
+.video-container .content .cta a:hover {
+    color: #fc4006;
+}
+
+#box-promotion {
+    background-color:rgba(0, 0, 0, 0.5);
+    float:left;
+    padding:10px 22px;
+    margin-top:55px;
+    font-family: 'Univers LT W02 55 Roman', Arial, sans-serif;
+    color:#918d8a;
+    font-size:14px;
+}
+#box-promotion a {
+    color:#fc7706;
+    text-decoration:none;
+    margin-left:10px;
+}
+#box-promotion a:hover {
+    color:#fc4006;
+}
+
+
+.menu-open .video-container .content{
+    -moz-transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}

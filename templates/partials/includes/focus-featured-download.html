@@ -1,0 +1,41 @@
+{% if item.featured_download.name != "" %}
+  <div class="large-4 columns">
+    <div class="focus-whitepaper">
+      <a href="{{ url(item.featured_download) }}">
+        {% if item.featured_download.thumbnail_image.url != "" %}
+            <span class="new-badge">New!</span>
+            <img src="{{item.featured_download.thumbnail_image.url}}">
+        {% endif %}
+        <div class="caption">
+          <h5>Featured {{ item.featured_download.type }}</h5>
+          <h2 class="large-title">{{ item.featured_download.hed }}</h2>
+          <p>{{ item.featured_download.dek }}</p>
+          <p><span class="link linkNext">{{ item.featured_download.button_text }}</span></p>
+        </div>
+      </a>
+    </div>
+  </div>
+{% else %}
+  <div class="large-4 columns form-submit">
+    <h4><strong>Stay in the loop.</strong></h4>
+    <p>Sign up to receive the latest on what we are thinking, reading, and writing.</p>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup2">
+      <form action="//cramer.us8.list-manage.com/subscribe/post?u=e96c30ea414130ba85f593f1c&amp;id=87aa8371f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email" placeholder="you@yourdomain.com" id="mce-EMAIL">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_e96c30ea414130ba85f593f1c_87aa8371f6" tabindex="-1" value=""></div>
+          <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button></div>
+        </div>
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+  </div>
+{% endif %}

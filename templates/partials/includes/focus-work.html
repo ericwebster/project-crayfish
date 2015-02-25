@@ -1,0 +1,50 @@
+
+<div class="detail-wrapper">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <h3>{{ item.headline_above_showcases }}</h3>
+      </div>
+    </div>
+  </div><!-- / row -->
+
+  <div class="row portfolio-grid">
+    <div class="large-12 medium-12 columns">
+      <div class="row showcase-grid">
+        {% set showcasesMax = 12 %}
+        {% set showcasesShown = 0 %}
+        {% for showcase in item.showcases %}
+          {% if showcasesShown < showcasesMax %}
+            <!-- Showcase Tile -->
+            <div class="large-2 medium-2 portfolio-case columns showcase-box">
+              <a href="{{ url(showcase) }}" style="background-image:url('{{ showcase.tile_image|imageCrop(300) }}');">
+                <div class="front">
+                  <h4>{{ showcase.name }}</h4>
+                  <p>{{ showcase.promo }}</p>
+                </div>
+                <div class="back">
+                  <p>See the work</p>
+                </div>
+              </a>
+            </div>
+            {% set showcasesShown = showcasesShown + 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% set showcase = cms.showcases %}
+        {% set showcase = showcase|sort('priority', true) %}
+        {% for tile in showcase %}
+
+        {% endfor %}
+
+        <!-- / removed for now
+        <div class="large-12 next-content">
+          <div class="large-12 panel next-content">
+            <button>More</button>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </div><!-- /row -->
+</div><!-- /detail-wrapper -->

@@ -1,0 +1,113 @@
+
+{% extends "templates/partials/base.html" %}
+{% set item = get('about') %}
+{% block title %} {{ item.name }} | {% parent %} {% endblock %}
+{% set pageName = 'about' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage %}
+{% set ogUrl = item.ogurl.url %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% block content %}
+
+
+
+	<div id="stage" class="row feature" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+
+
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-6 medium-8 columns end">
+          <div class="feature-title">
+	          <h5 style="color: {{item.hed_color}}">{{item.section_name}}</h5>
+	          <h1 style="color: {{item.hed_color}}">{{ item.hed }}</h1>
+	        </div>
+	        <div class="featured-desc">
+	          <p style="color: {{item.hed_color}}">{{ item.dek|safe }}</p>
+	        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <p class="intro"><img src="/static/images/brand-slash.png" alt="Brand Slash">{{ item.intro_paragraph }}</p>
+        </div>
+      </div>
+    </div>
+
+		<div class="row aboutDetails">
+			<div class="large-12 columns">
+				<div class="panel">
+					<div class="large-4 medium-4 columns results">
+						<p>{{item.left_column}}</p>
+					</div>
+				<div class="large-4 medium-4 columns creative">
+					<p>{{item.center_column}}</p>
+				</div>
+				<div class="large-4 medium-4 columns tinker">
+					<p>{{item.right_column}}</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="panel">
+					<p class="second_intro">{{item.marketing_paragraph}}</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row goBoxes">
+			<div class="large-12 columns">
+				<div class="panel">
+					<div class="large-4 medium-4 columns">
+						<div class="goBox">
+              <a href="/team/" class="team">
+								<div class="triangle-topright"></div>
+								<div class="go-text-wrapper">
+									<h2>The Team</h2>
+									<p>Meet Our People</p>
+								</div>
+              </a>
+						</div>
+					</div>
+					<div class="large-4 medium-4 columns">
+						<div class="goBox">
+              <a href="/inside-the-studio/" class="inside">
+								<div class="triangle-topright"></div>
+								<div class="go-text-wrapper">
+									<h2>The Studio</h2>
+									<p>See Inside</p>
+								</div>
+              </a>
+						</div>
+					</div>
+          <div class="large-4 medium-4 columns">
+              <div class="goBox">
+                <a href="/focus/" class="work">
+                  <div class="triangle-topright"></div>
+                  <div class="go-text-wrapper">
+	                  <h2>The Focus</h2>
+	                  <p>View Our Services</p>
+	                 </div>
+                </a>
+              </div>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+{% endblock %}

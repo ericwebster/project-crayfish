@@ -1,0 +1,215 @@
+{# ------------------------------------------------------- #}
+{# INDIVIDUAL VIEW FOR EACH story #}
+{# This page can use any data from http:localhost:2000/cms/#/form/story/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append this story's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+  <p><a href="{{ url('story') }}">View a list of all story</a></p>
+  <h1>{{ item.name }}</h1>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Story Type: </strong>
+        {{ item.story_type }}
+      </li>
+      <li>
+        <strong>Story Template: </strong>
+        {{ item.story_template }}
+      </li>
+      <li>
+        <strong>Titles: </strong>
+        {{ item.titles }}
+      </li>
+      <li>
+        <strong>Story Slug: </strong>
+        {{ item.story_slug }}
+      </li>
+      <li>
+        <strong>Display (Desktop): </strong>
+        {{ item.display_desktop }}
+      </li>
+      <li>
+        <strong>Alternative (Promo/Teaser): </strong>
+        {{ item.alternative_promoteaser }}
+      </li>
+      <li>
+        <strong>Descriptive (SEO / Open Graph): </strong>
+        {{ item.descriptive_seo__open_graph }}
+      </li>
+      <li>
+        <strong>Short (Menus / Mobile): </strong>
+        {{ item.short_menus__mobile }}
+      </li>
+      <li>
+        <strong>Snippet (2-3 words): </strong>
+        {{ item.snippet_23_words }}
+      </li>
+      <li>
+        <strong>The Story: </strong>
+        {{ item.the_story }}
+      </li>
+      <li>
+        <strong>Dek: </strong>
+        {{ item.dek }}
+      </li>
+      <li>
+        <strong>Lede: </strong>
+        {{ item.lede }}
+      </li>
+      <li>
+        <strong>Body: </strong>
+        {{ item.body|safe }}
+      </li>
+      <li>
+        <strong>Related Assets: </strong>
+        {# Relations require some special code. More info about relations here: #}
+        {# http://www.webhook.com/docs/template-rules-and-filters/#getitem #}
+        {% for relation in item.related_assets %}
+          {# You can ouput more than just the name. Feel free to output more fields from the CMS. #}
+          <a href="{{ url(relation) }}">{{ relation.name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </li>
+      <li>
+        <strong>Story Meta: </strong>
+        {{ item.story_meta }}
+      </li>
+      <li>
+        <strong>Thumbnail: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.thumbnail|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>Related Stories: </strong>
+        {# Relations require some special code. More info about relations here: #}
+        {# http://www.webhook.com/docs/template-rules-and-filters/#getitem #}
+        {% for relation in item.related_stories %}
+          {# You can ouput more than just the name. Feel free to output more fields from the CMS. #}
+          <a href="{{ url(relation) }}">{{ relation.name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </li>
+      <li>
+        <strong>Contributor - Primary: </strong>
+        {# Relations require some special code. More info about relations here: #}
+        {# http://www.webhook.com/docs/template-rules-and-filters/#getitem #}
+        {% for relation in item.contributor__primary %}
+          {# You can ouput more than just the name. Feel free to output more fields from the CMS. #}
+          <a href="{{ url(relation) }}">{{ relation.name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </li>
+      <li>
+        <strong>Contributor - Additional: </strong>
+        {# Relations require some special code. More info about relations here: #}
+        {# http://www.webhook.com/docs/template-rules-and-filters/#getitem #}
+        {% for relation in item.contributor__additional %}
+          {# You can ouput more than just the name. Feel free to output more fields from the CMS. #}
+          <a href="{{ url(relation) }}">{{ relation.name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </li>
+      <li>
+        <strong>Credits: </strong>
+        {{ item.credits }}
+      </li>
+      <li>
+        <strong>Tags: </strong>
+        {# Relations require some special code. More info about relations here: #}
+        {# http://www.webhook.com/docs/template-rules-and-filters/#getitem #}
+        {% for relation in item.tags %}
+          {# You can ouput more than just the name. Feel free to output more fields from the CMS. #}
+          <a href="{{ url(relation) }}">{{ relation.name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </li>
+      <li>
+        <strong>Comments: </strong>
+        {{ item.comments }}
+      </li>
+      <li>
+        <strong>Include Comments: </strong>
+        {{ item.include_comments }}
+      </li>
+      <li>
+        <strong>Comments Still Open?: </strong>
+        {{ item.comments_still_open }}
+      </li>
+      <li>
+        <strong>Advanced Configurations: </strong>
+        {{ item.advanced_configurations }}
+      </li>
+      <li>
+        <strong>Javascript: </strong>
+        {{ item.javascript }}
+      </li>
+      <li>
+        <strong>CSS: </strong>
+        {{ item.css }}
+      </li>
+      <li>
+        <strong>Page Background Image: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.page_background_image|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>Page Background Image - Fixed Position?: </strong>
+        {{ item.page_background_image__fixed_position }}
+      </li>
+      <li>
+        <strong>Stage Background Image: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.stage_background_image|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>Stage Overlay Color: </strong>
+        {{ item.stage_overlay_color }}
+      </li>
+      <li>
+        <strong>Stage Overlay Transparency: </strong>
+        {{ item.stage_overlay_transparency }}
+      </li>
+      <li>
+        <strong>Stage Height: </strong>
+        {{ item.stage_height }}
+      </li>
+      <li>
+        <strong>Stage Text Color: </strong>
+        {{ item.stage_text_color }}
+      </li>
+      <li>
+        <strong>Preview URL: </strong>
+        {{ item.preview_url }}
+      </li>
+      <li>
+        <strong>Slug: </strong>
+        {{ item.slug }}
+      </li>
+  </ul>
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% block content -%}
+{% set data = cms.thepulse -%}
+{% set data = data|sort('post_date', true) -%}
+{% set data = paginate(data, 30) -%}
+{
+  "items": [
+    {% for object in data -%}
+      {
+            "title": "{{object.name}}",
+            "link": "{{object.link_}}",
+            "pubDate": "{{ object.post_date|date("D, d M Y H:i:s O") }}",
+            "comment": "{{object.comments}}",
+            "description": "{{object.description}}"
+        }{% if !loop.last %},{% endif %}
+    {% endfor -%}
+  ]
+}
+{% endblock -%}

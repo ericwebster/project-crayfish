@@ -1,0 +1,63 @@
+{# ------------------------------------------------------- #}
+{# ONE OFF VIEW globalelements #}
+{# This page can use any data from http:localhost:2000/cms/#/form/globalelements/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# You can copy/paste this line to any page on your site to access the globalelements data. #}
+{% set item = get('globalelements') %}
+{# This sets our page <title>. It will append this globalelements's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+  <h1>{{ item.name }}</h1>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Preview URL: </strong>
+        {{ item.preview_url }}
+      </li>
+      <li>
+        <strong>Slug: </strong>
+        {{ item.slug }}
+      </li>
+      <li>
+        <strong>Twitter URL: </strong>
+        {{ item.twitter_url }}
+      </li>
+      <li>
+        <strong>Linkedin URL: </strong>
+        {{ item.linkedin_url }}
+      </li>
+      <li>
+        <strong>Facebook URL: </strong>
+        {{ item.facebook_url }}
+      </li>
+      <li>
+        <strong>Google+ URL: </strong>
+        {{ item.google_url }}
+      </li>
+  </ul>
+{% endblock %}

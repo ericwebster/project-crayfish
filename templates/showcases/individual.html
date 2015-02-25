@@ -1,0 +1,160 @@
+{# ------------------------------------------------------- #}
+{# INDIVIDUAL VIEW FOR EACH showcases #}
+{# This page can use any data from http:localhost:2000/cms/#/form/showcases/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{% set pageName = 'showcase orange-stage' %}
+{% set customScripts = ['/static/owl-carousel/owl.carousel.js', '/static/js/carousel.js'] %}
+{% set customStylesheets = ['/static/owl-carousel/owl.carousel.css', '/static/js/owl-carousel/owl.theme.css'] %}
+{# This sets our page <title>. It will append this showcases's name to the site title defined in base.html #}
+{% block title %} {{ item.name }} | Showcases | Cramer {% endblock %}
+{% block content %}
+
+
+<div id="stage" class="row feature">
+    <div class="large-12 columns">
+        <div class="panel">
+
+        {% if item.type === "Demo Reel" %}
+            <div class="large-6 medium-8 columns end">
+                <div class="feature-title reel" style="color: {{item.hed_color}}">
+                    <h5><a href="/work/">Work</a></h5>
+                    <h1>{{ item.name }}</h1>
+                </div>
+            </div>
+
+            <div class="large-6 medium-8 columns end">
+                <div class="feature-title" style="color: {{item.hed_color}}">
+                    <h2 style="color: {{item.hed_color}}">{{ item.showcase_overview }}</h2>
+                </div>
+            </div>
+        {% else %}
+            <div class="large-6 medium-8 columns end">
+                <div class="feature-logo" style="color: {{item.hed_color}}">
+                    <img src="{{ item.client_logo_white.url }}" alt="{{ item.name }} logo" />
+                </div>
+            </div>
+
+            <div class="large-6 medium-8 columns end">
+                <div class="feature-title" style="color: {{item.hed_color}}">
+                    <h5><a href="/work/">Work</a></h5>
+                    <h1>{{ item.showcase_title }}</h1>
+                    <h2 style="color: {{item.hed_color}}">{{ item.showcase_overview }}</h2>
+                </div>
+            </div>
+        {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="row showcase">
+        <div class="large-12 columns">
+            <div class="panel">
+                {% for format in item.media_formats %}
+                    {% if format.label === "Slides/Images" %}
+                        {% if format.value %}
+                            {% set showImages = true %}
+                        {% else %}
+                            {% set showImages = false %}
+                        {% endif %}
+                    {% elseif format.label === "Video - Wistia" %}
+                        {% if format.value %}
+                            {% set showWistia = true %}
+                        {% else %}
+                            {% set showWistia = false %}
+                        {% endif %}
+                    {% elseif format.label === "Video - General Embed" %}
+                        {% if format.value %}
+                            {% set showVideoEmbed = true %}
+                        {% else %}
+                            {% set showVideoEmbed = false %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if showWistia %}
+                    <div class="showcase-image video-player wistia">
+
+                        <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+                        <div class="wistia_embed wistia_async_{{ item.wistia_video_id }} videoFoam=true" style="width:1024px;height:576px;">&nbsp;</div>
+
+                        {% if item.wistia_caption != "" %}
+                            <div class="caption">
+                                <p>{{ item.wistia_caption }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                {% if showVideoEmbed %}
+                    <div class="showcase-image video-player">
+
+                        {{ item.video_embed|safe }}
+
+                        {% if item.embed_caption != "" %}
+                            <div class="caption">
+                                <p>{{ item.embed_caption }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                {% if showImages %}
+                    {% for image in item.slidesimages %}
+                    <div class="showcase-image">
+                        <img src="{{ image.url }}" alt="{{ image.caption }}" />
+
+                        {% if image.caption != "" %}
+                            <div class="caption">
+                                <p>{{ image.caption }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row contact-cta-lead cta-globals">
+      <div class="large-12 columns">
+        <div class="panel">
+          <p class="cta-intro">
+            {% if item.type === "Demo Reel" %}
+                Want to learn more about this work?
+            {% else %}
+                Want to learn more about our work with {{ item.name }}?
+            {% endif %}
+          </p>
+        </div>
+      </div>
+
+     {% include "templates/partials/includes/contact-cta.html" %}
+
+    </div><!-- contact-cta-box -->
+
+    <div class="row focus-boxes-lead cta-globals">
+      <div class="large-12 columns">
+        <div class="panel">
+          <p class="lead-intro">Our areas of expertise.</p>
+        </div>
+      </div>
+    </div>
+
+    {% include "templates/partials/includes/focus-boxes.html" %}
+</div>
+
+
+
+
+
+
+{% endblock %}

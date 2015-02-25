@@ -1,0 +1,231 @@
+/*
+   team.css
+ */
+
+
+.team .feature .large-5 {
+    margin-left:60px;
+}
+.team .feature-title h3, .about .feature-title h3{
+    margin:0;
+}
+.team .featured-desc p {
+    font-size: 34px;
+    line-height: 120%;
+    margin:0;
+    max-width: 425px;
+    color:#ffffff; 
+}
+
+.team p.intro {
+    font-size:34px;
+    line-height: 1.357;
+    color:#444444;
+    text-align:center;
+    padding:0 80px;
+    margin:60px 0;
+}
+.teamFilter {
+    padding: 0 80px;
+    margin-bottom:60px;
+}
+.teamFilter label, .teamFilter input, .teamFilter select, #searchName label, #searchName input {
+    float:left;
+}
+#searchName {
+    float:right;
+}
+.teamFilter label {
+    color:#fc7706;
+    font-size:28px;
+    margin-right:20px;
+    position: static;
+}
+.teamFilter select {
+    max-width:197px;
+    -webkit-apperance:none;
+}
+.teamFilter .lastName {
+    width:240px;
+}
+.teamFilter input {
+    margin-right:10px;
+}
+.teamFilter select, .teamFilter input {
+    background-color: #e3e3e3;
+    border:0px;
+    margin-top: 10px;
+    color:#444444;
+}
+.teamFilter select, .teamFilter input {
+    padding:5px 8px;
+    height: 27px;
+}
+.teamFilter input {
+    padding:6px 8px;
+}
+.teamFilter input[type="submit"] {
+    background-color: #ffffff;
+    text-indent: -9999px;
+    background-image:url("../images/submit-arrow.png"); background-repeat:no-repeat;background-position: center;
+    cursor:pointer;
+}
+.teamWrapper .large-3 {
+    max-width:298px;
+    width: 100%;
+    padding:0;
+    margin:0 0 30px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:relative;
+}
+.teamWrapper .panel {
+    padding:0 54px;
+}
+.teamFilter .panel {
+    padding:0 13px;
+}
+.memberWrapper {
+    overflow:hidden;
+    height:280px;
+}
+.teamBorder {
+    position:absolute;
+    bottom:0;
+    left: -40px;
+    max-width:380px;
+    width:100%;
+    height:1px;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDQlIiBzdG9wLWNvbG9yPSIjYjJiMmIyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 44%, rgba(255,255,255,0) 86%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(44%,rgba(178,178,178,1)), color-stop(86%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 44%,rgba(255,255,255,0) 86%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 44%,rgba(255,255,255,0) 86%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 44%,rgba(255,255,255,0) 86%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(178,178,178,1) 44%,rgba(255,255,255,0) 86%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#00ffffff',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+.teamMember {
+    position:relative;
+    top:1px;  /* This line fixes an issue that crashes ipads - Please leave */
+    transform: translate3d(0px, 235px, 0px);
+    -webkit-transform: translate3d(0px, 235px, 0px);
+    -moz-transform: translate3d(0px, 235px, 0px);
+    -webkit-transition: -webkit-transform .2s ease-in;
+    -moz-transition: -moz-transform .2s ease-in;
+    -o-transition: -o-transform .2s ease-in;
+    transition: transform .2s ease-in;
+
+}
+.teamWrapper .active .teamMember{
+		top:0px; /* This line fixes an issue that crashes ipads - Please leave */
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: -webkit-transform .2s ease-in;
+    -moz-transition: -moz-transform .2s ease-in;
+    -o-transition: -o-transform .2s ease-in;
+    transition: transform .2s ease-in;
+}
+
+.appleios .teamWrapper .active .teamMember{
+		top:0px; /* This line fixes an issue that crashes ipads - Please leave */
+   	transform:none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.appleios .teamMember {
+		top:236px;  /* This line fixes an issue that crashes ipads - Please leave */
+    transform:none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.ie9 .teamMember {
+   position:relative;
+   top:235px;
+}
+.ie9 .teamWrapper .active .teamMember{
+   top:0px;
+}
+.teamWrapper .active .nameDept {
+    display:none;
+}
+
+.teamWrapper .large-3:last-child {
+    float:left!important;
+}
+.nameDept {
+    text-align: center;
+    font-family:'Univers LT W01 45 Light', Arial, sans-serif;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 0px;
+}
+
+.nameDept span{
+    font-family:'Univers LT W01 65 Bold', Arial, sans-serif;
+}
+.teamWrapper .bio {
+    font-family:'Univers LT W01 45 Light', Arial, sans-serif;
+    background-color: rgba(251, 122, 15, 0.95);
+    color:#ffffff;
+    padding:40px 15px 0 15px;
+    font-size: 16px;
+    min-height:280px;
+}
+.teamWrapper .name {
+    font-family:'Univers LT W01 65 Bold', Arial, sans-serif;
+    line-height: 1;
+    margin:0;
+}
+.teamWrapper .title  {
+    font-family:'Univers LT W01 45 Light', Arial, sans-serif;
+    line-height: 1;
+    margin:0 0 20px 0;
+}
+.teamWrapper .info  {
+    line-height: 1;
+    margin:0 0 20px 0;
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+}
+
+.teamWrapper .bio ul.social {
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+.team .closeButton {
+    position:absolute;
+    top:55px;
+    right:10px;
+    opacity:.5;
+    cursor:pointer;
+    z-index: 9999;
+    display:none;
+}
+@media only screen and (max-width : 400px) {
+	.team p.intro{
+		font-size: 26px;
+		padding: 20px;
+		margin: 0px;
+	}
+	.teamWrapper .panel{
+		margin: 0 10px;
+		padding: 0 10px;
+	}
+	.nameDept{
+		margin-top:235px;
+	}
+}

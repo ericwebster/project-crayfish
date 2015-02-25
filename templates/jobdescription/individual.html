@@ -1,0 +1,138 @@
+
+{% extends "templates/partials/base.html" %}
+{% block title %}{{ item.name }} | {% parent %}{% endblock %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% set pageName = "careers-detail" %}
+
+
+
+{% block content %}
+
+
+
+<div class="careers-detail-wrapper">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <h5><a href="/careers/">Careers</a></h5>
+        <p class="intro">Tinkerers, Hackers, Builders, Makers, and Doers Wanted</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns careers-wrapper">
+      <div class="panel">
+        <div class="row open-position">
+          <h1>{{item.job_title}}</h1>
+          {{item.job_description|safe}}
+          <h2>Requirements:</h2>
+          {{item.requirements|safe}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row careers-detail-cta">
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-9 columns">
+          <div class="panel social">
+            <span class="share">Share</span>
+            <ul>
+                <li class='st_email_custom email' displayText='Email'></li>
+                <li class='st_linkedin_custom linkedin' displayText='LinkedIn'></li>
+                <li class='st_twitter_custom twitter' displayText='Tweet' st_via='WeAreCramer'></li>
+                <li class='st_facebook_custom facebook' displayText='Facebook'></li>
+                <li class='st_googleplus_custom gplus' displayText='Google +'></li>
+                <li class='st__large' displayText=''></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="large-3 columns apply">
+          <a href="{{item.apply_url|default('mailto:cramercareers@crameronline.com')}}">{{item.apply_button_text|default('Apply')}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+
+  <p><a href="{{ url('jobdescription') }}">View a list of all jobdescription</a></p>
+  <h1>{{ item.name }}</h1>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Job Title: </strong>
+        {{ item.job_title }}
+      </li>
+      <li>
+        <strong>Short Description: </strong>
+        {{ item.short_description }}
+      </li>
+      <li>
+        <strong>Job Description: </strong>
+        {{ item.job_description|safe }}
+      </li>
+      <li>
+        <strong>og-title: </strong>
+        {{ item.ogtitle }}
+      </li>
+      <li>
+        <strong>og-description: </strong>
+        {{ item.ogdescription }}
+      </li>
+      <li>
+        <strong>og-image: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.ogimage|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>meta-description: </strong>
+        {{ item.metadescription }}
+      </li>
+      <li>
+        <strong>Preview URL: </strong>
+        {{ item.preview_url }}
+      </li>
+      <li>
+        <strong>Slug: </strong>
+        {{ item.slug }}
+      </li>
+  </ul>
+
+  -->
+
+
+{% endblock %}
+{% block footer_extra %}
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "e4658e02-2042-4531-8666-51434d296b9b", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover: false});</script>
+{% endblock %}

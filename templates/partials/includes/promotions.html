@@ -1,0 +1,19 @@
+<!-- Priority makes the promotion with lowest priority # show first (This may need to be opposite)-->
+<!-- Slice only shows one item -->
+
+{% set homepagepromotions = cms.homepagepromotions|sort('priority', true)|slice(0,1) %}
+
+	{% for homepagepromotion in homepagepromotions %}
+
+		<!-- Current Date -->
+		{% set now = Date() %}
+		  
+	  {% if homepagepromotion.type == "Box" %}
+	  	{% if now|date('Ymd') <= homepagepromotion.date_end|date('Ymd') && now|date('Ymd') >= homepagepromotion.date_start|date('Ymd') %}
+		    <div id="box-promotion">
+		      <span id="flag-text">{{ homepagepromotion.flag_text }}:</span><span id="body-text"> {{ homepagepromotion.body_text }}</span>
+		      <a href="{{ homepagepromotion.cta_link }}" target="_blank">{{ homepagepromotion.cta_text }}</a>
+		    </div>
+	    {% endif %} 
+		{% endif %} 
+{% endfor %}

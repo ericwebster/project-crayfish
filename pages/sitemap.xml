@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://cramer.com/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://cramer.com/story/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://cramer.com/about/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://cramer.com/focus/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://cramer.com/work/</loc>
+  <lastmod>2014-11-21T02:51:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://cramer.com/careers/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://cramer.com/contact/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://cramer.com/terms/</loc>
+  <lastmod>2014-11-21T02:51:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>http://cramer.com/privacy/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>http://cramer.com/team/</loc>
+  <lastmod>2014-11-21T02:51:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/inside-the-studio/</loc>
+  <lastmod>2014-11-21T02:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/focus/events/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/focus/marketing/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/focus/content/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/focus/healthcare/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/focus/nonprofits/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/hexagon/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/pri-med/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/adp/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/event-reel/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/video-reel/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/luxottica/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/qlik/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/analog-devices/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/aquabot/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/elizabeth-arden-rx/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/quest-diagnostics/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/digital-marketing-reel/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/animation-reel/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/solidworks/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/vce/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/emd-serono/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cramer.com/download/event-technology-landscape-2015/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/new-england-coffee/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/siemens/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/ropes-gray/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/bg-medicine/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cramer.com/showcases/cynosure/</loc>
+  <lastmod>2014-11-21T02:51:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+</urlset>

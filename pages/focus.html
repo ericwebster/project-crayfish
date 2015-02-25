@@ -1,0 +1,78 @@
+
+{% extends "templates/partials/base.html" %}
+{% set item = get('focus') %}
+{% block title %}{{ item.name }} | {% parent %}{% endblock %}
+{% set pageName = 'focus-main' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage.url %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% block content %}
+
+  <div id="stage" class="row feature focus-main" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+    <div class="large-12 columns">
+      <div class="panel">
+        <div class="large-6 medium-8 columns end">
+          <div class="feature-title">
+          	 <h5 style="color: {{item.hed_color}}">{{item.section_name}}</h5>
+	          <h1 style="color: {{item.hed_color}}">{{ item.hed }}</h1>
+	        </div>
+	        <div class="featured-desc">
+	          <p style="color: {{item.hed_color}}">{{ item.dek|safe }}</p>
+	        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="page">
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <p class="intro"><img src="/static/images/brand-slash.png" alt="Brand Slash">{{ item.intro_paragraph }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel focus-body">
+          {{ item.body|safe }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row display-header">
+    <div class="row">
+      <h3>{{item.focus_boxes_lead}}</h3>
+    </div>
+  </div>
+
+    {% include "templates/partials/includes/focus-boxes.html" %}
+
+    <div class="row aboutDetails">
+      <div class="large-12 columns">
+        <div class="panel">
+          <div class="large-6 medium-6 columns gear">
+          {{item.left_col|safe}}
+          </div>
+          <div class="large-6 medium-6 columns heart">
+          {{item.right_col|safe}}
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+</div>
+
+{% endblock %}
+
+
+{% block footer_extra %}
+{% endblock %}

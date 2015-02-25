@@ -1,0 +1,55 @@
+
+{% extends "templates/partials/base.html" %}
+{% set pageName = 'careers-detail' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+
+	<div class="careers-detail-wrapper">
+      
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="large-12 columns careers-wrapper">
+          <div class="panel">
+            <div class="large-9 columns">
+              <div class="row">
+              	<h4>
+              	{% for relation in item.relationship %}
+			  		<a href="{{ url(relation) }}">{{ relation.name }}</a>{% if not loop.last %},{% endif %}
+			  	{% endfor %}
+			  	</h4>
+              	<h3>{{ item.name }}</h3>
+                {{ item.content|safe }}           
+              </div>
+            </div>
+            <div class="large-3 columns">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="row panel">
+      <ul>
+        <li>&copy;2014</li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </footer>
+
+
+{% endblock %}

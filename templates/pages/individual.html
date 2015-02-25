@@ -1,0 +1,34 @@
+{% set pageName = 'ssp' %}
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append this pages's name to the site title defined in base.html #}
+{% block title %} {{ item.name }} | {% parent %} {% endblock %}
+{% block content %}
+
+<div class="row">
+    	<div class="large-12 columns">
+    		<span class="decrative-head">{{item.name}}</span>
+    	</div>
+    </div>
+
+{% if item.intro_paragraph %}
+    <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <p class="intro"><img src="/static/images/slash.png">{{item.intro_paragraph}}</p>
+          </div>
+        </div>
+      </div>
+{% endif %}
+
+
+    <div class="row aboutImages ssp-body-copy">
+        <div class="small-12 large-2 columns">&nbsp;</div>
+        <div class="small-12 large-8 columns">
+          <div class="panel">
+          	{{item.page_content|safe}}
+          </div>
+        </div>
+        <div class="small-12 large-2 columns">&nbsp;</div>
+      </div>
+
+{% endblock %}

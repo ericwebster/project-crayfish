@@ -1,0 +1,236 @@
+/*
+   download.css
+*/
+.download-wrapper {
+    background: none repeat scroll 0 0 #f0efef;
+    padding-top: 85px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.download .contents h5 {
+    font-size: 15px;
+    line-height: 100%;
+    margin: 62px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#download-page img {
+    margin:10px 0 20px 0;
+}
+.download .contents h1 {
+    font-size: 47px;
+    margin: 0px 0 60px;
+    text-align:center;
+}
+
+.download .contents h2 {
+    font-weight: bold;
+}
+
+.download .contents h3{
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0 10px 0;
+}
+
+.download .contents p {
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+.download .contents .cf_widget_socialsignon .cf_sign_on{
+    width: auto !important;
+}
+.download .contents input,
+.download .contents input.mktoTextField,
+.download .contents input.mktoEmailField   {
+    -webkit-appearance:none;
+    border: 0;
+    background: #fff;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    width: 100% !important; /* to overwrite inline style */
+    font-family: "Arial";
+    font-size: 14px;
+}
+
+.download .contents .mktoForm .mktoGutter,
+.download .contents .mktoForm .mktoOffset{
+    display: none;
+}
+
+.download .contents input:focus,
+.download .contents .mktoForm input:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #333;
+}
+
+.download .contents input#message {
+    height: 165px;
+}
+.download .contents form,
+.download .contents .mktoForm {
+    padding: 0;
+    width: 100% !important;
+}
+.download .contents .asterisk,
+.download .contents .mktoAsterix {
+    float:left;
+}
+
+.download .contents .large-6 {
+    width: 47%;
+    padding-left: 70px;
+}
+
+.download .contents .large-12 .large-6{
+    width: 50%;
+}
+.download .contents .mktoForm .mktoFieldWrap{
+    float: none;
+}
+.download .contents .mktoFormRow{
+    /* flexbox setup */
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+
+    display: flex;
+    flex-direction: row;  
+}
+.download .contents .mktoFormCol{
+    width: 47%;
+    margin-right: 2%;
+    margin-bottom: 0px !important;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+}
+.download .contents .large-6 .large-6 {
+    padding-left:0;
+}
+.download .contents .large-6 .last-name,
+.download .contents .large-6 .company{
+    padding-right:0;
+}
+.download .contents label,
+.download .contents .mktoForm label.mktoLabel {
+    position:relative;
+    padding-right:18px;
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    min-width:150px; /* overwrite inline style */
+}
+.download .contents .mc-field-group,
+.download .contents .mktoForm .mktoFieldWrap{
+    position: relative;
+}
+.download .contents .submit{
+    padding: 15px 0;
+}
+.download .contents .submit input,
+.download .contents .mktoForm label.mktoButton{
+    width: 100% !important;
+    margin: 0 auto;
+    background: #fc7706;
+    color: #ffffff;
+    font-family: "Univers LT W01 65 Bold",Arial,sans-serif;
+    font-size: 16px;
+    padding: 15px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    float:right;
+}
+
+.download .contents .submit p{
+    float:left;
+}
+
+.download .contents .checkbox input,
+.download .contents .mktoForm .mktoCheckboxList input{
+    margin: 0;
+    padding: 0;
+    width: 15px;
+     -webkit-appearance: checkbox;
+}
+.download .contents .mktoForm .mktoCheckboxList{
+    width: 25px !important;
+}
+.download .contents .mktoForm .mktoCheckboxList input{
+    width: auto !important;
+}
+.download .contents .mktoForm .mktoCheckboxList label{
+    min-width: none;
+}
+.download .contents .error{
+    color: red;
+    padding: 15px;
+}
+
+.download .contents label.error{
+    position: absolute;
+    top: 23px;
+    left: 0;
+    background: rgba(250, 0, 0,.65);
+    padding: 3px;
+    font-size: 10px;
+    color: #fff;
+    min-width: 50px;
+    font-family:'Univers LT W02 55 Roman', Arial, sans-serif;
+    border-radius: 3px;
+    background-clip: padding-box;
+    z-index: 5000;
+}
+.download .contents p.intro{
+    color: #444444;
+    font-family: "Serifa W01 45 Light",georgia,serif;
+    font-size: 34px;
+    line-height: 1.357;
+    margin: 60px 0 44px;
+    padding: 0 80px;
+    text-align: center;
+}
+.download .contents #thank-you-page{
+    text-align: center;
+}
+.download .contents .ty-dek{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.download .contents .ty-dek p {
+    margin: 0 auto 20px auto;
+    width: 60%;
+}
+.download .contents .mktoForm .mktoFormRow label.mktoLabel{
+    padding: 0;
+}
+.download .contents .download-btn,
+.download .contents .mktoForm .mktoButton{
+    display: inline-block;
+    background: #fc7706;
+    color: #ffffff;
+    font-family: "Univers LT W01 65 Bold",Arial,sans-serif;
+    font-size: 14px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 100%;
+}
+.download .contents .mktoButtonRow{
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.download .contents .mktoButtonWrap{
+    margin: 0 !important;
+    width: 100%;
+    display: block;
+}

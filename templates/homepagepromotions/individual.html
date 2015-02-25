@@ -1,0 +1,72 @@
+{# ------------------------------------------------------- #}
+{# INDIVIDUAL VIEW FOR EACH homepagepromotions #}
+{# This page can use any data from http:localhost:2000/cms/#/form/homepagepromotions/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append this homepagepromotions's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+  <p><a href="{{ url('homepagepromotions') }}">View a list of all homepagepromotions</a></p>
+  <h1>{{ item.name }}</h1>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Type: </strong>
+        {{ item.type }}
+      </li>
+      <li>
+        <strong>Priority: </strong>
+        {{ item.priority }}
+      </li>
+      <li>
+        <strong>Date/Time Start: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.datetime_start|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Date/Time End: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.datetime_end|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Flag Text: </strong>
+        {{ item.flag_text }}
+      </li>
+      <li>
+        <strong>Body Text: </strong>
+        {{ item.body_text }}
+      </li>
+      <li>
+        <strong>CTA Text: </strong>
+        {{ item.cta_text }}
+      </li>
+      <li>
+        <strong>CTA Link : </strong>
+        {{ item.cta_link_ }}
+      </li>
+  </ul>
+{% endblock %}

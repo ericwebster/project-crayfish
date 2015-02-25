@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	{% set pages = getTypes(true) %}
+    <urlset
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+               http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+         <url>
+	      <loc>http://cramer.com</loc>
+	      <priority>1</priority>
+	      <changefreq>weekly</changefreq>
+	    </url>
+	    {% set pages = getTypes(true) %}
+		{% for page in pages %}
+		{# for some reason the != operator is not working, these hides pages with these names from the site map #}
+			{% if url(page) == "/clients/" || url(page) == "/globalelements/" || url(page) == "/news-category/" || url(page) == "/thepulse/" || url(page) == "/cramer-news/"
+			|| url(page) == "/home/"
+			|| url(page) == "/focuscontent/"
+			|| url(page) == "/focusevents/"
+			|| url(page) == "/focusmarketing/"
+			|| url(page) == "/focushealthcare/"
+			|| url(page) == "/focusnonprofits/"
+			|| url(page) == "/downloads/"
+
+			|| url(page) == "/p/" %}{% else %}
+		    <url>
+		      <loc>http://cramer.com{{url(page)}}</loc>
+		      <priority>.2</priority>
+		      <changefreq>weekly</changefreq>
+		    </url>
+		    {% endif %}
+		{% endfor %}
+
+		{% set pages = cms.jobdescription %}
+		{% for page in pages %}
+		{# for some reason the != operator is not working, these hides pages with these names from the site map #}
+		    <url>
+		      <loc>http://cramer.com{{url(page)}}</loc>
+		      <priority>.2</priority>
+		      <changefreq>weekly</changefreq>
+		    </url>
+		{% endfor %}
+
+		{% set pages = cms.pages %}
+		{% for page in pages %}
+		{# for some reason the != operator is not working, these hides pages with these names from the site map #}
+		    <url>
+		      <loc>http://cramer.com{{url(page)}}</loc>
+		      <priority>.2</priority>
+		      <changefreq>weekly</changefreq>
+		    </url>
+		{% endfor %}
+
+    </urlset>
+

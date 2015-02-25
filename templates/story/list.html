@@ -1,0 +1,46 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}Recent stories posted on {% parent %}{% endblock %}
+{% set pageName = "story story-list orange-stage" %}
+
+{% block content %}
+  {% set data = cms.story %}
+  {% set data = data|sort('publish_date', true) %}
+  {% set data = paginate(data, 20) %}
+
+<article id="story">
+
+    <header id="stage">
+        <div class="header-contents">
+          <h1>Recent Stories</h1>
+        </div><!-- /header-contents -->
+    </header><!-- /stage -->
+
+    <div id="page-wrapper">
+        <div class="wrapper">
+
+            <section class="body-content">
+              {% for item in data %}
+                {% if item.syndicate == "Yes" -%}
+                <div class="story-list-item">
+                  <a href="{{ url(item) }}">
+                    {% if item.story_slug %}<h5>{{ item.story_slug }}</h5>{% endif %}
+                    <h2>{% if item.alternative_promoteaser %}{{ item.alternative_promoteaser }}{% else %}{{ item.display_desktop }}{% endif %}</h2>
+                    <p>{{ item.dek }}</p>
+                  </a>
+                </div>
+                {% endif -%}
+              {% endfor %}
+
+              {% include "templates/partials/paginator.html" %}
+
+            </section>
+          </div>
+      </div><!-- /page-wrapper -->
+
+</article><!-- /story -->
+
+{% endblock %}
+
+{% block footer_extra %}
+
+{% endblock %}

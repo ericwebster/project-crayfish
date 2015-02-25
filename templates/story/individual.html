@@ -1,0 +1,274 @@
+{% extends "templates/partials/base.html" %}
+
+
+{% block title -%}
+    {% if item.descriptive_seo__open_graph -%}{% set pageTitle = item.descriptive_seo__open_graph|striptags|truncate(200) -%}
+    {% else -%}{% set pageTitle = item.display_desktop|striptags|truncate(200) -%}{% endif -%}
+    {{ pageTitle }} | {% parent -%}
+{% endblock %}
+
+{% block meta -%}
+    {% set pageName = "story" %}
+    {% if item.logo_color == "White" -%}
+        {% set pageName = pageName + " orange-stage" -%}
+    {% endif -%}
+
+    {% set ogdescription = "" -%}
+    {% if item.dek %}{% set ogdescription = item.dek|striptags|truncate(200) -%}
+    {% else %}{% set ogdescription = item.lede|striptags|truncate(200) %}{% endif -%}
+    {% set metadescription = ogdescription -%}
+
+    {% set ogimage = item.thumbnail|imageSize(300) -%}
+    {% set ogUpdatedTime = item.last_updated|date("D, d M Y H:i:s O") -%}
+
+    {# meta keywords -- based on story tags -#}
+    {% set metakeywords = "" -%}
+    {% for tag in item.tags -%}
+        {% set metakeywords = metakeywords + tag.name|striptags -%}
+        {% if not loop.last -%}
+            {% set metakeywords = metakeywords + ", " -%}
+        {% endif -%}
+    {% endfor -%}
+
+    <meta name="description" content="{{ metadescription }}">
+    <meta name="keywords" content="{{ metakeywords }}">
+    <meta property="og:updated_time" content="{{ ogUpdatedTime }}" />
+    <meta property="og:title" content="{{ pageTitle|default('Cramer | a marketing studio') }}" />
+    <meta property="og:description" content="{{ ogdescription }}" />
+    <meta property="og:image" content="{{ ogimage }}" />
+{% endblock %}
+
+{% block head_extra %}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@WeAreCramer" />
+
+    <meta name="news_keywords" content="{{ metakeywords }}" />
+    <meta property="article:published_time" content="{{ item.publish_date|date("D, d M Y H:i:s O") }}" />
+    <meta property="article:modified_time" content="{{ item.last_updated|date("D, d M Y H:i:s O") }}" />
+
+    {% if item.css %}<style type="text/css">{{ item.css }}</style>{% endif %}
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "author": "{{ item.contributor__primary[0].name|safe|escape('js') }}",
+        "name": "{{ item.name|safe|escape('js') }}",
+        "headline": "{{ item.display_desktop|safe|escape('js') }}",
+        "alternativeHeadline": "{{ pageTitle|safe|escape('js') }}",
+        "description": "{{ metadescription|safe|escape('js') }}",
+        "image": "{{ ogimage }}",
+        "url": "http://cramer.com{{ getCurrentUrl() }}",
+        "sourceOrganization": "Cramer",
+        "publisher": "Cramer",
+        "isFamilyFriendly": true,
+        "dateCreated": "{{ item.publish_date|date("D, d M Y H:i:s O") }}",
+        "datePublished": "{{ item.publish_date|date("D, d M Y H:i:s O") }}",
+        "dateModified": "{{ item.last_updated|date("D, d M Y H:i:s O") }}",
+        "copyrightYear": "{{ item.publish_date|date('Y') }}"
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+
+<article id="story">
+
+    <header id="stage" style="
+    {% if item.stage_background_image %}background-image: url({{item.stage_background_image|imageSize(1600)}});{% endif -%}
+    {% if item.stage_height %}height: {{ item.stage_height }}px;{% endif -%}
+    ">
+        <div class="header-contents">
+          {% if item.story_slug %}<h5{% if item.stage_text_color %} style="color:{{ item.stage_text_color }};"{% endif %}>{{ item.story_slug }}</h5>{% endif %}
+          <h1{% if item.stage_text_color %} style="color:{{ item.stage_text_color }};"{% endif %}>{{ item.display_desktop }}</h1>
+          {% if item.dek %}<p class="dek"{% if item.stage_text_color %} style="color:{{ item.stage_text_color }};"{% endif %}>{{ item.dek }}</p>{% endif %}
+          <p class="pubdate"{% if item.stage_text_color %} style="color:{{ item.stage_text_color }};"{% endif %}>Published: <time pubdate="pubdate">{{ item.publish_date|date('m-d-Y') }}</time></p>
+        </div><!-- /header-contents -->
+
+        <div class="stagecover" style="
+        {% if item.stage_overlay_transparency >0 && item.stage_overlay_color %}background-color: {{item.stage_overlay_color}};{% endif -%}
+        {% if item.stage_overlay_transparency %}opacity: {{ item.stage_overlay_transparency/100 }};{% endif -%}
+        "></div>
+    </header><!-- /stage -->
+
+    <div id="page-wrapper" style="
+    {% if item.page_background_image %}background-image: url({{item.page_background_image|imageSize(1600)}});{% endif -%}
+    {% if item.page_background_image__fixed_position %}background-attachment: fixed;{% endif -%}
+    ">
+        <div class="wrapper">
+
+            <section class="body-content" itemprop="articleBody">
+                {% if item.lede %}<p class="lede">{{ item.lede|safe }}</p>{% endif %}
+
+                {{ item.body|safe }}
+            </section><!-- /body-content -->
+
+            <section class="contributors">
+                <div class="primary">
+                    {% set contributorCount = 0 %}
+                    {% for contributor in item.contributor__primary %}
+                        {% if contributorCount == 0 %}
+                            <h4>About the Author{% if loop.last %}s{% endif %}</h4>
+                        {% endif %}
+
+                        <div class="bio">
+                            {% if contributor.avatar %}
+                                <img src="{{ contributor.avatar|imageSize(100) }}" />
+                            {% endif %}
+
+                            <div class="bio-contents">
+                                <h2>{{ contributor.name|safe }}</h2>
+
+                            {% if contributor.title || contributor.company -%}
+                                <p class="title">
+                                {{ contributor.title|safe }}
+                                {% if contributor.company -%}
+                                    / <span>{{ contributor.company|safe }}</span>
+                                {% endif -%}
+                                </p>
+                            {% endif -%}
+
+                            {% if contributor.bio__short -%}
+                                <p>
+                                    {{ contributor.bio__short|safe }}<br />
+                                </p>
+                            {% endif -%}
+
+                            {% if contributor.website || contributor.twitter || contributor.linkedin -%}
+                                <ul>
+                                    <!--<li>Connect with {{ contributor.first_name }}:</li>-->
+                                {% if contributor.website -%}
+                                    <li><a href="{{ contributor.website }}" target="_blank">Website</a></li>
+                                {% endif -%}
+                                {% if contributor.twitter -%}
+                                    <li><a href="{{ contributor.twitter }}" target="_blank">Twitter</a></li>
+                                {% endif -%}
+                                {% if contributor.linkedin -%}
+                                    <li><a href="{{ contributor.linkedin }}" target="_blank">LinkedIn</a></li>
+                                {% endif -%}
+                                </ul>
+                            {% endif -%}
+                            </div><!-- /bio-contents -->
+                        </div><!-- /bio -->
+
+                        {% set contributorCount = contributorCount + 1 -%}
+                    {% endfor -%}
+                </div><!-- /primary -->
+
+                {% set contributorCount = 0 -%}
+                {% for contributor in item.contributor__additional -%}
+                    {% if contributorCount == 0 -%}
+                        <div class="additional"><p>Additional contributions by
+                    {% elseif loop.last %}
+                        and
+                    {% else -%},
+                    {% endif -%}
+                    {{ contributor.name -}}{% set contributorCount = contributorCount + 1 -%}
+                {% endfor -%}
+                {% if contributorCount > 0 -%}
+                    </p></div><!-- /additional -->
+                {% endif -%}
+            </section><!-- /contributors -->
+
+            {% if item.credits -%}
+            <section class="credits">
+                <p>Credits: {{ item.credits|safe }}</p>
+            </section><!-- /section -->
+            {% endif -%}
+
+            {% if item.related_assets -%}
+            <section class="relatedassets">
+                <h2>{{ item.related_assets_section_head }}</h2>
+
+                <div class="row wrapper">
+                {% for asset in item.related_assets -%}
+                    <div class="large-6 column">
+                        <div class="asset">
+                            <h3>{{ asset.title }}</h3>
+                            <p>{{ asset.description }}</p>
+
+                            {% if asset.type == "Download" -%}
+                            <a href="/{{ asset.download.slug }}/">
+                                <img src="{{ asset.thumbnail|imageSize(500) }}" /><br />
+                                <p><span class="cta">{{ asset.call_to_action_text }}</span></p>
+                            </a>
+                            {% else -%}
+                                {{ asset.embed_code|safe }}<br />
+                            {% endif -%}
+                        </div><!-- /asset -->
+                    </div><!-- /column -->
+                {% endfor -%}
+                </div><!-- /row -->
+            </section><!--/relatedassets -->
+            {% endif -%}
+
+            <section class="social can-stick">
+                <div class="bar">
+                    <p class="share">Share</p>
+                    <ul>
+                        <li class='st_twitter_custom twitter' displayText='Tweet' st_via='WeAreCramer'><div class="icon">Twitter</div></li>
+                        <li class='st_linkedin_custom linkedin' displayText='LinkedIn'><div class="icon">LinkedIn</div></li>
+                        <li class='st_facebook_custom facebook' displayText='Facebook'><div class="icon">Facebook</div></li>
+                        <li class='st_googleplus_custom gplus' displayText='Google+'><div class="icon">Google+</div></li>
+                        <li class='st_email_custom email' displayText='Email'><div class="icon">Email</div></li>
+                        <li class='print'><a href="#print" title="Print"><div class="icon">Print</div></a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div><!-- /wrapper -->
+    </div></div><!-- /page/page-wrapper -->
+
+    <section class="article-footer">
+        <div class="row contact-cta-lead cta-globals">
+          <div class="large-12 columns">
+            <div class="panel">
+              <p class="cta-intro">
+                Hi, we're Cramer.
+              </p>
+            </div>
+          </div>
+
+          {% include "templates/partials/includes/contact-cta.html" %}
+
+        </div><!-- contact-cta-box -->
+
+        <div class="row focus-boxes-lead cta-globals">
+          <div class="large-12 columns">
+            <div class="panel">
+              <p class="lead-intro">Our areas of expertise.</p>
+            </div>
+          </div>
+        </div>
+
+        {% include "templates/partials/includes/focus-boxes.html" %}
+    </section><!-- /article-footer -->
+
+</article><!-- /story -->
+
+{% endblock %}
+
+{% block footer_extra %}
+
+    {% if item.javascript %}
+        <script>{{ item.javascript }}</script>
+    {% endif %}
+
+    <script type="text/javascript">
+    // set the height of all asset boxes to be the same
+    if ( $(".relatedassets .asset") && $(window).width() > 1024 ) {
+
+        var rowHeight = $(".relatedassets .row").height() - 60;
+        $(".relatedassets .asset").css("height", rowHeight);
+
+    }
+
+    </script>
+
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "e4658e02-2042-4531-8666-51434d296b9b", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover: false});</script>
+    <script src="//load.sumome.com/" data-sumo-site-id="6d0ff6dd9c9ac69f2ac272782d2ce3435d98270dab30d4884748c1cf2a0365ca" async></script>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "templates/partials/base.html" %}
+{% set item = get('insidethestudio') %}
+{% block title %} {{ item.name }} | {% parent %} {% endblock %}
+{% set pageName = 'inside-the-studio' %}
+
+{% set ogtitle = item.ogtitle %}
+{% set ogdescription = item.ogdescription %}
+{% set ogimage = item.ogimage.url %}
+{% set ogUrl = item.ogurl %}
+{% set metadescription = item.metadescription %}
+{% set metakeywords = item.metakeywords %}
+
+{% block content %}
+
+<div id="stage" class="row feature" style="background-image: url({{item.stage_image|imageSize(1600)|default('/static/css/images/about-feature.jpg')}});">
+  <div class="large-12 columns">
+    <div class="panel">
+      <div class="large-6 medium-8 columns end">
+        <div class="feature-title">
+          <h5><a href="/about/" style="color: {{item.hed_color}}">{{item.section_name}}</a></h5>
+          <h1 style="color: {{item.hed_color}}">{{ item.hed }}</h1>
+        </div>
+        <div class="featured-desc" style="color: {{item.hed_color}}">
+          {{ item.dek|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+    <div class="row showcase">
+        <div class="large-12 columns">
+            <div class="panel">
+              <div class="inside-body">{{ item.intro|safe }}</div>
+
+              {% for image in item.gallery %}
+              <div class="showcase-image">
+                  <img src="{{ image.url }}" alt="{{ image.caption }}" />
+
+                  {% if image.caption != "" %}
+                      <div class="caption">
+                          <p>{{ image.caption }}</p>
+                      </div>
+                  {% endif %}
+              </div>
+              {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row contact-cta-lead cta-globals">
+      <div class="large-12 columns">
+        <div class="panel">
+          <p class="cta-intro">
+            {{ contact_cta_lead }}
+          </p>
+        </div>
+      </div>
+    </section><!-- contact-cta-box -->
+
+     {% include "templates/partials/includes/contact-cta.html" %}
+
+    <div class="row focus-boxes-lead cta-globals">
+      <div class="large-12 columns">
+        <div class="panel">
+          <p class="lead-intro">{{ focus_boxes_lead }}</p>
+        </div>
+      </div>
+    </div>
+
+    {% include "templates/partials/includes/focus-boxes.html" %}
+
+</div>
+
+
+
+
+{% endblock %}
